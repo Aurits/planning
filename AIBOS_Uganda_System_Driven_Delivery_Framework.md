@@ -92,8 +92,13 @@ header-includes: |
     strong { font-weight: 600; }
     a { color: #3b5bdb; text-decoration: none; }
     pre, blockquote { page-break-inside: avoid; }
+    header#title-block-header { display: none; }
   </style>
 ---
+
+# AIBOS Uganda: System-Driven Delivery Framework
+
+### A Comprehensive Plan for Quality, Communication, and Operational Excellence
 
 > **"From a person-dependent organization to a system-driven organization."**
 
@@ -900,14 +905,14 @@ These sessions happen immediately after each team's regular weekly meeting. They
 
 ### 9.5 Technical Sharing Sessions (TSS)
 
-| Item           | Detail                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
-| **Frequency**  | Weekly (Friday)                                                                                        |
-| **Duration**   | 30 minutes                                                                                             |
-| **Purpose**    | Knowledge sharing, skill development, cross-team learning                                              |
-| **Format**     | One team presents a technical topic; mandatory Q&A from other teams                                    |
+| Item           | Detail                                                                                                          |
+| -------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Frequency**  | Weekly (Friday)                                                                                                 |
+| **Duration**   | 30 minutes                                                                                                      |
+| **Purpose**    | Knowledge sharing, skill development, cross-team learning                                                       |
+| **Format**     | One team presents a technical topic; mandatory Q&A from other teams                                             |
 | **Output**     | Summary documented in Google Drive (Operations/TSS Summaries/) and posted in the team channel after the session |
-| **Connection** | TSS content feeds into external technical blogs (Medium)                                               |
+| **Connection** | TSS content feeds into external technical blogs (Medium)                                                        |
 
 **Rules for TSS:**
 
