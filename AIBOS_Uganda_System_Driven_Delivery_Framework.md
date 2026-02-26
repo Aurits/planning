@@ -95,8 +95,6 @@ header-includes: |
   </style>
 ---
 
-# AIBOS Uganda: System-Driven Delivery Framework
-
 > **"From a person-dependent organization to a system-driven organization."**
 
 ## Table of Contents
@@ -151,7 +149,7 @@ This framework addresses seven interconnected pillars:
 
 - **New team members:** Read Sections 1–5 first for full context, then refer to specific sections as needed
 - **Product Managers:** Sections 5, 6, 7, 8, and 9 are your primary operational reference
-- **Developers:** Sections 6, 7, 10.6, and 13 are most relevant to your daily work
+- **Developers:** Sections 6, 7, 11.3, and 13 are most relevant to your daily work
 - **Leadership:** Sections 2, 3, 4, 14, and 15 provide governance and strategic overview
 - **All team members:** Section 12 (Reward System) and Section 10.7 (Talent) apply to everyone's growth and day-to-day experience
 
@@ -323,7 +321,7 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 **Rules:**
 
 - Each PM fills their project's row during the **evening retrospective**
-- Ambrose reviews the full summary tab every **Friday** in the PDMO meeting
+- Ambrose reviews the full summary tab every **Tuesday** in the PDMO meeting
 - Japan team (Prakhar/Nate) has view access at all times
 - An empty cell by EOD is flagged as a potential gap
 
@@ -448,7 +446,7 @@ CODE WRITTEN BY DEVELOPER
 │  LAYER 4: AUTOMATED     │  Unit and integration tests run
 │  TESTS                  │  automatically on every code push.
 │  (Continuous)           │  Focus: regressions, edge cases
-│  Who: Infra + Dev team  │
+│  Who: Development team  │
 └────────────┬────────────┘
              │ All layers pass
              ▼
@@ -896,7 +894,9 @@ These sessions happen immediately after each team's regular weekly meeting. They
 2. Updates from team product meetings
 3. Review of templates and weekly checklist
 4. Cross-team dependencies and key issues
-5. Questions, actions, and next steps
+5. Team Highlight — one shoutout for SLA/KPI excellence that week
+6. Under-the-Radar Contribution — nominated quiet wins
+7. Questions, actions, and next steps
 
 ### 9.5 Technical Sharing Sessions (TSS)
 
@@ -906,7 +906,7 @@ These sessions happen immediately after each team's regular weekly meeting. They
 | **Duration**   | 30 minutes                                                                                             |
 | **Purpose**    | Knowledge sharing, skill development, cross-team learning                                              |
 | **Format**     | One team presents a technical topic; mandatory Q&A from other teams                                    |
-| **Output**     | Summary documented in Google Drive (Operations/SOPs/) and posted in the team channel after the session |
+| **Output**     | Summary documented in Google Drive (Operations/TSS Summaries/) and posted in the team channel after the session |
 | **Connection** | TSS content feeds into external technical blogs (Medium)                                               |
 
 **Rules for TSS:**
@@ -1116,7 +1116,7 @@ PM assigns work aligned to strength (Skills Map)
          │
 Member delivers quality work
          │
-Recognition in Friday PDMO highlight
+Recognition in Tuesday PDMO highlight
          │
 Contribution noted in KPI dashboard
          │
@@ -1247,6 +1247,7 @@ AIBOS Uganda (Shared Drive)
 ├── Operations/
 │   ├── Templates/          ← All framework templates (Appendices A–M)
 │   ├── SOPs/               ← Standard Operating Procedures
+│   ├── TSS Summaries/      ← Weekly Technical Sharing Session summaries
 │   └── KPI Tracking/       ← Google Sheets KPI dashboards per project
 ├── Projects/
 │   ├── [Project Name]/
@@ -1363,7 +1364,7 @@ Recognition must be:
 
 ### 12.2 Tier 1 — Weekly Recognition (Zero Cost)
 
-Every Friday PDMO meeting includes a **"Team Highlight"** — one specific shoutout for a team or individual that exemplified the SLA/KPI standards that week.
+Every Tuesday PDMO meeting includes a **"Team Highlight"** — one specific shoutout for a team or individual that exemplified the SLA/KPI standards that week.
 
 This is posted in the team channel after the meeting.
 
@@ -1435,7 +1436,7 @@ AIBOS Uganda recognizes extra-mile effort as a distinct and important category o
 | Type of Effort                            | Recognition Approach                                                          |
 | ----------------------------------------- | ----------------------------------------------------------------------------- |
 | Late-night deployment or emergency fix    | Named shoutout in next-day morning standup                                    |
-| Critical task completed over the weekend  | Acknowledged in the following Friday PDMO highlight                           |
+| Critical task completed over the weekend  | Acknowledged in the following Tuesday PDMO highlight                          |
 | Consistently staying late during a sprint | Noted in the monthly summary shared with Japan                                |
 | Going beyond scope to unblock a teammate  | PDMO callout framed as: _"This person made it possible for the team to ship"_ |
 
@@ -1464,7 +1465,7 @@ In most teams, the most lasting contributions — writing the guide that helped 
 
 #### The "Under-the-Radar" Contribution Shoutout
 
-In the weekly PDMO Friday summary, a recurring segment: **"This Week's Under-the-Radar Contribution"**
+In the weekly Tuesday PDMO summary, a recurring segment: **"This Week's Under-the-Radar Contribution"**
 
 - Any PM or team member can nominate a contribution — not limited to KPI metrics
 - One nomination per week is highlighted in the team channel
@@ -1608,7 +1609,7 @@ Meeting       Ambrose       BEGINS
 | --------------------------------------------------------------------- | -------------- | ----------- |
 | Confirm Ambrose as Management Owner                                   | Prakhar / Nate | Feb 23      |
 | Share and review this framework document with Martin and Joseph       | Ambrose        | Feb 27      |
-| Nominate QA Owners for each project                                   | Each team      | Feb 28      |
+| Nominate QA Owners for each project                                   | Each team      | Mar 1       |
 | Set up KPI tracking sheet (Google Sheets)                             | Ambrose        | Mar 1       |
 | Confirm shadow assignments per project                                | Ambrose + PMs  | Mar 7       |
 | Brief full team on daily pulse and SLA expectations                   | Ambrose + PMs  | Mar 10–14   |
@@ -1823,7 +1824,9 @@ Tuesday | 14:00 EAT
 2. Updates from team product meetings
 3. Review of templates and weekly checklist
 4. Cross-team dependencies and key issues
-5. Questions, actions, and next steps
+5. Team Highlight — one shoutout for SLA/KPI excellence that week
+6. Under-the-Radar Contribution — nominated quiet wins
+7. Questions, actions, and next steps
 ```
 
 ### Appendix F — Meeting Schedule Reference
@@ -2052,6 +2055,7 @@ NOTES / ACTIONS FROM THIS MEETING:
 ────────────────────────────────────────────────────────
 ```
 
-_Version: 1.0_
+_Version: 2.0_
 _Last Updated: February 2026_
+_Document Owner: Ambrose Alanda_
 _For questions or updates: B1 Channel_
