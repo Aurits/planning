@@ -97,11 +97,7 @@ header-includes: |
 
 # AIBOS Uganda: System-Driven Delivery Framework
 
----
-
 > **"From a person-dependent organization to a system-driven organization."**
-
----
 
 ## Table of Contents
 
@@ -123,8 +119,6 @@ header-includes: |
 - [Section 15 — AI Tools & Shared Team Environment](#section-15--ai-tools--shared-team-environment)
 - [Appendices](#appendices)
 
----
-
 ## Section 0 — Executive Summary
 
 ### Purpose
@@ -133,13 +127,13 @@ This document is the operational blueprint for AIBOS Uganda's transformation fro
 
 ### The Core Transformation Goal
 
-| From | To |
-|---|---|
-| Quality depends on specific individuals | Quality is enforced by the system |
-| Communication happens when someone remembers | Communication follows a defined protocol |
-| Decisions live in people's heads | Decisions are documented and accessible |
-| Managers spend time firefighting | Managers monitor, guide, and improve the system |
-| Knowledge is lost when someone leaves | Knowledge lives in documentation and tools |
+| From                                         | To                                              |
+| -------------------------------------------- | ----------------------------------------------- |
+| Quality depends on specific individuals      | Quality is enforced by the system               |
+| Communication happens when someone remembers | Communication follows a defined protocol        |
+| Decisions live in people's heads             | Decisions are documented and accessible         |
+| Managers spend time firefighting             | Managers monitor, guide, and improve the system |
+| Knowledge is lost when someone leaves        | Knowledge lives in documentation and tools      |
 
 ### What This Document Covers
 
@@ -160,8 +154,6 @@ This framework addresses seven interconnected pillars:
 - **Developers:** Sections 6, 7, 10.6, and 13 are most relevant to your daily work
 - **Leadership:** Sections 2, 3, 4, 14, and 15 provide governance and strategic overview
 - **All team members:** Section 12 (Reward System) and Section 10.7 (Talent) apply to everyone's growth and day-to-day experience
-
----
 
 ## Section 1 — Background & Context
 
@@ -190,6 +182,7 @@ The underlying cause of these issues is not a lack of skill or knowledge. The ro
 > **The organization currently relies too heavily on specific individuals to maintain quality and communication standards. When those individuals are busy, unavailable, or overloaded, standards drop.**
 
 This creates two problems:
+
 - Talented individuals carry an unsustainable personal burden
 - The organization cannot scale because performance is tied to people, not systems
 
@@ -207,24 +200,22 @@ Communication depends on memory        Communication follows protocol
 
 ### 1.4 What This Is and Is Not
 
-| This IS | This is NOT |
-|---|---|
-| A process and systems initiative | Punishment or blame for any individual |
-| A collective effort across all levels | A performance review mechanism |
-| An opportunity to build better systems | A criticism of individual capability |
-| A foundation for AI-enabled growth | A set of rules imposed from the top down |
+| This IS                                | This is NOT                              |
+| -------------------------------------- | ---------------------------------------- |
+| A process and systems initiative       | Punishment or blame for any individual   |
+| A collective effort across all levels  | A performance review mechanism           |
+| An opportunity to build better systems | A criticism of individual capability     |
+| A foundation for AI-enabled growth     | A set of rules imposed from the top down |
 
 ### 1.5 Guiding Mindset
 
-| Principle | Meaning in Practice |
-|---|---|
-| **Mistakes are opportunities** | Every problem found is a chance to build a system that prevents it from recurring |
-| **DRY (Don't Repeat Yourself)** | Once a mistake happens, we build a system so it never happens again |
-| **Team over individual** | "Assignee" means "Owner" — the owner's job includes asking the team for help |
-| **Standards over individuals** | If a process works for one person, document it so it works for everyone |
-| **Japan-Uganda as one team** | Different contexts, same goal — building a company of global standard |
-
----
+| Principle                       | Meaning in Practice                                                               |
+| ------------------------------- | --------------------------------------------------------------------------------- |
+| **Mistakes are opportunities**  | Every problem found is a chance to build a system that prevents it from recurring |
+| **DRY (Don't Repeat Yourself)** | Once a mistake happens, we build a system so it never happens again               |
+| **Team over individual**        | "Assignee" means "Owner" — the owner's job includes asking the team for help      |
+| **Standards over individuals**  | If a process works for one person, document it so it works for everyone           |
+| **Japan-Uganda as one team**    | Different contexts, same goal — building a company of global standard             |
 
 ## Section 2 — Organizational Structure & Roles
 
@@ -232,29 +223,29 @@ Communication depends on memory        Communication follows protocol
 
 There are two types of responsibility in every activity:
 
-| Role | Description | Example |
-|---|---|---|
+| Role                 | Description                                                                                                  | Example                                                                   |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
 | **Management Owner** | Bears ultimate responsibility. Assigns and oversees Execution Owners. Responsible for the system succeeding. | A manager who owns the meeting process — even if someone else facilitates |
-| **Execution Owner** | Fulfills responsibility within their defined scope. Accountable for their piece of delivery. | A PM who facilitates the standup as the Execution Owner of that meeting |
+| **Execution Owner**  | Fulfills responsibility within their defined scope. Accountable for their piece of delivery.                 | A PM who facilitates the standup as the Execution Owner of that meeting   |
 
 **Key principle:** The Execution Owner is responsible for doing the work. The Management Owner is responsible for making sure the work gets done — including asking for help, removing blockers, and ensuring quality.
 
 ### 2.2 Initiative Ownership Structure
 
-| Role | Person | Scope |
-|---|---|---|
-| **Management Owner** | Ambrose | Overall ownership of SLA/KPI improvement initiative |
-| **Execution Owners** | Martin, Joseph, and Project PMs | Implementation and day-to-day execution |
-| **Advisor — Development** | Prakhar (Head of Development, AIBOS Japan) | Guidance on development process and rule changes |
-| **Advisor — Operations** | Nate (Head of AIBOS Uganda) | Guidance on Uganda structure and communication matters |
+| Role                      | Person                                     | Scope                                                  |
+| ------------------------- | ------------------------------------------ | ------------------------------------------------------ |
+| **Management Owner**      | Ambrose                                    | Overall ownership of SLA/KPI improvement initiative    |
+| **Execution Owners**      | Martin, Joseph, and Project PMs            | Implementation and day-to-day execution                |
+| **Advisor — Development** | Prakhar (Head of Development, AIBOS Japan) | Guidance on development process and rule changes       |
+| **Advisor — Operations**  | Nate (Head of AIBOS Uganda)                | Guidance on Uganda structure and communication matters |
 
 ### 2.3 Japan-Uganda Leadership Responsibilities
 
-| Leader | Ultimate Responsibility |
-|---|---|
+| Leader  | Ultimate Responsibility                                                         |
+| ------- | ------------------------------------------------------------------------------- |
 | Prakhar | Bridging the client and development team; approving development process changes |
-| Nate | Overall Uganda structure and operational functioning |
-| Ambrose | Day-to-day management of the SLA/KPI system and delivery standards |
+| Nate    | Overall Uganda structure and operational functioning                            |
+| Ambrose | Day-to-day management of the SLA/KPI system and delivery standards              |
 
 ### 2.4 Communication Channels
 
@@ -271,8 +262,6 @@ Client communication               Per project PM, following protocol
 
 > **Note:** The B1 channel is the default for transparency. Direct messages should be used only for sensitive matters — everything operational should be visible to the team.
 
----
-
 ## Section 3 — SLA Framework
 
 ### 3.1 Overview
@@ -281,13 +270,13 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 
 ### 3.2 SLA Standards
 
-| Area | Standard | Why It Matters |
-|---|---|---|
-| **Client Response Time** | First response within **15 minutes** during working hours | Eliminates client anxiety about being ignored; builds trust |
-| **Deadline Management** | Escalate delay risks **immediately upon recognition** — never on the due date | Gives the client and team time to adjust; prevents surprise failures |
-| **Requirements & Scope** | Confirm understanding **in writing** before starting work; MVP scope first | Eliminates work based on assumptions; prevents over-engineering |
-| **Quality Assurance** | Two-stage check: **developer self-test → QA Owner verification** before any client delivery | Stops preventable bugs from reaching the client |
-| **Meeting Management** | **Pre-assign roles**; share decisions and next actions **same day** | Ensures meetings produce outcomes, not just discussions |
+| Area                     | Standard                                                                                    | Why It Matters                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Client Response Time** | First response within **15 minutes** during working hours                                   | Eliminates client anxiety about being ignored; builds trust          |
+| **Deadline Management**  | Escalate delay risks **immediately upon recognition** — never on the due date               | Gives the client and team time to adjust; prevents surprise failures |
+| **Requirements & Scope** | Confirm understanding **in writing** before starting work; MVP scope first                  | Eliminates work based on assumptions; prevents over-engineering      |
+| **Quality Assurance**    | Two-stage check: **developer self-test → QA Owner verification** before any client delivery | Stops preventable bugs from reaching the client                      |
+| **Meeting Management**   | **Pre-assign roles**; share decisions and next actions **same day**                         | Ensures meetings produce outcomes, not just discussions              |
 
 ### 3.3 SLA Monitoring
 
@@ -295,29 +284,27 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 - Violations are not punitive — they are data points for system improvement
 - Recurring violations in the same area trigger a process review
 
----
-
 ## Section 4 — KPI Framework
 
 ### 4.1 KPI Definitions
 
-| KPI | What It Measures | Good Result |
-|---|---|---|
-| **15-min response violations** | Number of times a client message went unacknowledged for more than 15 minutes | 0 per week |
-| **Delay escalation rate** | Percentage of delay risks shared proactively (before the due date) | 100% |
-| **Pre-delivery bugs found in QA** | Number of bugs caught internally before reaching the client | Track trend downward |
-| **Post-delivery bugs reported by client** | Number of bugs the client found after delivery | 0 target |
-| **On-time delivery rate** | Percentage of tasks delivered on or before the agreed deadline | 100% target |
+| KPI                                       | What It Measures                                                              | Good Result          |
+| ----------------------------------------- | ----------------------------------------------------------------------------- | -------------------- |
+| **15-min response violations**            | Number of times a client message went unacknowledged for more than 15 minutes | 0 per week           |
+| **Delay escalation rate**                 | Percentage of delay risks shared proactively (before the due date)            | 100%                 |
+| **Pre-delivery bugs found in QA**         | Number of bugs caught internally before reaching the client                   | Track trend downward |
+| **Post-delivery bugs reported by client** | Number of bugs the client found after delivery                                | 0 target             |
+| **On-time delivery rate**                 | Percentage of tasks delivered on or before the agreed deadline                | 100% target          |
 
 ### 4.2 Collection & Review Cadence
 
-| KPI | Collected | Reviewed |
-|---|---|---|
-| 15-min response violations | Daily (PM logs per project) | Weekly (PDMO meeting) |
-| Delay escalation rate | Daily (PM logs per project) | Weekly (PDMO meeting) |
-| Pre-delivery bugs found in QA | Daily (QA Owner logs) | Weekly (PDMO meeting) |
-| Post-delivery bugs (client reported) | Daily (PM logs) | Weekly (PDMO meeting) |
-| On-time delivery rate | Weekly (PM confirms) | Weekly (PDMO meeting) |
+| KPI                                  | Collected                   | Reviewed              |
+| ------------------------------------ | --------------------------- | --------------------- |
+| 15-min response violations           | Daily (PM logs per project) | Weekly (PDMO meeting) |
+| Delay escalation rate                | Daily (PM logs per project) | Weekly (PDMO meeting) |
+| Pre-delivery bugs found in QA        | Daily (QA Owner logs)       | Weekly (PDMO meeting) |
+| Post-delivery bugs (client reported) | Daily (PM logs)             | Weekly (PDMO meeting) |
+| On-time delivery rate                | Weekly (PM confirms)        | Weekly (PDMO meeting) |
 
 ### 4.3 KPI Dashboard
 
@@ -325,15 +312,16 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 
 **Structure — One Sheet per Project, One Summary Tab:**
 
-| KPI | Mon | Tue | Wed | Thu | Fri | Weekly Total | Target |
-|---|---|---|---|---|---|---|---|
-| 15-min response violations | | | | | | | 0 |
-| Delay risks escalated proactively | | | | | | | 100% |
-| Pre-delivery bugs found in QA | | | | | | | Log & trend |
-| Post-delivery bugs (client) | | | | | | | 0 |
-| On-time delivery | | | | | | | 100% |
+| KPI                               | Mon | Tue | Wed | Thu | Fri | Weekly Total | Target      |
+| --------------------------------- | --- | --- | --- | --- | --- | ------------ | ----------- |
+| 15-min response violations        |     |     |     |     |     |              | 0           |
+| Delay risks escalated proactively |     |     |     |     |     |              | 100%        |
+| Pre-delivery bugs found in QA     |     |     |     |     |     |              | Log & trend |
+| Post-delivery bugs (client)       |     |     |     |     |     |              | 0           |
+| On-time delivery                  |     |     |     |     |     |              | 100%        |
 
 **Rules:**
+
 - Each PM fills their project's row during the **evening retrospective**
 - Ambrose reviews the full summary tab every **Friday** in the PDMO meeting
 - Japan team (Prakhar/Nate) has view access at all times
@@ -341,14 +329,12 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 
 **Summary Tab Format:**
 
-| Project | Response SLA | Delay Escalation | Pre-delivery Bugs | Client Bugs | On-time Rate | Overall |
-|---|---|---|---|---|---|---|
-| Create Project | | | | | | ON TRACK / WATCH / BLOCKED |
-| EMS | | | | | | |
-| FOCUST | | | | | | |
-| AI Phone Agent | | | | | | |
-
----
+| Project        | Response SLA | Delay Escalation | Pre-delivery Bugs | Client Bugs | On-time Rate | Overall                    |
+| -------------- | ------------ | ---------------- | ----------------- | ----------- | ------------ | -------------------------- |
+| Create Project |              |                  |                   |             |              | ON TRACK / WATCH / BLOCKED |
+| EMS            |              |                  |                   |             |              |                            |
+| FOCUST         |              |                  |                   |             |              |                            |
+| AI Phone Agent |              |                  |                   |             |              |                            |
 
 ## Section 5 — Daily Operational System (The Daily Pulse)
 
@@ -422,8 +408,6 @@ EVENING LOOP
 - Ambrose makes immediate decisions on anything critical
 - Non-urgent items go to the PDMO weekly meeting
 
----
-
 ## Section 6 — Quality Assurance System
 
 ### 6.1 Philosophy
@@ -477,22 +461,22 @@ If any layer fails, the item goes back to the developer — it does not move for
 
 **Role Definition — QA Owner:**
 
-| Responsibility | Description |
-|---|---|
+| Responsibility     | Description                                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------- |
 | Pre-delivery check | Reviews every deliverable before it goes to the client using the Definition of Done checklist |
-| Bug gate | Anything not ready goes back to the developer — no exceptions |
-| KPI logging | Logs pre-delivery bugs found in the daily KPI sheet |
-| Smoke test lead | Runs the standard checklist after every deployment to staging |
-| Escalation | If a deliverable has critical gaps close to deadline, escalates to PM immediately |
+| Bug gate           | Anything not ready goes back to the developer — no exceptions                                 |
+| KPI logging        | Logs pre-delivery bugs found in the daily KPI sheet                                           |
+| Smoke test lead    | Runs the standard checklist after every deployment to staging                                 |
+| Escalation         | If a deliverable has critical gaps close to deadline, escalates to PM immediately             |
 
 **Named QA Owners per Project:**
 
-| Project | QA Owner | Backup QA Owner | Rotation (Every) |
-|---|---|---|---|
-| Create Project (BP) | To be nominated by team | To be nominated by team | 2–3 months |
-| EMS | To be nominated by team | To be nominated by team | 2–3 months |
-| FOCUST | To be nominated by team | To be nominated by team | 2–3 months |
-| AI Phone Agent | To be nominated by team | To be nominated by team | 2–3 months |
+| Project             | QA Owner                | Backup QA Owner         | Rotation (Every) |
+| ------------------- | ----------------------- | ----------------------- | ---------------- |
+| Create Project (BP) | To be nominated by team | To be nominated by team | 2–3 months       |
+| EMS                 | To be nominated by team | To be nominated by team | 2–3 months       |
+| FOCUST              | To be nominated by team | To be nominated by team | 2–3 months       |
+| AI Phone Agent      | To be nominated by team | To be nominated by team | 2–3 months       |
 
 > **Process:** Each team nominates their QA Owner by **March 1** (aligned with Phase 1 of the Implementation Roadmap). Criteria: not the person who wrote the feature being tested; understands the product well; has time allocated for QA duties alongside delivery work.
 
@@ -501,6 +485,7 @@ If any layer fails, the item goes back to the developer — it does not move for
 > **See Appendix H for the QA Owner Appointment Form.**
 
 **Rotation Policy:**
+
 - QA Owner rotates every 2–3 months
 - This builds QA competency across the whole team
 - The outgoing QA Owner briefs the incoming one before handover
@@ -527,11 +512,11 @@ A Pull Request cannot be merged to staging unless the DoD checklist is confirmed
 
 ### 6.5 Two-Environment Standard
 
-| Environment | Purpose | Who Accesses It |
-|---|---|---|
-| **Development (Dev)** | Active feature development and testing | Developers only |
-| **Staging** | Client acceptance testing; PM and QA validation | PM, QA Owner, Client (where applicable) |
-| **Production** | Live, stable, client-facing system | Client and end users only |
+| Environment           | Purpose                                         | Who Accesses It                         |
+| --------------------- | ----------------------------------------------- | --------------------------------------- |
+| **Development (Dev)** | Active feature development and testing          | Developers only                         |
+| **Staging**           | Client acceptance testing; PM and QA validation | PM, QA Owner, Client (where applicable) |
+| **Production**        | Live, stable, client-facing system              | Client and end users only               |
 
 **Rule:** No feature goes to Production without passing through Staging and receiving confirmation.
 
@@ -566,12 +551,12 @@ Managing quality requires knowing what to protect most. Not all features carry t
 
 #### Priority Levels
 
-| Priority | Label | Definition | Stability Rule |
-|---|---|---|---|
-| **P0 — Critical** | Core / Always On | Features that must work at all times. Failure here is unacceptable to the client. | No changes without full QA sign-off and a documented rollback plan. |
-| **P1 — High** | Core Workflow | Features essential to the main user journey. Bugs here are high-urgency. | Changes require staging validation before any production deployment. |
-| **P2 — Standard** | Supportive | Secondary features or enhancements. Bugs are tolerable temporarily. | Standard QA process applies. |
-| **P3 — Low** | Nice-to-Have | Minor features or cosmetic improvements. | Can be deferred without client impact. |
+| Priority          | Label            | Definition                                                                        | Stability Rule                                                       |
+| ----------------- | ---------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **P0 — Critical** | Core / Always On | Features that must work at all times. Failure here is unacceptable to the client. | No changes without full QA sign-off and a documented rollback plan.  |
+| **P1 — High**     | Core Workflow    | Features essential to the main user journey. Bugs here are high-urgency.          | Changes require staging validation before any production deployment. |
+| **P2 — Standard** | Supportive       | Secondary features or enhancements. Bugs are tolerable temporarily.               | Standard QA process applies.                                         |
+| **P3 — Low**      | Nice-to-Have     | Minor features or cosmetic improvements.                                          | Can be deferred without client impact.                               |
 
 > **Rule:** P0 features are never modified without a documented risk assessment and rollback plan. If a P0 feature is at risk of being broken by a change, that change must wait for a safe deployment window.
 
@@ -617,11 +602,10 @@ Immediately execute rollback:
 Any update that affects P0 or P1 features must be communicated to the client **before** deployment, not after.
 
 **Template — Planned Change Notification:**
-> *"Hi [Client Name], we are planning to deploy an update to [Feature/Module] on [Date]. This addresses [brief description]. Internal testing is complete and a rollback plan is in place. If you have any concerns, please let us know before [Time]. We will confirm the outcome in our daily report."*
+
+> _"Hi [Client Name], we are planning to deploy an update to [Feature/Module] on [Date]. This addresses [brief description]. Internal testing is complete and a rollback plan is in place. If you have any concerns, please let us know before [Time]. We will confirm the outcome in our daily report."_
 
 > **See Appendix I for the full Risk Assessment & Rollback Plan template.**
-
----
 
 ## Section 7 — Communication Protocol
 
@@ -665,24 +649,28 @@ Direct answer to the client's question, accurate and concise.
 ---
 
 **Path B — Investigation Acknowledgment:**
+
 > "Hi [Client Name], thank you for your message regarding [Topic]. I have flagged this with the team and we are currently reviewing the details. I will get back to you with a status update within the hour.
 > Best regards, [Name]"
 
 ---
 
 **Path C — Long-Term Acknowledgment:**
+
 > "Hi [Client Name], thank you for reaching out about [Topic]. This requires a deeper review of [Area/Module]. We are looking into it and will provide a full status update in our end-of-day report, or sooner if resolved.
 > Best regards, [Name]"
 
 ---
 
 **1-Hour Update (for Path B):**
+
 > "Hi [Client Name], a quick update: we have identified that the issue is related to [Area]. We are currently [testing/refining/investigating] the solution. I will confirm the final outcome in our daily report.
 > Best regards, [Name]"
 
 ### 7.4 The 1-Hour Pulse Rule
 
 If a Path B acknowledgment was sent, the Execution Owner must:
+
 - Set a timer after sending the acknowledgment
 - Provide a status update within 1 hour — even if the issue is not yet resolved
 - Never let a client question go into the next day without a summary in the EOD report
@@ -718,15 +706,13 @@ Client notified with:
 
 ### 7.6 What "Good Communication" Looks Like
 
-| Scenario | Poor Practice | Good Practice |
-|---|---|---|
-| Requirements unclear | Start work, assume | Stop. Confirm in writing before starting |
-| Task will be delayed | Say nothing until due date | Escalate as soon as the risk is recognized |
-| Client asks a technical question | Wait until fully resolved | Acknowledge in 15 min, update in 1 hour |
-| Bug found after delivery | Hope client doesn't notice | Notify client immediately with resolution plan |
-| Meeting decision made | Forget by next day | Post decisions and next actions in channel same day |
-
----
+| Scenario                         | Poor Practice              | Good Practice                                       |
+| -------------------------------- | -------------------------- | --------------------------------------------------- |
+| Requirements unclear             | Start work, assume         | Stop. Confirm in writing before starting            |
+| Task will be delayed             | Say nothing until due date | Escalate as soon as the risk is recognized          |
+| Client asks a technical question | Wait until fully resolved  | Acknowledge in 15 min, update in 1 hour             |
+| Bug found after delivery         | Hope client doesn't notice | Notify client immediately with resolution plan      |
+| Meeting decision made            | Forget by next day         | Post decisions and next actions in channel same day |
 
 ## Section 8 — Reporting System
 
@@ -776,6 +762,7 @@ Best regards,
 ```
 
 **Submission Rules:**
+
 - Sent to the Daily Reports channel by **17:30 every working day**
 - CC'd to the client where the project involves direct client communication
 - PM is responsible for submission — QA Owner confirms accuracy of section 3
@@ -822,16 +809,14 @@ Closing Note
 
 ### 8.3 Client Reporting Guidelines
 
-| Principle | Detail |
-|---|---|
-| **Frequency** | Daily (via EOD report) |
-| **Tone** | Professional, honest, confident |
-| **On delays** | Proactive — notify the moment risk is recognized |
-| **On bugs** | Transparent — report immediately with resolution plan |
-| **On progress** | Specific — avoid vague "in progress" without detail |
-| **Language** | Clear and simple — avoid heavy technical jargon unless the client is technical |
-
----
+| Principle       | Detail                                                                         |
+| --------------- | ------------------------------------------------------------------------------ |
+| **Frequency**   | Daily (via EOD report)                                                         |
+| **Tone**        | Professional, honest, confident                                                |
+| **On delays**   | Proactive — notify the moment risk is recognized                               |
+| **On bugs**     | Transparent — report immediately with resolution plan                          |
+| **On progress** | Specific — avoid vague "in progress" without detail                            |
+| **Language**    | Clear and simple — avoid heavy technical jargon unless the client is technical |
 
 ## Section 9 — Meeting Structure & Schedule
 
@@ -859,49 +844,51 @@ Management "Big 3"
 
 ### 9.2 Company Standup
 
-| Item | Detail |
-|---|---|
-| **Duration** | 6–10 minutes |
-| **Frequency** | Daily, Monday to Friday |
-| **Purpose** | Company-wide alignment on daily priorities |
-| **Format** | Each person: What did I do? What will I do today? Any blockers? |
-| **Rule** | No problem-solving in the standup — flag and address separately |
+| Item          | Detail                                                          |
+| ------------- | --------------------------------------------------------------- |
+| **Duration**  | 6–10 minutes                                                    |
+| **Frequency** | Daily, Monday to Friday                                         |
+| **Purpose**   | Company-wide alignment on daily priorities                      |
+| **Format**    | Each person: What did I do? What will I do today? Any blockers? |
+| **Rule**      | No problem-solving in the standup — flag and address separately |
 
 ### 9.3 Team-Level Product Meetings (15 Minutes)
 
 These sessions happen immediately after each team's regular weekly meeting. They are the foundation of the product management rhythm.
 
 **Purpose:**
+
 - Align on product priorities for the week
 - Complete the weekly product checklist
 - Surface blockers, bottlenecks, and missed requirements early
 
 **Attendees:**
+
 - All team members (mandatory)
 - Project Manager (leads)
 - Product Managers from other teams (optional — for cross-team learning)
 
 **Confirmed Schedule:**
 
-| Team | Meeting Day | Time |
-|---|---|---|
-| SNS | Monday | After 14:00 team meeting |
-| AI Phone Agent | Tuesday | After 10:30 team meeting |
-| Create Project | Wednesday | After 12:00 team meeting |
-| EMS | Thursday | After 11:00 team meeting |
-| FOCUST | Friday | After 10:00 team meeting |
+| Team           | Meeting Day | Time                     |
+| -------------- | ----------- | ------------------------ |
+| SNS            | Monday      | After 14:00 team meeting |
+| AI Phone Agent | Tuesday     | After 10:30 team meeting |
+| Create Project | Wednesday   | After 12:00 team meeting |
+| EMS            | Thursday    | After 11:00 team meeting |
+| FOCUST         | Friday      | After 10:00 team meeting |
 
 > **Early validation:** The Create Project team's pilot session identified workflow bottlenecks and missed requirements, which were assigned and actioned immediately — directly demonstrating the value of this format.
 
 ### 9.4 Weekly PDMO Meeting (All Product Managers)
 
-| Item | Detail |
-|---|---|
-| **Title** | Weekly PDMO Product Managers Sync |
-| **Day & Time** | Tuesday at 14:00 EAT |
-| **Duration** | 30–45 minutes |
-| **Attendees** | All Product Managers + Ambrose |
-| **Advisors** | Prakhar and/or Nate (as available) |
+| Item           | Detail                             |
+| -------------- | ---------------------------------- |
+| **Title**      | Weekly PDMO Product Managers Sync  |
+| **Day & Time** | Tuesday at 14:00 EAT               |
+| **Duration**   | 30–45 minutes                      |
+| **Attendees**  | All Product Managers + Ambrose     |
+| **Advisors**   | Prakhar and/or Nate (as available) |
 
 **Agenda:**
 
@@ -913,38 +900,37 @@ These sessions happen immediately after each team's regular weekly meeting. They
 
 ### 9.5 Technical Sharing Sessions (TSS)
 
-| Item | Detail |
-|---|---|
-| **Frequency** | Weekly (Friday) |
-| **Duration** | 30 minutes |
-| **Purpose** | Knowledge sharing, skill development, cross-team learning |
-| **Format** | One team presents a technical topic; mandatory Q&A from other teams |
-| **Output** | Summary documented in Google Drive (Operations/SOPs/) and posted in the team channel after the session |
-| **Connection** | TSS content feeds into external technical blogs (Medium) |
+| Item           | Detail                                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------ |
+| **Frequency**  | Weekly (Friday)                                                                                        |
+| **Duration**   | 30 minutes                                                                                             |
+| **Purpose**    | Knowledge sharing, skill development, cross-team learning                                              |
+| **Format**     | One team presents a technical topic; mandatory Q&A from other teams                                    |
+| **Output**     | Summary documented in Google Drive (Operations/SOPs/) and posted in the team channel after the session |
+| **Connection** | TSS content feeds into external technical blogs (Medium)                                               |
 
 **Rules for TSS:**
+
 - Presenters prepare adequately to fit within 30 minutes
 - Every attendee from other teams must ask at least one relevant question
 - Key learning is documented within 24 hours of the session
 
 ### 9.6 Full Weekly Meeting Reference
 
-| Day | Time | Meeting | Led By | Duration |
-|---|---|---|---|---|
-| Monday | 09:00 | Company Standup | Rotating | 10 min |
-| Monday | After 14:00 | SNS Product Meeting | SNS PM | 15 min |
-| Tuesday | 09:00 | Company Standup | Rotating | 10 min |
-| Tuesday | After 10:30 | AI Phone Agent Product Meeting | Kevin (PM) | 15 min |
-| Tuesday | 14:00 | PDMO — All PMs Sync | Ambrose | 30–45 min |
-| Wednesday | 09:00 | Company Standup | Rotating | 10 min |
-| Wednesday | After 12:00 | Create Project Product Meeting | Ambrose (PM) | 15 min |
-| Thursday | 09:00 | Company Standup | Rotating | 10 min |
-| Thursday | After 11:00 | EMS Product Meeting | EMS PM | 15 min |
-| Friday | 09:00 | Company Standup | Rotating | 10 min |
-| Friday | After 10:00 | FOCUST Product Meeting | FOCUST PM | 15 min |
-| Friday | TBC | Technical Sharing Session | Assigned team | 30 min |
-
----
+| Day       | Time        | Meeting                        | Led By        | Duration  |
+| --------- | ----------- | ------------------------------ | ------------- | --------- |
+| Monday    | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Monday    | After 14:00 | SNS Product Meeting            | SNS PM        | 15 min    |
+| Tuesday   | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Tuesday   | After 10:30 | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min    |
+| Tuesday   | 14:00       | PDMO — All PMs Sync            | Ambrose       | 30–45 min |
+| Wednesday | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Wednesday | After 12:00 | Create Project Product Meeting | Ambrose (PM)  | 15 min    |
+| Thursday  | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Thursday  | After 11:00 | EMS Product Meeting            | EMS PM        | 15 min    |
+| Friday    | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Friday    | After 10:00 | FOCUST Product Meeting         | FOCUST PM     | 15 min    |
+| Friday    | TBC         | Technical Sharing Session      | Assigned team | 30 min    |
 
 ## Section 10 — Capacity Building & Continuity
 
@@ -956,14 +942,15 @@ When a key person is unavailable, projects should not stall. When a team member 
 
 For every project, there is a **Primary** lead and a **Shadow**. The Shadow is not a passive observer — they are an active participant who stays informed and is ready to take over at any point.
 
-| Project | Primary Lead | Shadow / Backup | Shadow Responsibilities |
-|---|---|---|---|
+| Project        | Primary Lead    | Shadow / Backup | Shadow Responsibilities                                            |
+| -------------- | --------------- | --------------- | ------------------------------------------------------------------ |
 | Create Project | To be confirmed | To be confirmed | Attends prep meetings, CC'd on client comms, aware of all blockers |
-| EMS | Martin / Andrew | To be confirmed | Same as above |
-| FOCUST | FOCUST PM | To be confirmed | Same as above |
-| AI Phone Agent | Kevin | To be confirmed | Same as above |
+| EMS            | Martin / Andrew | To be confirmed | Same as above                                                      |
+| FOCUST         | FOCUST PM       | To be confirmed | Same as above                                                      |
+| AI Phone Agent | Kevin           | To be confirmed | Same as above                                                      |
 
 **Shadow Rules:**
+
 - Shadow attends the team's product meeting every week
 - Shadow is CC'd on all significant client communication
 - If Primary is unavailable, Shadow steps in immediately with no ramp-up delay
@@ -985,18 +972,19 @@ Manager holds all knowledge       Documentation holds knowledge
 ```
 
 **Rotational Reporting:**
+
 - Daily reports are not always written by the same person
 - PMs rotate the reporting duty among team members
 - This ensures every team member understands project status and can communicate it clearly
 
 **Manager's New Role Checklist:**
 
-| Old Activity | New Activity |
-|---|---|
-| Writing reports | Reviewing reports for quality |
-| Answering every client question | Ensuring the protocol is followed |
-| Catching bugs personally | Verifying the QA layer caught them |
-| Knowing every detail | Knowing where the details are documented |
+| Old Activity                    | New Activity                             |
+| ------------------------------- | ---------------------------------------- |
+| Writing reports                 | Reviewing reports for quality            |
+| Answering every client question | Ensuring the protocol is followed        |
+| Catching bugs personally        | Verifying the QA layer caught them       |
+| Knowing every detail            | Knowing where the details are documented |
 
 ### 10.4 Technical Sharing Sessions as Capacity Engine
 
@@ -1004,11 +992,11 @@ TSS sessions should actively build team capacity, not just share information pas
 
 **Active TSS Format:**
 
-| Phase | Duration | Description |
-|---|---|---|
-| Presentation | 20 min | Team presents a technical topic, decision, or implementation |
-| Q&A | 8 min | Other teams ask questions — minimum 1 question per attendee |
-| Documentation | 2 min | Key points saved to Google Drive and posted in the team channel within 24 hours |
+| Phase         | Duration | Description                                                                     |
+| ------------- | -------- | ------------------------------------------------------------------------------- |
+| Presentation  | 20 min   | Team presents a technical topic, decision, or implementation                    |
+| Q&A           | 8 min    | Other teams ask questions — minimum 1 question per attendee                     |
+| Documentation | 2 min    | Key points saved to Google Drive and posted in the team channel within 24 hours |
 
 **Cross-pollination rule:** The Shadow for a project should lead the Q&A for that project's TSS presentation — they have the most to learn and the most responsibility to stay current.
 
@@ -1040,22 +1028,23 @@ Understanding what each team member does best is critical for task assignment, c
 
 #### Purpose of the Skills Map
 
-| Use Case | How the Skills Map Helps |
-|---|---|
-| Task assignment | PMs assign based on proven strength, reducing delivery risk |
+| Use Case              | How the Skills Map Helps                                               |
+| --------------------- | ---------------------------------------------------------------------- |
+| Task assignment       | PMs assign based on proven strength, reducing delivery risk            |
 | Cross-team assistance | When Team A needs support, Team B can identify who has the right skill |
-| Capacity planning | Managers can spot skills gaps before a new project begins |
-| Career development | Team members know what to build next to fill gaps |
+| Capacity planning     | Managers can spot skills gaps before a new project begins              |
+| Career development    | Team members know what to build next to fill gaps                      |
 
 #### Skills Map — Frontend Department
 
-| Team Member | Core Strength | Secondary Strength | Learning Area | Available for Cross-Support |
-|---|---|---|---|---|
-| [Name] | [e.g., React / Next.js UI] | [e.g., API integration] | [e.g., Testing] | Yes / Limited / No |
-| [Name] | | | | |
-| [Name] | | | | |
+| Team Member | Core Strength              | Secondary Strength      | Learning Area   | Available for Cross-Support |
+| ----------- | -------------------------- | ----------------------- | --------------- | --------------------------- |
+| [Name]      | [e.g., React / Next.js UI] | [e.g., API integration] | [e.g., Testing] | Yes / Limited / No          |
+| [Name]      |                            |                         |                 |                             |
+| [Name]      |                            |                         |                 |                             |
 
 **Skill categories for Frontend:**
+
 - UI component development (React / Next.js)
 - State management (Redux, Zustand, Context API)
 - API integration and data handling
@@ -1066,13 +1055,14 @@ Understanding what each team member does best is critical for task assignment, c
 
 #### Skills Map — Backend Department
 
-| Team Member | Core Strength | Secondary Strength | Learning Area | Available for Cross-Support |
-|---|---|---|---|---|
-| [Name] | [e.g., Node.js / Express] | [e.g., Database design] | [e.g., DevOps] | Yes / Limited / No |
-| [Name] | | | | |
-| [Name] | | | | |
+| Team Member | Core Strength             | Secondary Strength      | Learning Area  | Available for Cross-Support |
+| ----------- | ------------------------- | ----------------------- | -------------- | --------------------------- |
+| [Name]      | [e.g., Node.js / Express] | [e.g., Database design] | [e.g., DevOps] | Yes / Limited / No          |
+| [Name]      |                           |                         |                |                             |
+| [Name]      |                           |                         |                |                             |
 
 **Skill categories for Backend:**
+
 - API development (REST / GraphQL)
 - Database design and optimization (PostgreSQL, MySQL, MongoDB)
 - Authentication and security
@@ -1097,6 +1087,7 @@ Understanding what each team member does best is critical for task assignment, c
 Given the current team size and available resources, the most impactful decision AIBOS Uganda can make is to intentionally match each person to tasks they do well. This is not about limiting growth — it is about building confidence, delivering quality, and giving each individual room to become excellent before expanding their scope.
 
 **The benefits are immediate:**
+
 - Delivery quality improves because the person best suited to the task owns it
 - Developer morale increases because people feel competent and valued, not overwhelmed
 - Accountability is clearer when people own work they genuinely understand
@@ -1104,13 +1095,14 @@ Given the current team size and available resources, the most impactful decision
 
 #### Morale and Task Assignment
 
-| Assignment Style | Impact on Morale |
-|---|---|
-| Assigned to area of strength | Confidence, flow, quality output, willingness to take on more |
-| Assigned to unknown areas without support | Stress, slow delivery, self-doubt, quiet disengagement |
+| Assignment Style                           | Impact on Morale                                                        |
+| ------------------------------------------ | ----------------------------------------------------------------------- |
+| Assigned to area of strength               | Confidence, flow, quality output, willingness to take on more           |
+| Assigned to unknown areas without support  | Stress, slow delivery, self-doubt, quiet disengagement                  |
 | Assigned with mentorship and a growth plan | Managed challenge, supported learning, long-term capability development |
 
 **For managers:** Before assigning a stretch task (outside someone's confirmed strengths), confirm:
+
 - Is there someone available to mentor them through it?
 - Is the deadline realistic for a learn-as-you-go scenario?
 - Does the team member know this is a growth assignment, not just another delivery task?
@@ -1138,11 +1130,10 @@ Natural growth into new responsibilities over time
 #### When Hiring
 
 As the team grows, new hires should be evaluated against the Skills Map — filling documented gaps rather than adding redundant strengths. Each new hire should:
+
 - Be assigned a Shadow mentor from day one
 - Have their skill profile added to the relevant department Skills Map
 - Receive a clear first-90-days plan aligned to a specific project or workstream
-
----
 
 ## Section 11 — Documentation & Knowledge Management
 
@@ -1169,27 +1160,27 @@ Step 5: Track execution              →  weekly-tech-check
 
 **Approval Gates:**
 
-| Gate | Name | Required Documents |
-|---|---|---|
-| **G1** | Scope Lock | product doc, requirement-list, function-list |
-| **G2** | Design Gate | architecture, tech stack, infrastructure, ADRs |
+| Gate   | Name         | Required Documents                             |
+| ------ | ------------ | ---------------------------------------------- |
+| **G1** | Scope Lock   | product doc, requirement-list, function-list   |
+| **G2** | Design Gate  | architecture, tech stack, infrastructure, ADRs |
 | **G3** | Release Gate | All tests pass, design-gate-checklist complete |
 
 > **Rule: No code until G2 is passed.**
 
 **Template Map:**
 
-| Phase | Document | Purpose |
-|---|---|---|
-| Planning | product.md | Vision, goals, users, success metrics |
-| Planning | requirement-list | What users need and why |
-| Planning | function-list | What the system does |
-| Design | architecture.md | How the system is structured |
-| Design | tech.md | Approved technology stack |
-| Design | infrastructure.md | Cloud resources and configuration |
-| Design | adrs/ | Architecture Decision Records |
-| Execution | weekly-tech-check.md | Health status and blockers |
-| Execution | design-gate-checklist.md | Approval checkpoints |
+| Phase     | Document                 | Purpose                               |
+| --------- | ------------------------ | ------------------------------------- |
+| Planning  | product.md               | Vision, goals, users, success metrics |
+| Planning  | requirement-list         | What users need and why               |
+| Planning  | function-list            | What the system does                  |
+| Design    | architecture.md          | How the system is structured          |
+| Design    | tech.md                  | Approved technology stack             |
+| Design    | infrastructure.md        | Cloud resources and configuration     |
+| Design    | adrs/                    | Architecture Decision Records         |
+| Execution | weekly-tech-check.md     | Health status and blockers            |
+| Execution | design-gate-checklist.md | Approval checkpoints                  |
 
 **Reference:** [C2-PdMO Sample Meta on GitHub](https://github.com/aibos-dev/matrix-reorganization/tree/docs/c2-pdmo/02_Resources/sample-meta/docs/c2-pdmo)
 
@@ -1229,6 +1220,7 @@ Review with team and Prakhar (if needed)
 ```
 
 **Rules:**
+
 - Every major architecture change starts as an ADR
 - `architecture.md` always reflects the current accepted state
 - Superseded ADRs are kept for historical reference
@@ -1269,15 +1261,16 @@ AIBOS Uganda (Shared Drive)
 
 **Access Control:**
 
-| Folder | Access Level |
-|---|---|
-| Operations/ | All team members (view), PMs + Ambrose (edit) |
+| Folder                        | Access Level                                  |
+| ----------------------------- | --------------------------------------------- |
+| Operations/                   | All team members (view), PMs + Ambrose (edit) |
 | Projects/[Name]/Client Comms/ | PM + Ambrose (edit), client (view on request) |
-| Projects/[Name]/Internal/ | Project team (edit), Ambrose (view) |
-| Teams/ | All team members (view), PMs + Ambrose (edit) |
-| Shared with Clients/ | PM + Ambrose (edit), client (view) |
+| Projects/[Name]/Internal/     | Project team (edit), Ambrose (view)           |
+| Teams/                        | All team members (view), PMs + Ambrose (edit) |
+| Shared with Clients/          | PM + Ambrose (edit), client (view)            |
 
 **Governance Rules:**
+
 - Product team is the primary custodian of the Drive folder structure
 - Every template from this framework (Appendices A–M) is stored in Operations/Templates/
 - Undocumented practices are not considered standards — if it matters, it goes in Drive or /docs
@@ -1287,10 +1280,10 @@ AIBOS Uganda (Shared Drive)
 
 As internal documentation matures, AIBOS Uganda will begin publishing external technical content.
 
-| Channel | Purpose | Quality Standard |
-|---|---|---|
-| Medium (initial) | Technical blogs from TSS content | Solves a real problem; not generic AI-generated content |
-| AIBOS Blog (future) | Company-owned technical publishing | Curated, quality-reviewed |
+| Channel             | Purpose                            | Quality Standard                                        |
+| ------------------- | ---------------------------------- | ------------------------------------------------------- |
+| Medium (initial)    | Technical blogs from TSS content   | Solves a real problem; not generic AI-generated content |
+| AIBOS Blog (future) | Company-owned technical publishing | Curated, quality-reviewed                               |
 
 **Connection to TSS:** A TSS session can motivate a blog post, or a blog post can be presented in TSS. Both reinforce learning and external visibility.
 
@@ -1302,13 +1295,13 @@ Not all documentation is meant for the client. A clear, consistent boundary betw
 
 #### Knowledge Classification Categories
 
-| Category | Classification | Description | Examples |
-|---|---|---|---|
-| **Client-Facing** | Always shared | Created specifically for client communication | Daily progress reports, release notes, delivery confirmations, requirement confirmations |
-| **Client-Accessible** | Shared on request | Available to the client if asked, but not proactively sent | Approved technical specs, staging links, test plans, deployment schedules |
-| **Internal — Project** | Internal only | Used by the project team for execution | ADRs, architecture docs, peer review comments, bug trackers, QA logs, KPI logs |
-| **Internal — Organizational** | Internal only | Organizational operations, not project-specific | Team performance data, capacity plans, KPI dashboard scores, team health discussions |
-| **Restricted** | Leadership only | Sensitive to business or personnel | Personnel matters, financial discussions, strategic decisions not yet finalized |
+| Category                      | Classification    | Description                                                | Examples                                                                                 |
+| ----------------------------- | ----------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Client-Facing**             | Always shared     | Created specifically for client communication              | Daily progress reports, release notes, delivery confirmations, requirement confirmations |
+| **Client-Accessible**         | Shared on request | Available to the client if asked, but not proactively sent | Approved technical specs, staging links, test plans, deployment schedules                |
+| **Internal — Project**        | Internal only     | Used by the project team for execution                     | ADRs, architecture docs, peer review comments, bug trackers, QA logs, KPI logs           |
+| **Internal — Organizational** | Internal only     | Organizational operations, not project-specific            | Team performance data, capacity plans, KPI dashboard scores, team health discussions     |
+| **Restricted**                | Leadership only   | Sensitive to business or personnel                         | Personnel matters, financial discussions, strategic decisions not yet finalized          |
 
 #### Decision Guide — Is This Shareable with the Client?
 
@@ -1333,26 +1326,25 @@ Does it help the client understand what was built or confirmed?
 
 #### Always Internal vs. Always Shared — Quick Reference
 
-| Always Internal | Always Shared with Client |
-|---|---|
-| QA bug logs and pre-delivery test results | Delivery confirmation and release notes |
-| KPI dashboard scores per team | Daily progress report (EOD) |
-| Peer review and code review comments | Requirement confirmations (before work starts) |
-| Architecture Decision Records (ADRs) | Staging environment link for acceptance testing |
-| Team capacity and Skills Map data | Timeline and delivery schedule |
-| Internal escalation and risk records | Delay notifications (proactive) |
-| Shadow assignments and backup plans | Feature change requests (confirmed scope) |
+| Always Internal                           | Always Shared with Client                       |
+| ----------------------------------------- | ----------------------------------------------- |
+| QA bug logs and pre-delivery test results | Delivery confirmation and release notes         |
+| KPI dashboard scores per team             | Daily progress report (EOD)                     |
+| Peer review and code review comments      | Requirement confirmations (before work starts)  |
+| Architecture Decision Records (ADRs)      | Staging environment link for acceptance testing |
+| Team capacity and Skills Map data         | Timeline and delivery schedule                  |
+| Internal escalation and risk records      | Delay notifications (proactive)                 |
+| Shadow assignments and backup plans       | Feature change requests (confirmed scope)       |
 
 #### Tagging Documents in Google Drive
 
 When saving documents in Google Drive, include the classification tag in the file name or document description:
+
 - `[CLIENT-FACING]` — place in Projects/[Name]/Client Comms/ or Shared with Clients/
 - `[INTERNAL]` — place in Projects/[Name]/Internal/ or Operations/
 - `[RESTRICTED]` — place in a leadership-only subfolder with restricted access
 
 This prevents accidental sharing and helps new team members understand what belongs in client communications from day one.
-
----
 
 ## Section 12 — Reward & Motivation System
 
@@ -1360,9 +1352,10 @@ This prevents accidental sharing and helps new team members understand what belo
 
 > **Systems sustain behavior. Recognition energizes it.**
 
-At AIBOS Uganda's current stage, the most powerful rewards are **recognition and growth opportunity**, not just monetary incentives. The reward system should feel like *"this person made the team stronger"* — not a competition.
+At AIBOS Uganda's current stage, the most powerful rewards are **recognition and growth opportunity**, not just monetary incentives. The reward system should feel like _"this person made the team stronger"_ — not a competition.
 
 Recognition must be:
+
 - Specific (tied to a real action or KPI outcome)
 - Genuine (not generic praise)
 - Consistent (not occasional)
@@ -1375,26 +1368,28 @@ Every Friday PDMO meeting includes a **"Team Highlight"** — one specific shout
 This is posted in the team channel after the meeting.
 
 **Examples of strong framing:**
-- *"This week the FOCUST team reported a delay risk on Tuesday — three days before the deadline — giving us time to adjust. That is exactly the culture we are building."*
-- *"AI Phone Agent had zero client-reported bugs this week. The QA layer worked exactly as designed."*
+
+- _"This week the FOCUST team reported a delay risk on Tuesday — three days before the deadline — giving us time to adjust. That is exactly the culture we are building."_
+- _"AI Phone Agent had zero client-reported bugs this week. The QA layer worked exactly as designed."_
 
 ### 12.3 Tier 2 — Monthly KPI-Linked Awards
 
 At the end of each month, review the KPI dashboard and recognize:
 
-| Award | Criteria | Recognition |
-|---|---|---|
-| **Best Response Rate** | Fewest 15-min response violations | Shoutout + noted in monthly summary to Japan |
-| **Cleanest Delivery** | Lowest post-delivery bugs reported by client | Shoutout + featured in PDMO summary |
-| **Best QA Catch** | Most pre-delivery bugs caught internally | Shoutout — framed as "protected the team" |
-| **Proactive Communicator** | Most delay risks escalated early | Shoutout — framed as "showed leadership" |
-| **Documentation Champion** | Best/most consistent documentation update | Shoutout — connection to Google Drive / docs/ contribution |
+| Award                      | Criteria                                     | Recognition                                                |
+| -------------------------- | -------------------------------------------- | ---------------------------------------------------------- |
+| **Best Response Rate**     | Fewest 15-min response violations            | Shoutout + noted in monthly summary to Japan               |
+| **Cleanest Delivery**      | Lowest post-delivery bugs reported by client | Shoutout + featured in PDMO summary                        |
+| **Best QA Catch**          | Most pre-delivery bugs caught internally     | Shoutout — framed as "protected the team"                  |
+| **Proactive Communicator** | Most delay risks escalated early             | Shoutout — framed as "showed leadership"                   |
+| **Documentation Champion** | Best/most consistent documentation update    | Shoutout — connection to Google Drive / docs/ contribution |
 
 ### 12.4 Tier 3 — Quarterly Growth Reward
 
 The top performing team member per quarter receives a **TSS Lead Slot** — they choose a topic of their interest and present it to the whole company.
 
 This is a growth opportunity, not just a trophy:
+
 - Builds the individual's profile internally
 - Develops their communication and technical articulation skills
 - Connects to the external blog initiative — their TSS becomes their first published blog post
@@ -1403,10 +1398,10 @@ This is a growth opportunity, not just a trophy:
 
 ### 12.5 How to Frame Recognition
 
-| Avoid | Use Instead |
-|---|---|
-| "You worked very hard" | "You protected the team by escalating early" |
-| "Good job" | "Your QA catch prevented a client issue this week" |
+| Avoid                       | Use Instead                                                        |
+| --------------------------- | ------------------------------------------------------------------ |
+| "You worked very hard"      | "You protected the team by escalating early"                       |
+| "Good job"                  | "Your QA catch prevented a client issue this week"                 |
 | "You're the best developer" | "Your documentation means the next person can pick this up easily" |
 
 The goal is to make excellence feel systemic and replicable, not exceptional and individual.
@@ -1417,15 +1412,15 @@ As AIBOS Uganda grows, tangible recognition becomes an important complement to t
 
 #### Phase-Appropriate Rollout
 
-| Phase | Milestone | Items |
-|---|---|---|
-| **Starter** | On joining + first 90-day completion | Branded notebook, pen, sticker pack |
-| **Recognition** | Quarterly top performer or project milestone | AIBOS branded t-shirt or hoodie |
-| **Milestone** | 1-year anniversary or major project launch | Higher-value item (jacket, backpack, or team experience) |
+| Phase           | Milestone                                    | Items                                                    |
+| --------------- | -------------------------------------------- | -------------------------------------------------------- |
+| **Starter**     | On joining + first 90-day completion         | Branded notebook, pen, sticker pack                      |
+| **Recognition** | Quarterly top performer or project milestone | AIBOS branded t-shirt or hoodie                          |
+| **Milestone**   | 1-year anniversary or major project launch   | Higher-value item (jacket, backpack, or team experience) |
 
 **Framing swag with meaning:** Swag should always be accompanied by a specific reason — it is not a participation trophy. The story is what makes the item memorable:
 
-> *"This hoodie goes to the FOCUST team for completing the beta launch on time with zero client-reported bugs. That is the standard we are building this team around."*
+> _"This hoodie goes to the FOCUST team for completing the beta launch on time with zero client-reported bugs. That is the standard we are building this team around."_
 
 ### 12.7 Overtime & Extra-Mile Recognition
 
@@ -1437,14 +1432,14 @@ AIBOS Uganda recognizes extra-mile effort as a distinct and important category o
 
 #### Recognition Model for Overtime
 
-| Type of Effort | Recognition Approach |
-|---|---|
-| Late-night deployment or emergency fix | Named shoutout in next-day morning standup |
-| Critical task completed over the weekend | Acknowledged in the following Friday PDMO highlight |
-| Consistently staying late during a sprint | Noted in the monthly summary shared with Japan |
-| Going beyond scope to unblock a teammate | PDMO callout framed as: *"This person made it possible for the team to ship"* |
+| Type of Effort                            | Recognition Approach                                                          |
+| ----------------------------------------- | ----------------------------------------------------------------------------- |
+| Late-night deployment or emergency fix    | Named shoutout in next-day morning standup                                    |
+| Critical task completed over the weekend  | Acknowledged in the following Friday PDMO highlight                           |
+| Consistently staying late during a sprint | Noted in the monthly summary shared with Japan                                |
+| Going beyond scope to unblock a teammate  | PDMO callout framed as: _"This person made it possible for the team to ship"_ |
 
-> **Important balance:** Recognition of overtime is not an invitation to normalize it. The PM who acknowledges the effort should also ask: *"What process gap caused this crunch? How do we prevent it next time?"* Overtime recognition and process improvement go hand in hand.
+> **Important balance:** Recognition of overtime is not an invitation to normalize it. The PM who acknowledges the effort should also ask: _"What process gap caused this crunch? How do we prevent it next time?"_ Overtime recognition and process improvement go hand in hand.
 
 #### Compensatory Time
 
@@ -1458,33 +1453,34 @@ In most teams, the most lasting contributions — writing the guide that helped 
 
 #### Contribution Types Worth Recognizing
 
-| Contribution | Why It Matters |
-|---|---|
-| Documenting a complex process in Google Drive or the project docs/ folder | Saves every future team member hours of confusion |
-| Writing an SOP the whole team now follows | Makes the organization more resilient |
-| Mentoring a junior member through a difficult task | Multiplies capability across the team |
-| Identifying and fixing a systemic issue proactively | Protects the team before a problem reaches the client |
-| Proposing a process improvement that is adopted | Demonstrates system-thinking and leadership |
-| Leading a TSS session that other teams found valuable | Builds cross-team knowledge and external visibility |
+| Contribution                                                              | Why It Matters                                        |
+| ------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Documenting a complex process in Google Drive or the project docs/ folder | Saves every future team member hours of confusion     |
+| Writing an SOP the whole team now follows                                 | Makes the organization more resilient                 |
+| Mentoring a junior member through a difficult task                        | Multiplies capability across the team                 |
+| Identifying and fixing a systemic issue proactively                       | Protects the team before a problem reaches the client |
+| Proposing a process improvement that is adopted                           | Demonstrates system-thinking and leadership           |
+| Leading a TSS session that other teams found valuable                     | Builds cross-team knowledge and external visibility   |
 
 #### The "Under-the-Radar" Contribution Shoutout
 
 In the weekly PDMO Friday summary, a recurring segment: **"This Week's Under-the-Radar Contribution"**
+
 - Any PM or team member can nominate a contribution — not limited to KPI metrics
 - One nomination per week is highlighted in the team channel
 
 **Sample post:**
-> *"This week's contribution shoutout goes to [Name] for documenting the EMS deployment process in Google Drive. Three team members already referenced it — it paid off immediately."*
+
+> _"This week's contribution shoutout goes to [Name] for documenting the EMS deployment process in Google Drive. Three team members already referenced it — it paid off immediately."_
 
 #### Long-Term: Individual Contribution Profile
 
 As the documentation library in Google Drive and the project repos grows, each team member will have a **Contribution Profile** — a record of what they have built, documented, and shared. This becomes a career development artifact:
+
 - Referenced during quarterly reviews
 - Shared where appropriate with Japan leadership
 - Used as the basis for TSS nominations and growth opportunities
 - Serves as an internal portfolio for individual progression at AIBOS Uganda
-
----
 
 ## Section 13 — MVP to Production Framework
 
@@ -1499,12 +1495,12 @@ Across multiple AIBOS Uganda projects, the same pattern has emerged: an MVP is b
 
 ### 13.2 Stage Definitions
 
-| Stage | Definition | Quality Expectation | Client Visibility |
-|---|---|---|---|
-| **MVP** | Built to validate feasibility or demonstrate a concept | May include shortcuts; not production-grade | Internal / invited preview only |
-| **Demo** | Presentation-focused; optimized for clarity over completeness | Not assumed production-bound | Stakeholder preview on staging |
-| **Beta** | Feature-complete but still being validated and stabilized | Near-production quality | Client tests on staging |
-| **Production** | Stable, tested, and deployed for real users | Meets all QA gates | Live — client and end users |
+| Stage          | Definition                                                    | Quality Expectation                         | Client Visibility               |
+| -------------- | ------------------------------------------------------------- | ------------------------------------------- | ------------------------------- |
+| **MVP**        | Built to validate feasibility or demonstrate a concept        | May include shortcuts; not production-grade | Internal / invited preview only |
+| **Demo**       | Presentation-focused; optimized for clarity over completeness | Not assumed production-bound                | Stakeholder preview on staging  |
+| **Beta**       | Feature-complete but still being validated and stabilized     | Near-production quality                     | Client tests on staging         |
+| **Production** | Stable, tested, and deployed for real users                   | Meets all QA gates                          | Live — client and end users     |
 
 ### 13.3 Transition Guidelines
 
@@ -1557,7 +1553,7 @@ EOD report updated
 ### 13.5 Client Confirmation for Extra Features
 
 > **Before adding any feature beyond the original scope, the PM must confirm with the client:**
-> *"We are planning to add [Feature X]. Is this something you would like included?"*
+> _"We are planning to add [Feature X]. Is this something you would like included?"_
 
 This applies even when the feature seems helpful or proactive. A feature built without confirmation is a feature the client may not want to pay for.
 
@@ -1589,8 +1585,6 @@ G1 gate: Requirements documented
 Implementation begins
 ```
 
----
-
 ## Section 14 — Implementation Roadmap
 
 ### 14.1 Overview
@@ -1610,28 +1604,28 @@ Meeting       Ambrose       BEGINS
 
 **Goal:** Prepare the system. Build awareness. Assign ownership.
 
-| Action | Owner | Target Date |
-|---|---|---|
-| Confirm Ambrose as Management Owner | Prakhar / Nate | Feb 23 |
-| Share and review this framework document with Martin and Joseph | Ambrose | Feb 27 |
-| Nominate QA Owners for each project | Each team | Feb 28 |
-| Set up KPI tracking sheet (Google Sheets) | Ambrose | Mar 1 |
-| Confirm shadow assignments per project | Ambrose + PMs | Mar 7 |
-| Brief full team on daily pulse and SLA expectations | Ambrose + PMs | Mar 10–14 |
-| Set up Google Drive folder structure (Operations/, Projects/, Teams/) | Product team | Mar 14 |
+| Action                                                                | Owner          | Target Date |
+| --------------------------------------------------------------------- | -------------- | ----------- |
+| Confirm Ambrose as Management Owner                                   | Prakhar / Nate | Feb 23      |
+| Share and review this framework document with Martin and Joseph       | Ambrose        | Feb 27      |
+| Nominate QA Owners for each project                                   | Each team      | Feb 28      |
+| Set up KPI tracking sheet (Google Sheets)                             | Ambrose        | Mar 1       |
+| Confirm shadow assignments per project                                | Ambrose + PMs  | Mar 7       |
+| Brief full team on daily pulse and SLA expectations                   | Ambrose + PMs  | Mar 10–14   |
+| Set up Google Drive folder structure (Operations/, Projects/, Teams/) | Product team   | Mar 14      |
 
 ### 14.3 Phase 2 — Trial Operation (Mar 16 – Mar 31)
 
 **Goal:** Run the system. Identify friction. Adjust.
 
-| What Goes Live | Notes |
-|---|---|
-| Daily Pulse (standup → prep → sync → peer review → EOD report) | Full cadence from day one |
-| KPI daily logging begins | Each PM fills their row every evening |
-| 15-min response protocol | All teams begin tracking |
-| QA Owner role activated | DoD checklist used for every delivery |
-| Weekly PDMO meeting running | Tuesday 14:00 EAT |
-| Team product meetings running | Per confirmed schedule |
+| What Goes Live                                                 | Notes                                 |
+| -------------------------------------------------------------- | ------------------------------------- |
+| Daily Pulse (standup → prep → sync → peer review → EOD report) | Full cadence from day one             |
+| KPI daily logging begins                                       | Each PM fills their row every evening |
+| 15-min response protocol                                       | All teams begin tracking              |
+| QA Owner role activated                                        | DoD checklist used for every delivery |
+| Weekly PDMO meeting running                                    | Tuesday 14:00 EAT                     |
+| Team product meetings running                                  | Per confirmed schedule                |
 
 **Review points:** Ambrose reviews what is working and what feels "clunky" — adjustments made before April.
 
@@ -1639,13 +1633,13 @@ Meeting       Ambrose       BEGINS
 
 **Goal:** Confirm adoption. Measure outcomes. Build confidence.
 
-| Metric | Target |
-|---|---|
-| 15-min response violations | Trending toward zero |
-| Delay risks escalated proactively | 80%+ of the time |
-| Post-delivery bugs reported by client | Significant reduction from baseline |
-| KPI sheet filled consistently | 90%+ completion rate |
-| Team able to operate without Ambrose present for a day | Yes |
+| Metric                                                 | Target                              |
+| ------------------------------------------------------ | ----------------------------------- |
+| 15-min response violations                             | Trending toward zero                |
+| Delay risks escalated proactively                      | 80%+ of the time                    |
+| Post-delivery bugs reported by client                  | Significant reduction from baseline |
+| KPI sheet filled consistently                          | 90%+ completion rate                |
+| Team able to operate without Ambrose present for a day | Yes                                 |
 
 At the end of April, a review meeting with Prakhar and Nate confirms whether the system is functioning and what the next phase looks like.
 
@@ -1654,20 +1648,20 @@ At the end of April, a review meeting with Prakhar and Nate confirms whether the
 **Goal:** Once the operational foundation is stable, introduce AI tools and a shared team environment to accelerate delivery and reduce cost.
 
 **Areas to roll out (see Section 15 for full detail):**
+
 - Claude Code for automated test generation and code review support
 - AI-assisted documentation drafting for Google Drive and project docs/ entries
 - Automated KPI reporting from existing data sources
 - Shared team VM / server environment setup (1 shared account model)
 
 **Prerequisites before Phase 4 begins:**
+
 - Phase 3 Proving Period (April) confirms system is functioning
 - KPI sheet at 90%+ fill rate consistently
 - QA Owner roles active and rotational handover documented
 - At least one full TSS cycle completed
 
 > **Important:** AI tools are introduced to accelerate a working system — not to fix a broken one. The April proving period must confirm system stability before this phase begins.
-
----
 
 ## Section 15 — AI Tools & Shared Team Environment
 
@@ -1681,13 +1675,13 @@ The AI integration plan for AIBOS Uganda is deliberately staged. The operational
 
 The following areas are planned for AI tool integration (see Section 14.5 — Phase 4):
 
-| Area | AI Application | Benefit |
-|---|---|---|
-| **Code review** | AI-assisted code review (e.g., Claude Code) to supplement the QA layer | Faster catch of standard errors; developers get immediate feedback |
-| **Test generation** | Automated unit and integration test generation from code | Reduces manual test writing; improves regression coverage |
-| **KPI reporting** | Automated reporting from existing data sources | Reduces time spent manually compiling weekly reports |
-| **Documentation** | AI-assisted drafting of Google Drive documents, SOPs, and project docs/ entries | Faster documentation; encourages consistent formatting |
-| **Requirement analysis** | AI review of requirement documents for gaps or ambiguities | Catches missing edge cases before development starts |
+| Area                     | AI Application                                                                  | Benefit                                                            |
+| ------------------------ | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Code review**          | AI-assisted code review (e.g., Claude Code) to supplement the QA layer          | Faster catch of standard errors; developers get immediate feedback |
+| **Test generation**      | Automated unit and integration test generation from code                        | Reduces manual test writing; improves regression coverage          |
+| **KPI reporting**        | Automated reporting from existing data sources                                  | Reduces time spent manually compiling weekly reports               |
+| **Documentation**        | AI-assisted drafting of Google Drive documents, SOPs, and project docs/ entries | Faster documentation; encourages consistent formatting             |
+| **Requirement analysis** | AI review of requirement documents for gaps or ambiguities                      | Catches missing edge cases before development starts               |
 
 #### Tools in Scope (Phase 4 — May onwards)
 
@@ -1716,12 +1710,12 @@ Centralized environment     →  Consistent setup, no "works on my machine"
 
 #### Why This Model
 
-| Challenge (Individual Accounts) | Solution (Shared Environment) |
-|---|---|
-| Each developer maintains a separate AI tool subscription | One shared account reduces cost significantly |
-| Environment inconsistencies cause "works on my machine" bugs | One server environment means everyone runs the same setup |
-| Onboarding a new team member requires full environment setup | New members connect to existing server — ready in minutes |
-| AI tool costs scale with headcount | Shared model scales at a fraction of individual-account costs |
+| Challenge (Individual Accounts)                              | Solution (Shared Environment)                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------- |
+| Each developer maintains a separate AI tool subscription     | One shared account reduces cost significantly                 |
+| Environment inconsistencies cause "works on my machine" bugs | One server environment means everyone runs the same setup     |
+| Onboarding a new team member requires full environment setup | New members connect to existing server — ready in minutes     |
+| AI tool costs scale with headcount                           | Shared model scales at a fraction of individual-account costs |
 
 #### Implementation Notes
 
@@ -1748,11 +1742,7 @@ Scaled Team (12+ months)
 
 > **Note:** This model works best for internal development and AI tools. Client-facing systems, production accounts, and individual authentication for billing-critical services should remain separate for security and accountability.
 
----
-
 ## Appendices
-
----
 
 ### Appendix A — Daily Report Template
 
@@ -1781,20 +1771,19 @@ Best regards,
 [Name] | [Role / Team]
 ```
 
----
-
 ### Appendix B — 15-Minute Response Templates
 
 **Path B — Investigation Acknowledgment:**
+
 > "Hi [Client Name], thank you for your message regarding [Topic]. I have flagged this with the team and we are currently reviewing the details. I will get back to you with a status update within the hour. Best regards, [Name]"
 
 **Path C — Long-Term Acknowledgment:**
+
 > "Hi [Client Name], thank you for reaching out about [Topic]. This requires a deeper review of [Area]. We are looking into it and will provide a full update in our end-of-day report, or sooner if resolved. Best regards, [Name]"
 
 **1-Hour Update:**
-> "Hi [Client Name], a quick update: we have identified the issue is related to [Area]. We are currently [testing/investigating/refining] the solution. I will confirm the final outcome in our daily report. Best regards, [Name]"
 
----
+> "Hi [Client Name], a quick update: we have identified the issue is related to [Area]. We are currently [testing/investigating/refining] the solution. I will confirm the final outcome in our daily report. Best regards, [Name]"
 
 ### Appendix C — Definition of Done Checklist
 
@@ -1814,19 +1803,15 @@ QA Owner sign-off: ___________________
 Date: ___________________
 ```
 
----
-
 ### Appendix D — KPI Dashboard Template
 
-| KPI | Mon | Tue | Wed | Thu | Fri | Weekly Total | Target |
-|---|---|---|---|---|---|---|---|
-| 15-min response violations | | | | | | | 0 |
-| Delay risks escalated proactively | | | | | | | 100% |
-| Pre-delivery bugs found in QA | | | | | | | Log trend |
-| Post-delivery bugs (client reported) | | | | | | | 0 |
-| On-time delivery | | | | | | | 100% |
-
----
+| KPI                                  | Mon | Tue | Wed | Thu | Fri | Weekly Total | Target    |
+| ------------------------------------ | --- | --- | --- | --- | --- | ------------ | --------- |
+| 15-min response violations           |     |     |     |     |     |              | 0         |
+| Delay risks escalated proactively    |     |     |     |     |     |              | 100%      |
+| Pre-delivery bugs found in QA        |     |     |     |     |     |              | Log trend |
+| Post-delivery bugs (client reported) |     |     |     |     |     |              | 0         |
+| On-time delivery                     |     |     |     |     |     |              | 100%      |
 
 ### Appendix E — Weekly PDMO Agenda Template
 
@@ -1841,40 +1826,34 @@ Tuesday | 14:00 EAT
 5. Questions, actions, and next steps
 ```
 
----
-
 ### Appendix F — Meeting Schedule Reference
 
-| Day | Meeting | Led By | Duration |
-|---|---|---|---|
-| Mon | Company Standup | Rotating | 10 min |
-| Mon | SNS Product Meeting | SNS PM | 15 min (after 14:00) |
-| Tue | Company Standup | Rotating | 10 min |
-| Tue | AI Phone Agent Product Meeting | Kevin (PM) | 15 min (after 10:30) |
-| Tue | PDMO All-PMs Sync | Ambrose | 30–45 min (14:00) |
-| Wed | Company Standup | Rotating | 10 min |
-| Wed | Create Project Product Meeting | Ambrose | 15 min (after 12:00) |
-| Thu | Company Standup | Rotating | 10 min |
-| Thu | EMS Product Meeting | EMS PM | 15 min (after 11:00) |
-| Fri | Company Standup | Rotating | 10 min |
-| Fri | FOCUST Product Meeting | FOCUST PM | 15 min (after 10:00) |
-| Fri | Technical Sharing Session | Assigned team | 30 min |
-
----
+| Day | Meeting                        | Led By        | Duration             |
+| --- | ------------------------------ | ------------- | -------------------- |
+| Mon | Company Standup                | Rotating      | 10 min               |
+| Mon | SNS Product Meeting            | SNS PM        | 15 min (after 14:00) |
+| Tue | Company Standup                | Rotating      | 10 min               |
+| Tue | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min (after 10:30) |
+| Tue | PDMO All-PMs Sync              | Ambrose       | 30–45 min (14:00)    |
+| Wed | Company Standup                | Rotating      | 10 min               |
+| Wed | Create Project Product Meeting | Ambrose       | 15 min (after 12:00) |
+| Thu | Company Standup                | Rotating      | 10 min               |
+| Thu | EMS Product Meeting            | EMS PM        | 15 min (after 11:00) |
+| Fri | Company Standup                | Rotating      | 10 min               |
+| Fri | FOCUST Product Meeting         | FOCUST PM     | 15 min (after 10:00) |
+| Fri | Technical Sharing Session      | Assigned team | 30 min               |
 
 ### Appendix G — C2-PdMO Document Reference Map
 
-| Charter Requirement | Template Location | Status |
-|---|---|---|
-| Architecture Governance | 2-design/architecture.md, tech.md, adrs/ | Covered |
-| Traceability (REQ→FUNC→COMP) | Throughout planning and design phases | Covered |
-| Feasibility & Quality Audit | 3-execution/design-gate-checklist.md | Covered |
-| Weekly Architecture Review | 3-execution/weekly-tech-check.md | Covered |
-| Design Gate (Approval) | 3-execution/design-gate-checklist.md | Covered |
-| Weekly Tech Check Format | 3-execution/weekly-tech-check.md | Covered |
-| Design Approval Request | 1-planning/requirement-list, function-list | Covered |
-
----
+| Charter Requirement          | Template Location                          | Status  |
+| ---------------------------- | ------------------------------------------ | ------- |
+| Architecture Governance      | 2-design/architecture.md, tech.md, adrs/   | Covered |
+| Traceability (REQ→FUNC→COMP) | Throughout planning and design phases      | Covered |
+| Feasibility & Quality Audit  | 3-execution/design-gate-checklist.md       | Covered |
+| Weekly Architecture Review   | 3-execution/weekly-tech-check.md           | Covered |
+| Design Gate (Approval)       | 3-execution/design-gate-checklist.md       | Covered |
+| Weekly Tech Check Format     | 3-execution/weekly-tech-check.md           | Covered |
+| Design Approval Request      | 1-planning/requirement-list, function-list | Covered |
 
 ### Appendix H — QA Owner Appointment Form
 
@@ -1901,8 +1880,6 @@ QA Owner Signature: ___________________  Date: _______
 PM Signature:       ___________________  Date: _______
 ────────────────────────────────────────────────────────
 ```
-
----
 
 ### Appendix I — Risk Assessment & Rollback Plan Template
 
@@ -1947,8 +1924,6 @@ Client Notified?    Yes / No             Date: _______
 ────────────────────────────────────────────────────────
 ```
 
----
-
 ### Appendix J — Skills Map Template
 
 To be filled per department and stored in Google Drive under **Teams/[Department]/Skills Map**. Updated quarterly.
@@ -1982,22 +1957,18 @@ NOTES / DEVELOPMENT AREAS:
 ────────────────────────────────────────────────────────
 ```
 
----
-
 ### Appendix K — Stakeholder Communication Matrix
 
-| Stakeholder | Communication Type | Channel | Frequency | Owner |
-|---|---|---|---|---|
-| DATAGRID / Client | Daily progress update | Client channel / email | Daily (17:30) | Project PM |
-| DATAGRID / Client | Delay or risk notification | Direct message + channel | Immediately on risk recognition | Project PM |
-| DATAGRID / Client | Planned change notification | Client channel | Before P0/P1 deployments | PM + QA Owner |
-| AIBOS Japan (Prakhar) | Weekly status summary | PDMO summary document | Weekly (after Tuesday PDMO) | Ambrose |
-| AIBOS Japan (Nate) | Operational matters | Direct consultation | As needed | Ambrose |
-| Internal team | Daily Pulse (EOD report) | Daily Reports channel | Daily (17:30) | PM per project |
-| Internal team | Weekly PDMO highlights | Team channel | Weekly (Friday) | Ambrose |
-| Internal team | TSS session summary | Google Drive + team channel | Within 24hrs of session | Presenting team |
-
----
+| Stakeholder           | Communication Type          | Channel                     | Frequency                       | Owner           |
+| --------------------- | --------------------------- | --------------------------- | ------------------------------- | --------------- |
+| DATAGRID / Client     | Daily progress update       | Client channel / email      | Daily (17:30)                   | Project PM      |
+| DATAGRID / Client     | Delay or risk notification  | Direct message + channel    | Immediately on risk recognition | Project PM      |
+| DATAGRID / Client     | Planned change notification | Client channel              | Before P0/P1 deployments        | PM + QA Owner   |
+| AIBOS Japan (Prakhar) | Weekly status summary       | PDMO summary document       | Weekly (after Tuesday PDMO)     | Ambrose         |
+| AIBOS Japan (Nate)    | Operational matters         | Direct consultation         | As needed                       | Ambrose         |
+| Internal team         | Daily Pulse (EOD report)    | Daily Reports channel       | Daily (17:30)                   | PM per project  |
+| Internal team         | Weekly PDMO highlights      | Team channel                | Weekly (Friday)                 | Ambrose         |
+| Internal team         | TSS session summary         | Google Drive + team channel | Within 24hrs of session         | Presenting team |
 
 ### Appendix L — Shadow / Backup Handover Template
 
@@ -2038,8 +2009,6 @@ PRIMARY LEAD NOTES:
 Shadow confirms readiness:  ___________________  Date: _______
 ────────────────────────────────────────────────────────
 ```
-
----
 
 ### Appendix M — Weekly Product Checklist Template
 
@@ -2083,9 +2052,6 @@ NOTES / ACTIONS FROM THIS MEETING:
 ────────────────────────────────────────────────────────
 ```
 
----
-
-*Document Owner: Ambrose Alanda — Product & Management Office, AIBOS Uganda*
-*Version: 2.0*
-*Last Updated: February 2026*
-*For questions or updates: B1 Channel*
+_Version: 1.0_
+_Last Updated: February 2026_
+_For questions or updates: B1 Channel_
