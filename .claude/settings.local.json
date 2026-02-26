@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(pandoc:*)",
-      "Bash(sudo apt-get:*)"
+      "Bash(sudo apt-get:*)",
+      "Bash(wkhtmltopdf:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(md-to-pdf:*)"
     ]
   }
 }

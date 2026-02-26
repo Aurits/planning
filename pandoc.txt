@@ -1,0 +1,2 @@
+pandoc AIBOS_Uganda_System_Driven_Delivery_Framework.md -o AIBOS_Uganda_System_Driven_Delivery_Framework.pdf --pdf-engine=wkhtmltopdf --standalone -t html5 -V
+margin-top=22mm -V margin-bottom=22mm -V margin-left=25mm -V margin-right=25mm

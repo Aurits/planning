@@ -1,5 +1,101 @@
+---
+title: "AIBOS Uganda: System-Driven Delivery Framework"
+subtitle: "A Comprehensive Plan for Quality, Communication, and Operational Excellence"
+header-includes: |
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background-color: #ffffff; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 10.5pt; line-height: 1.75; color: #1a1f36;
+      width: 100%; max-width: none; margin: 0; padding: 20px 0 36px;
+    }
+    h1 {
+      font-size: 20pt; font-weight: 700; color: #1a1f36;
+      border-bottom: 3px solid #3b5bdb; padding-bottom: 10px;
+      margin-top: 40px; margin-bottom: 18px;
+      page-break-before: avoid; page-break-after: avoid;
+    }
+    h2 {
+      font-size: 14pt; font-weight: 600; color: #3b5bdb;
+      border-left: 4px solid #3b5bdb; padding-left: 12px;
+      margin-top: 0; margin-bottom: 16px;
+      page-break-before: always; page-break-after: avoid;
+    }
+    h3 {
+      font-size: 11.5pt; font-weight: 600; color: #1a1f36;
+      border-bottom: 1px solid #c8cfe8; padding-bottom: 5px;
+      margin-top: 26px; margin-bottom: 10px;
+      page-break-after: avoid; orphans: 3; widows: 3;
+    }
+    h4 {
+      font-size: 9.5pt; font-weight: 700; color: #3b5bdb;
+      text-transform: uppercase; letter-spacing: 0.07em;
+      margin-top: 20px; margin-bottom: 8px;
+      page-break-after: avoid;
+    }
+    p { margin-bottom: 12px; orphans: 3; widows: 3; }
+    ul, ol { margin: 8px 0 14px 24px; }
+    li { margin-bottom: 5px; }
+    blockquote {
+      background: #f0f4ff;
+      border-left: 4px solid #3b5bdb;
+      border-top: 1px solid #c5cbf9;
+      border-right: 1px solid #c5cbf9;
+      border-bottom: 1px solid #c5cbf9;
+      padding: 12px 18px;
+      margin: 18px 0; font-style: italic; color: #1a1f36;
+    }
+    blockquote p { margin: 0; }
+    pre {
+      background: #1e2030; color: #c0caf5;
+      padding: 16px 20px; margin: 16px 0; overflow-x: auto;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      font-size: 8.5pt; line-height: 1.6; page-break-inside: avoid;
+      border: 1px solid #2d3561;
+    }
+    code {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 8.5pt; background: #eef0fb; color: #364fc7;
+      padding: 2px 6px; border: 1px solid #c5cbf9;
+    }
+    pre code {
+      background: transparent; color: #c0caf5;
+      padding: 0; border: none;
+    }
+    table {
+      width: 100%; border-collapse: collapse; margin: 18px 0;
+      font-size: 9.5pt; page-break-inside: avoid;
+      border: 1px solid #c8cfe8; table-layout: auto;
+    }
+    col { width: auto; }
+    colgroup { width: 100%; }
+    thead tr { background: #1a1f36; color: #ffffff; }
+    thead th {
+      padding: 10px 14px; text-align: left;
+      font-weight: 600; font-size: 9pt; letter-spacing: 0.04em;
+      border-right: 1px solid #2d3561;
+      word-wrap: break-word; overflow-wrap: break-word;
+    }
+    thead th:last-child { border-right: none; }
+    tbody tr { border-bottom: 1px solid #c8cfe8; }
+    tbody tr:nth-child(even) { background: #f5f7fc; }
+    tbody tr:last-child { border-bottom: none; }
+    td {
+      padding: 9px 14px; vertical-align: top;
+      border-right: 1px solid #e2e6f0;
+      word-wrap: break-word; overflow-wrap: break-word;
+    }
+    td:last-child { border-right: none; }
+    hr { border: none; border-top: 1px solid #c8cfe8; margin: 36px 0; }
+    strong { font-weight: 600; }
+    a { color: #3b5bdb; text-decoration: none; }
+    pre, blockquote { page-break-inside: avoid; }
+  </style>
+---
+
 # AIBOS Uganda: System-Driven Delivery Framework
-### A Comprehensive Plan for Quality, Communication, and Operational Excellence
 
 ---
 
@@ -24,6 +120,7 @@
 - [Section 12 — Reward & Motivation System](#section-12--reward--motivation-system)
 - [Section 13 — MVP to Production Framework](#section-13--mvp-to-production-framework)
 - [Section 14 — Implementation Roadmap](#section-14--implementation-roadmap)
+- [Section 15 — AI Tools & Shared Team Environment](#section-15--ai-tools--shared-team-environment)
 - [Appendices](#appendices)
 
 ---
@@ -46,21 +143,23 @@ This document is the operational blueprint for AIBOS Uganda's transformation fro
 
 ### What This Document Covers
 
-This framework addresses six interconnected pillars:
+This framework addresses seven interconnected pillars:
 
 1. **Standards** — SLAs, KPIs, and measurable expectations
 2. **Operations** — Daily routines, meetings, and reporting
-3. **Quality** — QA layers, ownership, and release governance
+3. **Quality** — QA layers, ownership, release governance, and priority framework
 4. **Communication** — Client and internal communication protocols
-5. **Knowledge** — Documentation, templates, and Aibos Atlas
-6. **People** — Capacity building, continuity, and recognition
+5. **Knowledge** — Documentation, Google Drive + docs/ repository, and internal vs. shared knowledge boundaries
+6. **People** — Capacity building, skills mapping, hiring, and recognition
+7. **Technology** — AI tools and shared team environments for sustainable scale
 
 ### How to Use This Document
 
 - **New team members:** Read Sections 1–5 first for full context, then refer to specific sections as needed
 - **Product Managers:** Sections 5, 6, 7, 8, and 9 are your primary operational reference
-- **Developers:** Sections 6, 7, and 13 are most relevant to your daily work
-- **Leadership:** Sections 2, 3, 4, and 14 provide governance and strategic overview
+- **Developers:** Sections 6, 7, 10.6, and 13 are most relevant to your daily work
+- **Leadership:** Sections 2, 3, 4, 14, and 15 provide governance and strategic overview
+- **All team members:** Section 12 (Reward System) and Section 10.7 (Talent) apply to everyone's growth and day-to-day experience
 
 ---
 
@@ -222,7 +321,7 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 
 ### 4.3 KPI Dashboard
 
-**Tool:** Google Sheets (Phase 1) → Aibos Atlas Dashboard (Phase 2)
+**Tool:** Google Sheets (stored in the team Google Drive under Operations/KPI Tracking/)
 
 **Structure — One Sheet per Project, One Summary Tab:**
 
@@ -244,7 +343,7 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 
 | Project | Response SLA | Delay Escalation | Pre-delivery Bugs | Client Bugs | On-time Rate | Overall |
 |---|---|---|---|---|---|---|
-| Create Project | | | | | | 🟢/🟡/🔴 |
+| Create Project | | | | | | ON TRACK / WATCH / BLOCKED |
 | EMS | | | | | | |
 | FOCUST | | | | | | |
 | AI Phone Agent | | | | | | |
@@ -395,7 +494,11 @@ If any layer fails, the item goes back to the developer — it does not move for
 | FOCUST | To be nominated by team | To be nominated by team | 2–3 months |
 | AI Phone Agent | To be nominated by team | To be nominated by team | 2–3 months |
 
-> **Process:** Each team nominates their QA Owner this week. Criteria: not the person who wrote the feature being tested; understands the product well; has allocated time for QA duties.
+> **Process:** Each team nominates their QA Owner by **March 1** (aligned with Phase 1 of the Implementation Roadmap). Criteria: not the person who wrote the feature being tested; understands the product well; has time allocated for QA duties alongside delivery work.
+
+> **QA Owner Roles:** Runs the smoke test checklist on every staging deployment; signs off on the DoD checklist; logs pre-delivery bugs in the KPI sheet; escalates to PM when quality is at risk before a deadline. The QA Owner is the team's last line of defence before the client sees any work.
+
+> **See Appendix H for the QA Owner Appointment Form.**
 
 **Rotation Policy:**
 - QA Owner rotates every 2–3 months
@@ -456,6 +559,67 @@ QA Owner reviews on Staging
                    ▼
               EOD Report updated
 ```
+
+### 6.7 Project Priority Framework
+
+Managing quality requires knowing what to protect most. Not all features carry the same risk when things change — this framework categorizes features by priority and ensures that any change is assessed for impact before it is applied.
+
+#### Priority Levels
+
+| Priority | Label | Definition | Stability Rule |
+|---|---|---|---|
+| **P0 — Critical** | Core / Always On | Features that must work at all times. Failure here is unacceptable to the client. | No changes without full QA sign-off and a documented rollback plan. |
+| **P1 — High** | Core Workflow | Features essential to the main user journey. Bugs here are high-urgency. | Changes require staging validation before any production deployment. |
+| **P2 — Standard** | Supportive | Secondary features or enhancements. Bugs are tolerable temporarily. | Standard QA process applies. |
+| **P3 — Low** | Nice-to-Have | Minor features or cosmetic improvements. | Can be deferred without client impact. |
+
+> **Rule:** P0 features are never modified without a documented risk assessment and rollback plan. If a P0 feature is at risk of being broken by a change, that change must wait for a safe deployment window.
+
+#### Risk Assessment Requirement
+
+Before any change to a P0 or P1 feature, the PM and QA Owner must complete a brief risk assessment:
+
+```
+CHANGE RISK ASSESSMENT
+───────────────────────────────────────────────────────
+Feature Being Changed:              [Name / Module]
+Priority Level:                     P0 / P1 / P2 / P3
+What is changing:                   [Brief description]
+Potential impact on other features: [List affected areas]
+Can it be reverted if it fails:     Yes / No
+Rollback steps if needed:           [Step-by-step rollback]
+Who approves:                       [PM + QA Owner]
+Client informed?                    Yes / No / Not required
+───────────────────────────────────────────────────────
+```
+
+#### Rollback Protocol
+
+Every P0 and P1 deployment must have a documented rollback plan before it is merged to Production.
+
+```
+Deployment goes to Production
+         │
+    ┌────┴─────────────────────────────────────────────┐
+    │ Smoke test passes within 30 minutes?             │
+    └────┬─────────────────────────────────────────────┘
+    Fails│
+         ▼
+Immediately execute rollback:
+  1. Revert to last stable Production deployment
+  2. Notify PM and QA Owner
+  3. PM notifies client with brief honest message
+  4. Root cause identified before next attempt
+```
+
+#### Client Communication on Priority Changes
+
+Any update that affects P0 or P1 features must be communicated to the client **before** deployment, not after.
+
+**Template — Planned Change Notification:**
+> *"Hi [Client Name], we are planning to deploy an update to [Feature/Module] on [Date]. This addresses [brief description]. Internal testing is complete and a rollback plan is in place. If you have any concerns, please let us know before [Time]. We will confirm the outcome in our daily report."*
+
+> **See Appendix I for the full Risk Assessment & Rollback Plan template.**
 
 ---
 
@@ -634,12 +798,12 @@ Project Health Overview
 ────────────────────────────────────────────
 Project           │ Status
 ──────────────────┼──────────────
-Create Project    │ 🟢 / 🟡 / 🔴
-EMS               │ 🟢 / 🟡 / 🔴
-FOCUST            │ 🟢 / 🟡 / 🔴
-AI Phone Agent    │ 🟢 / 🟡 / 🔴
+Create Project    │ ON TRACK / WATCH / BLOCKED
+EMS               │ ON TRACK / WATCH / BLOCKED
+FOCUST            │ ON TRACK / WATCH / BLOCKED
+AI Phone Agent    │ ON TRACK / WATCH / BLOCKED
 
-🟢 On Track   🟡 Watch / Minor Risks   🔴 Blocked
+ON TRACK = performing well   WATCH = minor risks   BLOCKED = needs attention
 
 Project Summaries
 ────────────────────────────────────────────
@@ -755,7 +919,7 @@ These sessions happen immediately after each team's regular weekly meeting. They
 | **Duration** | 30 minutes |
 | **Purpose** | Knowledge sharing, skill development, cross-team learning |
 | **Format** | One team presents a technical topic; mandatory Q&A from other teams |
-| **Output** | Summary documented in Aibos Atlas after the session |
+| **Output** | Summary documented in Google Drive (Operations/SOPs/) and posted in the team channel after the session |
 | **Connection** | TSS content feeds into external technical blogs (Medium) |
 
 **Rules for TSS:**
@@ -844,7 +1008,7 @@ TSS sessions should actively build team capacity, not just share information pas
 |---|---|---|
 | Presentation | 20 min | Team presents a technical topic, decision, or implementation |
 | Q&A | 8 min | Other teams ask questions — minimum 1 question per attendee |
-| Documentation | 2 min | Key points noted for Aibos Atlas entry within 24 hours |
+| Documentation | 2 min | Key points saved to Google Drive and posted in the team channel within 24 hours |
 
 **Cross-pollination rule:** The Shadow for a project should lead the Q&A for that project's TSS presentation — they have the most to learn and the most responsibility to stay current.
 
@@ -852,7 +1016,7 @@ TSS sessions should actively build team capacity, not just share information pas
 
 **Rule:** If a task is done more than twice, it must have a written "How-To" guide.
 
-SOPs are stored in Aibos Atlas under the relevant project category.
+SOPs are stored in Google Drive under **Operations/SOPs/** for organizational procedures, or in the project's `/docs` folder for project-specific procedures.
 
 **Minimum SOP for any recurring task:**
 
@@ -869,6 +1033,114 @@ Owned by: [Role]
 Last updated: [Date]
 ─────────────────────────
 ```
+
+### 10.6 Team Skills Map
+
+Understanding what each team member does best is critical for task assignment, cross-team assistance, and targeted capacity building. The Skills Map is a living reference that grows as team members develop — it is not a performance evaluation, but a practical tool for PMs and management to match the right people to the right work.
+
+#### Purpose of the Skills Map
+
+| Use Case | How the Skills Map Helps |
+|---|---|
+| Task assignment | PMs assign based on proven strength, reducing delivery risk |
+| Cross-team assistance | When Team A needs support, Team B can identify who has the right skill |
+| Capacity planning | Managers can spot skills gaps before a new project begins |
+| Career development | Team members know what to build next to fill gaps |
+
+#### Skills Map — Frontend Department
+
+| Team Member | Core Strength | Secondary Strength | Learning Area | Available for Cross-Support |
+|---|---|---|---|---|
+| [Name] | [e.g., React / Next.js UI] | [e.g., API integration] | [e.g., Testing] | Yes / Limited / No |
+| [Name] | | | | |
+| [Name] | | | | |
+
+**Skill categories for Frontend:**
+- UI component development (React / Next.js)
+- State management (Redux, Zustand, Context API)
+- API integration and data handling
+- Responsive design and accessibility
+- Performance optimization
+- Testing (Jest, Playwright, Cypress)
+- Design implementation (Figma → Code)
+
+#### Skills Map — Backend Department
+
+| Team Member | Core Strength | Secondary Strength | Learning Area | Available for Cross-Support |
+|---|---|---|---|---|
+| [Name] | [e.g., Node.js / Express] | [e.g., Database design] | [e.g., DevOps] | Yes / Limited / No |
+| [Name] | | | | |
+| [Name] | | | | |
+
+**Skill categories for Backend:**
+- API development (REST / GraphQL)
+- Database design and optimization (PostgreSQL, MySQL, MongoDB)
+- Authentication and security
+- Cloud infrastructure and deployment
+- Automated testing and CI/CD pipelines
+- Microservices and system architecture
+- Integration with third-party services and AI/LLM APIs
+
+#### How to Maintain the Skills Map
+
+- The Skills Map template lives in Google Drive under **Teams/[Department]/**
+- Each PM reviews the map **quarterly** and updates entries after significant project completions
+- Team members can self-nominate updated strengths — the PM validates through direct observation
+- Skills Map feeds into the TSS calendar — members strong in an area are the natural lead presenter for that topic
+
+> **See Appendix J for the Skills Map completion template.**
+
+### 10.7 Hiring & Talent Management
+
+#### The Right Person for the Right Task
+
+Given the current team size and available resources, the most impactful decision AIBOS Uganda can make is to intentionally match each person to tasks they do well. This is not about limiting growth — it is about building confidence, delivering quality, and giving each individual room to become excellent before expanding their scope.
+
+**The benefits are immediate:**
+- Delivery quality improves because the person best suited to the task owns it
+- Developer morale increases because people feel competent and valued, not overwhelmed
+- Accountability is clearer when people own work they genuinely understand
+- Quality work done confidently feeds directly into the recognition system — reinforcing a positive cycle
+
+#### Morale and Task Assignment
+
+| Assignment Style | Impact on Morale |
+|---|---|
+| Assigned to area of strength | Confidence, flow, quality output, willingness to take on more |
+| Assigned to unknown areas without support | Stress, slow delivery, self-doubt, quiet disengagement |
+| Assigned with mentorship and a growth plan | Managed challenge, supported learning, long-term capability development |
+
+**For managers:** Before assigning a stretch task (outside someone's confirmed strengths), confirm:
+- Is there someone available to mentor them through it?
+- Is the deadline realistic for a learn-as-you-go scenario?
+- Does the team member know this is a growth assignment, not just another delivery task?
+
+#### Growth Path and Career Development
+
+The Reward & Motivation System (Section 12) is designed to reinforce and support individual career development. The link between task assignment, recognition, and growth looks like this:
+
+```
+PM assigns work aligned to strength (Skills Map)
+         │
+Member delivers quality work
+         │
+Recognition in Friday PDMO highlight
+         │
+Contribution noted in KPI dashboard
+         │
+Quarterly: TSS Lead Slot or Growth Acknowledgment
+         │
+Member's contributions documented in Google Drive grow as a track record
+         │
+Natural growth into new responsibilities over time
+```
+
+#### When Hiring
+
+As the team grows, new hires should be evaluated against the Skills Map — filling documented gaps rather than adding redundant strengths. Each new hire should:
+- Be assigned a Shadow mentor from day one
+- Have their skill profile added to the relevant department Skills Map
+- Receive a clear first-90-days plan aligned to a specific project or workstream
 
 ---
 
@@ -961,39 +1233,55 @@ Review with team and Prakhar (if needed)
 - `architecture.md` always reflects the current accepted state
 - Superseded ADRs are kept for historical reference
 
-### 11.4 Aibos Atlas — Internal Knowledge Platform
+### 11.4 Google Drive & Repository — Knowledge Management System
 
-**What it is:** A web-based internal knowledge system (built with Next.js) that serves as the single structured source of truth for organizational standards, reference architectures, playbooks, and operational guidelines.
-
-**What it is not:** A replacement for GitHub or Google Drive. It fills the gap between code (GitHub) and files (Drive) by providing structured, searchable, project-organized institutional knowledge.
+AIBOS Uganda uses a two-tier knowledge system that separates organizational knowledge from project-level technical documentation.
 
 ```
-GitHub   →  Stores code and version history
-Drive    →  Stores files and documents
-Atlas    →  Structures institutional knowledge
+GitHub /docs    →  Technical documentation (C2-PdMO, ADRs, weekly checks)
+Google Drive    →  Organizational knowledge (SOPs, templates, guidelines, meeting outputs)
 ```
 
-**Content Domains:**
+**Tier 1 — Project Repository (/docs)**
+Already defined in Section 11.3. Each project repository maintains a `/docs` folder containing C2-PdMO planning documents, architecture records, and execution logs. This is the technical record for that specific project.
 
-| Domain | What it Contains |
+**Tier 2 — Google Drive (Shared Organizational Knowledge)**
+The team Google Drive serves as the central location for all non-code organizational knowledge — templates, SOPs, skills maps, guidelines, KPI tracking sheets, and meeting outputs.
+
+**Recommended Google Drive Folder Structure:**
+
+```
+AIBOS Uganda (Shared Drive)
+├── Operations/
+│   ├── Templates/          ← All framework templates (Appendices A–M)
+│   ├── SOPs/               ← Standard Operating Procedures
+│   └── KPI Tracking/       ← Google Sheets KPI dashboards per project
+├── Projects/
+│   ├── [Project Name]/
+│   │   ├── Client Comms/   ← CLIENT-FACING documents
+│   │   ├── Internal/       ← INTERNAL project documents
+│   │   └── Handover/       ← Shadow handover records
+├── Teams/
+│   ├── Frontend/           ← Skills Map, department SOPs
+│   └── Backend/            ← Skills Map, department SOPs
+└── Shared with Clients/    ← Copies of documents shared externally
+```
+
+**Access Control:**
+
+| Folder | Access Level |
 |---|---|
-| Architecture | System design principles, deployment models, reference architectures |
-| Product | Discovery playbooks, prioritization frameworks, release standards |
-| Engineering | Coding standards, branching strategy, quality gates |
-| Infrastructure | Cloud strategy, environment guidelines, security baselines |
-| Operations | Incident management, escalation models, SLA definitions |
-| Governance | Decision principles, review cadence, change management |
+| Operations/ | All team members (view), PMs + Ambrose (edit) |
+| Projects/[Name]/Client Comms/ | PM + Ambrose (edit), client (view on request) |
+| Projects/[Name]/Internal/ | Project team (edit), Ambrose (view) |
+| Teams/ | All team members (view), PMs + Ambrose (edit) |
+| Shared with Clients/ | PM + Ambrose (edit), client (view) |
 
-**Governance Model:**
-
-- Each domain has an assigned owner (not a committee)
-- Updates prioritize clarity over process
-- Undocumented practices are not considered standards
-- Product team is the primary custodian of Atlas
-
-**Prototype:** [atlas-app-tbgo.vercel.app](https://atlas-app-tbgo.vercel.app)
-
-**Roadmap:** Prototype → Internal deployment on AIBOS subdomain → Integration with weekly reporting
+**Governance Rules:**
+- Product team is the primary custodian of the Drive folder structure
+- Every template from this framework (Appendices A–M) is stored in Operations/Templates/
+- Undocumented practices are not considered standards — if it matters, it goes in Drive or /docs
+- New folders should follow the structure above; ad-hoc top-level folders are not permitted
 
 ### 11.5 External Knowledge Sharing
 
@@ -1007,6 +1295,62 @@ As internal documentation matures, AIBOS Uganda will begin publishing external t
 **Connection to TSS:** A TSS session can motivate a blog post, or a blog post can be presented in TSS. Both reinforce learning and external visibility.
 
 **Ownership:** Product team initiates and manages quality control. Engineering teams are the authors.
+
+### 11.6 Internal vs. Shared Knowledge Boundary
+
+Not all documentation is meant for the client. A clear, consistent boundary between what is internal-only and what is shared with the client protects the team, maintains trust, and ensures clients receive the right level of transparency — without unnecessary exposure of internal processes, systems, or discussions.
+
+#### Knowledge Classification Categories
+
+| Category | Classification | Description | Examples |
+|---|---|---|---|
+| **Client-Facing** | Always shared | Created specifically for client communication | Daily progress reports, release notes, delivery confirmations, requirement confirmations |
+| **Client-Accessible** | Shared on request | Available to the client if asked, but not proactively sent | Approved technical specs, staging links, test plans, deployment schedules |
+| **Internal — Project** | Internal only | Used by the project team for execution | ADRs, architecture docs, peer review comments, bug trackers, QA logs, KPI logs |
+| **Internal — Organizational** | Internal only | Organizational operations, not project-specific | Team performance data, capacity plans, KPI dashboard scores, team health discussions |
+| **Restricted** | Leadership only | Sensitive to business or personnel | Personnel matters, financial discussions, strategic decisions not yet finalized |
+
+#### Decision Guide — Is This Shareable with the Client?
+
+```
+Document created or updated
+         │
+         ▼
+Does it contain team personnel info, financials, or internal KPIs?
+  Yes → RESTRICTED / INTERNAL ONLY
+  No  → Continue
+         │
+         ▼
+Was it created specifically for client communication?
+  Yes → CLIENT-FACING (send proactively)
+  No  → Continue
+         │
+         ▼
+Does it help the client understand what was built or confirmed?
+  Yes → CLIENT-ACCESSIBLE (share on request or attach to delivery)
+  No  → INTERNAL — PROJECT
+```
+
+#### Always Internal vs. Always Shared — Quick Reference
+
+| Always Internal | Always Shared with Client |
+|---|---|
+| QA bug logs and pre-delivery test results | Delivery confirmation and release notes |
+| KPI dashboard scores per team | Daily progress report (EOD) |
+| Peer review and code review comments | Requirement confirmations (before work starts) |
+| Architecture Decision Records (ADRs) | Staging environment link for acceptance testing |
+| Team capacity and Skills Map data | Timeline and delivery schedule |
+| Internal escalation and risk records | Delay notifications (proactive) |
+| Shadow assignments and backup plans | Feature change requests (confirmed scope) |
+
+#### Tagging Documents in Google Drive
+
+When saving documents in Google Drive, include the classification tag in the file name or document description:
+- `[CLIENT-FACING]` — place in Projects/[Name]/Client Comms/ or Shared with Clients/
+- `[INTERNAL]` — place in Projects/[Name]/Internal/ or Operations/
+- `[RESTRICTED]` — place in a leadership-only subfolder with restricted access
+
+This prevents accidental sharing and helps new team members understand what belongs in client communications from day one.
 
 ---
 
@@ -1044,7 +1388,7 @@ At the end of each month, review the KPI dashboard and recognize:
 | **Cleanest Delivery** | Lowest post-delivery bugs reported by client | Shoutout + featured in PDMO summary |
 | **Best QA Catch** | Most pre-delivery bugs caught internally | Shoutout — framed as "protected the team" |
 | **Proactive Communicator** | Most delay risks escalated early | Shoutout — framed as "showed leadership" |
-| **Documentation Champion** | Best/most consistent documentation update | Shoutout — connection to Aibos Atlas contribution |
+| **Documentation Champion** | Best/most consistent documentation update | Shoutout — connection to Google Drive / docs/ contribution |
 
 ### 12.4 Tier 3 — Quarterly Growth Reward
 
@@ -1066,6 +1410,79 @@ This is a growth opportunity, not just a trophy:
 | "You're the best developer" | "Your documentation means the next person can pick this up easily" |
 
 The goal is to make excellence feel systemic and replicable, not exceptional and individual.
+
+### 12.6 AIBOS Swag & Tangible Recognition
+
+As AIBOS Uganda grows, tangible recognition becomes an important complement to the verbal and written acknowledgment system. Branded swag serves both as a reward and as a visible symbol of belonging to a team that values quality — something people are proud to carry or wear.
+
+#### Phase-Appropriate Rollout
+
+| Phase | Milestone | Items |
+|---|---|---|
+| **Starter** | On joining + first 90-day completion | Branded notebook, pen, sticker pack |
+| **Recognition** | Quarterly top performer or project milestone | AIBOS branded t-shirt or hoodie |
+| **Milestone** | 1-year anniversary or major project launch | Higher-value item (jacket, backpack, or team experience) |
+
+**Framing swag with meaning:** Swag should always be accompanied by a specific reason — it is not a participation trophy. The story is what makes the item memorable:
+
+> *"This hoodie goes to the FOCUST team for completing the beta launch on time with zero client-reported bugs. That is the standard we are building this team around."*
+
+### 12.7 Overtime & Extra-Mile Recognition
+
+#### Why It Needs Its Own Category
+
+Extra hours put in during a crunch period, a critical release, or an emergency are often invisible in standard KPI-based recognition. Without acknowledgment, repeated overtime builds quiet resentment — even among people who genuinely care about the work.
+
+AIBOS Uganda recognizes extra-mile effort as a distinct and important category of contribution.
+
+#### Recognition Model for Overtime
+
+| Type of Effort | Recognition Approach |
+|---|---|
+| Late-night deployment or emergency fix | Named shoutout in next-day morning standup |
+| Critical task completed over the weekend | Acknowledged in the following Friday PDMO highlight |
+| Consistently staying late during a sprint | Noted in the monthly summary shared with Japan |
+| Going beyond scope to unblock a teammate | PDMO callout framed as: *"This person made it possible for the team to ship"* |
+
+> **Important balance:** Recognition of overtime is not an invitation to normalize it. The PM who acknowledges the effort should also ask: *"What process gap caused this crunch? How do we prevent it next time?"* Overtime recognition and process improvement go hand in hand.
+
+#### Compensatory Time
+
+Where overtime has been significant and sustained, managers should consider compensatory time (time off in lieu) as a practical acknowledgment. This should be discussed and confirmed with Nate as appropriate for each situation.
+
+### 12.8 Contribution Recognition System
+
+#### The Problem It Solves
+
+In most teams, the most lasting contributions — writing the guide that helped everyone, cleaning up the codebase, documenting the architecture others struggled to understand — happen quietly and go unnoticed. The KPI-based system risks rewarding visible delivery metrics while overlooking equally impactful work that does not show up in a dashboard.
+
+#### Contribution Types Worth Recognizing
+
+| Contribution | Why It Matters |
+|---|---|
+| Documenting a complex process in Google Drive or the project docs/ folder | Saves every future team member hours of confusion |
+| Writing an SOP the whole team now follows | Makes the organization more resilient |
+| Mentoring a junior member through a difficult task | Multiplies capability across the team |
+| Identifying and fixing a systemic issue proactively | Protects the team before a problem reaches the client |
+| Proposing a process improvement that is adopted | Demonstrates system-thinking and leadership |
+| Leading a TSS session that other teams found valuable | Builds cross-team knowledge and external visibility |
+
+#### The "Under-the-Radar" Contribution Shoutout
+
+In the weekly PDMO Friday summary, a recurring segment: **"This Week's Under-the-Radar Contribution"**
+- Any PM or team member can nominate a contribution — not limited to KPI metrics
+- One nomination per week is highlighted in the team channel
+
+**Sample post:**
+> *"This week's contribution shoutout goes to [Name] for documenting the EMS deployment process in Google Drive. Three team members already referenced it — it paid off immediately."*
+
+#### Long-Term: Individual Contribution Profile
+
+As the documentation library in Google Drive and the project repos grows, each team member will have a **Contribution Profile** — a record of what they have built, documented, and shared. This becomes a career development artifact:
+- Referenced during quarterly reviews
+- Shared where appropriate with Japan leadership
+- Used as the basis for TSS nominations and growth opportunities
+- Serves as an internal portfolio for individual progression at AIBOS Uganda
 
 ---
 
@@ -1201,7 +1618,7 @@ Meeting       Ambrose       BEGINS
 | Set up KPI tracking sheet (Google Sheets) | Ambrose | Mar 1 |
 | Confirm shadow assignments per project | Ambrose + PMs | Mar 7 |
 | Brief full team on daily pulse and SLA expectations | Ambrose + PMs | Mar 10–14 |
-| Set up Aibos Atlas initial structure | Product team | Mar 14 |
+| Set up Google Drive folder structure (Operations/, Projects/, Teams/) | Product team | Mar 14 |
 
 ### 14.3 Phase 2 — Trial Operation (Mar 16 – Mar 31)
 
@@ -1232,17 +1649,104 @@ Meeting       Ambrose       BEGINS
 
 At the end of April, a review meeting with Prakhar and Nate confirms whether the system is functioning and what the next phase looks like.
 
-### 14.5 Phase 4 — AI Integration Planning (May)
+### 14.5 Phase 4 — AI Tools & Shared Environment (May)
 
-**Goal:** Once the operational foundation is stable, introduce AI tools to accelerate.
+**Goal:** Once the operational foundation is stable, introduce AI tools and a shared team environment to accelerate delivery and reduce cost.
 
-**Areas to explore:**
-- Using Claude Code for automated test generation
-- AI-assisted code review to supplement the QA layer
+**Areas to roll out (see Section 15 for full detail):**
+- Claude Code for automated test generation and code review support
+- AI-assisted documentation drafting for Google Drive and project docs/ entries
 - Automated KPI reporting from existing data sources
-- AI-assisted documentation drafting for Aibos Atlas
+- Shared team VM / server environment setup (1 shared account model)
+
+**Prerequisites before Phase 4 begins:**
+- Phase 3 Proving Period (April) confirms system is functioning
+- KPI sheet at 90%+ fill rate consistently
+- QA Owner roles active and rotational handover documented
+- At least one full TSS cycle completed
 
 > **Important:** AI tools are introduced to accelerate a working system — not to fix a broken one. The April proving period must confirm system stability before this phase begins.
+
+---
+
+## Section 15 — AI Tools & Shared Team Environment
+
+### 15.1 Philosophy
+
+> **AI tools are introduced to accelerate a working system — not to fix a broken one.**
+
+The AI integration plan for AIBOS Uganda is deliberately staged. The operational foundation (Sections 3–14) must be stable and adopted before AI tools are layered on top. When that foundation is in place, AI can compress timelines, reduce repetitive work, and allow the team to focus on higher-value decisions.
+
+### 15.2 AI Tools for Managers and Teams
+
+The following areas are planned for AI tool integration (see Section 14.5 — Phase 4):
+
+| Area | AI Application | Benefit |
+|---|---|---|
+| **Code review** | AI-assisted code review (e.g., Claude Code) to supplement the QA layer | Faster catch of standard errors; developers get immediate feedback |
+| **Test generation** | Automated unit and integration test generation from code | Reduces manual test writing; improves regression coverage |
+| **KPI reporting** | Automated reporting from existing data sources | Reduces time spent manually compiling weekly reports |
+| **Documentation** | AI-assisted drafting of Google Drive documents, SOPs, and project docs/ entries | Faster documentation; encourages consistent formatting |
+| **Requirement analysis** | AI review of requirement documents for gaps or ambiguities | Catches missing edge cases before development starts |
+
+#### Tools in Scope (Phase 4 — May onwards)
+
+- **Claude Code** — AI coding assistant for development and automated test generation
+- **AI-assisted review** — Supplement to peer code review; identifies common issues quickly
+- **Automated KPI dashboarding** — Scripts or integrations that pull data from existing channels into the dashboard automatically
+
+> **Important:** Managers should be trained to use AI tools to review, guide, and audit — not to replace judgment. AI output is always reviewed by a human before any client-facing use.
+
+### 15.3 Shared Team Environment
+
+As AIBOS Uganda grows, access to AI tools and development infrastructure should be structured for cost efficiency and team-wide access — not fragmented across individual personal accounts.
+
+#### The Shared VM / Server Workspace Model
+
+Rather than each team member maintaining their own separate accounts and local environments, AIBOS Uganda will move toward a **shared team server environment**:
+
+```
+SHARED TEAM WORKSPACE
+───────────────────────────────────────────────────────
+1 Virtual Machine / Server  →  Accessible by whole team
+1 Shared Account (per tool) →  Used by all team members
+Centralized environment     →  Consistent setup, no "works on my machine"
+───────────────────────────────────────────────────────
+```
+
+#### Why This Model
+
+| Challenge (Individual Accounts) | Solution (Shared Environment) |
+|---|---|
+| Each developer maintains a separate AI tool subscription | One shared account reduces cost significantly |
+| Environment inconsistencies cause "works on my machine" bugs | One server environment means everyone runs the same setup |
+| Onboarding a new team member requires full environment setup | New members connect to existing server — ready in minutes |
+| AI tool costs scale with headcount | Shared model scales at a fraction of individual-account costs |
+
+#### Implementation Notes
+
+- The shared VM should be set up as part of the **Phase 4 rollout (May)**
+- Access control: each team member has their own login to the VM, but shares the AI tool account credentials via a secure, centrally managed method (e.g., team password manager)
+- The VM environment setup should be documented in Google Drive (Operations/SOPs/) as the standard development environment going forward
+- As the team grows and usage demands increase, this model can be upgraded (more compute, additional accounts) — but the shared foundation keeps early-stage costs manageable
+
+#### Cost Efficiency Over Time
+
+```
+Small Team (Today)
+  1 shared account — cost fixed regardless of team size
+         │
+         ▼
+Growing Team (6–12 months)
+  Same account, more users — still 1 subscription cost
+         │
+         ▼
+Scaled Team (12+ months)
+  Evaluate: 1 upgraded tier vs. multiple accounts
+  Decision informed by actual usage data
+```
+
+> **Note:** This model works best for internal development and AI tools. Client-facing systems, production accounts, and individual authentication for billing-critical services should remain separate for security and accountability.
 
 ---
 
@@ -1372,7 +1876,216 @@ Tuesday | 14:00 EAT
 
 ---
 
+### Appendix H — QA Owner Appointment Form
+
+**Deadline: March 1 (Phase 1 — Foundation)**
+
+```
+QA OWNER APPOINTMENT
+────────────────────────────────────────────────────────
+Project:              ________________________________
+QA Owner (Primary):   ________________________________
+QA Owner (Backup):    ________________________________
+Appointed By (PM):    ________________________________
+Appointment Date:     ________________________________
+Rotation Schedule:    Every 2–3 months (next: ________)
+
+QA Owner Responsibilities (confirm understanding):
+  □  Run smoke test checklist on every staging deployment
+  □  Sign off on the Definition of Done checklist
+  □  Log all pre-delivery bugs in the KPI sheet
+  □  Escalate to PM immediately if quality risk is detected before deadline
+  □  Brief incoming QA Owner before rotation handover
+
+QA Owner Signature: ___________________  Date: _______
+PM Signature:       ___________________  Date: _______
+────────────────────────────────────────────────────────
+```
+
+---
+
+### Appendix I — Risk Assessment & Rollback Plan Template
+
+```
+CHANGE RISK ASSESSMENT & ROLLBACK PLAN
+────────────────────────────────────────────────────────
+Project:                    ____________________________
+Feature / Module Changed:   ____________________________
+Priority Level:             P0 / P1 / P2 / P3
+Change Description:         ____________________________
+Planned Deployment Date:    ____________________________
+
+RISK ASSESSMENT
+────────────────────────────────────────────────────────
+What could go wrong?        ____________________________
+Which features are affected? ___________________________
+Is this reversible?         Yes / No
+Risk level:                 Low / Medium / High
+
+ROLLBACK PLAN
+────────────────────────────────────────────────────────
+Step 1:   Revert to last stable deployment
+Step 2:   Notify PM and QA Owner immediately
+Step 3:   PM notifies client — [template below]
+Step 4:   Root cause investigation begins
+Step 5:   Fix confirmed and tested before re-deployment
+
+CLIENT COMMUNICATION TEMPLATE (Rollback)
+────────────────────────────────────────────────────────
+"Hi [Client], we encountered an issue with the recent
+update to [Module]. We have reverted to the previous
+stable version to protect your service. The issue is
+under investigation and we will confirm a resolution
+timeline in our next update. We apologize for any
+inconvenience. [Name]"
+
+APPROVAL
+────────────────────────────────────────────────────────
+PM Sign-off:        ___________________  Date: _______
+QA Owner Sign-off:  ___________________  Date: _______
+Client Notified?    Yes / No             Date: _______
+────────────────────────────────────────────────────────
+```
+
+---
+
+### Appendix J — Skills Map Template
+
+To be filled per department and stored in Google Drive under **Teams/[Department]/Skills Map**. Updated quarterly.
+
+```
+DEPARTMENT SKILLS MAP
+────────────────────────────────────────────────────────
+Department:     Frontend / Backend
+Last Updated:   ____________________________
+Updated By:     ____________________________
+
+SKILL CATEGORIES (mark each member's level):
+  ★★★ = Strong (can lead and teach)
+  ★★  = Confident (delivers independently)
+  ★   = Learning (needs some support)
+  —   = Not yet explored
+
+MEMBER SKILL GRID
+─────────────────┬──────┬──────┬──────┬──────┬──────┬──────
+Team Member      │ Skill│ Skill│ Skill│ Skill│ Skill│ Cross-Team
+                 │  1   │  2   │  3   │  4   │  5   │ Available?
+─────────────────┼──────┼──────┼──────┼──────┼──────┼──────
+[Name]           │      │      │      │      │      │ Yes/No
+[Name]           │      │      │      │      │      │
+[Name]           │      │      │      │      │      │
+─────────────────┴──────┴──────┴──────┴──────┴──────┴──────
+
+NOTES / DEVELOPMENT AREAS:
+[Name]: Targeting [skill] by [quarter]
+[Name]: Mentor assigned for [skill] — [Mentor Name]
+────────────────────────────────────────────────────────
+```
+
+---
+
+### Appendix K — Stakeholder Communication Matrix
+
+| Stakeholder | Communication Type | Channel | Frequency | Owner |
+|---|---|---|---|---|
+| DATAGRID / Client | Daily progress update | Client channel / email | Daily (17:30) | Project PM |
+| DATAGRID / Client | Delay or risk notification | Direct message + channel | Immediately on risk recognition | Project PM |
+| DATAGRID / Client | Planned change notification | Client channel | Before P0/P1 deployments | PM + QA Owner |
+| AIBOS Japan (Prakhar) | Weekly status summary | PDMO summary document | Weekly (after Tuesday PDMO) | Ambrose |
+| AIBOS Japan (Nate) | Operational matters | Direct consultation | As needed | Ambrose |
+| Internal team | Daily Pulse (EOD report) | Daily Reports channel | Daily (17:30) | PM per project |
+| Internal team | Weekly PDMO highlights | Team channel | Weekly (Friday) | Ambrose |
+| Internal team | TSS session summary | Google Drive + team channel | Within 24hrs of session | Presenting team |
+
+---
+
+### Appendix L — Shadow / Backup Handover Template
+
+Used when a Primary lead is unavailable and the Shadow steps in.
+
+```
+SHADOW HANDOVER BRIEFING
+────────────────────────────────────────────────────────
+Project:               ____________________________
+Primary Lead:          ____________________________
+Shadow (Stepping In):  ____________________________
+Handover Date:         ____________________________
+Expected Duration:     ____________________________
+
+CURRENT STATUS
+────────────────────────────────────────────────────────
+Active tasks:          ____________________________
+Pending client items:  ____________________________
+Known blockers:        ____________________________
+Next deadline:         ____________________________
+
+CLIENT CONTACTS
+────────────────────────────────────────────────────────
+Primary contact:       ____________________________
+Preferred channel:     ____________________________
+Tone/context notes:    ____________________________
+
+KEY LINKS
+────────────────────────────────────────────────────────
+Project board:         ____________________________
+KPI sheet row:         ____________________________
+Repository:            ____________________________
+Staging URL:           ____________________________
+
+PRIMARY LEAD NOTES:
+[Any additional context the Shadow needs to know]
+
+Shadow confirms readiness:  ___________________  Date: _______
+────────────────────────────────────────────────────────
+```
+
+---
+
+### Appendix M — Weekly Product Checklist Template
+
+Used by each PM during the weekly 15-minute team product meeting.
+
+```
+WEEKLY PRODUCT CHECKLIST
+────────────────────────────────────────────────────────
+Project:        ____________________________
+Week of:        ____________________________
+PM:             ____________________________
+Meeting Date:   ____________________________
+
+DELIVERY CHECK
+────────────────────────────────────────────────────────
+□  All tasks from last week: completed / carried over / escalated?
+□  Any task delivered without client confirmation of requirements?
+□  Any deliverable that went to client without QA sign-off?
+□  Any deadline missed this week? (If yes: documented and communicated)
+
+QUALITY CHECK
+────────────────────────────────────────────────────────
+□  QA Owner performed smoke test after last deployment
+□  No P0 or P1 feature broken in current staging
+□  KPI sheet filled every day this week
+
+COMMUNICATION CHECK
+────────────────────────────────────────────────────────
+□  All client messages responded to within 15 minutes
+□  No delay risks communicated late (on due date)
+□  EOD report sent every working day
+
+PLANNING CHECK
+────────────────────────────────────────────────────────
+□  Next week's priorities agreed by team
+□  Any blockers that need management attention?
+□  Shadow up to date on project status?
+
+NOTES / ACTIONS FROM THIS MEETING:
+[Action] → [Owner] → [Target Date]
+────────────────────────────────────────────────────────
+```
+
+---
+
 *Document Owner: Ambrose Alanda — Product & Management Office, AIBOS Uganda*
-*Version: 1.0*
+*Version: 2.0*
 *Last Updated: February 2026*
 *For questions or updates: B1 Channel*
