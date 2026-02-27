@@ -326,7 +326,7 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 **Rules:**
 
 - Each PM fills their project's row during the **evening retrospective**
-- Ambrose reviews the full summary tab every **Tuesday** in the PDMO meeting
+- Management Owner reviews the full summary tab every **Tuesday** in the PDMO meeting
 - Japan team (Prakhar/Nate) has view access at all times
 - An empty cell by EOD is flagged as a potential gap
 
@@ -359,9 +359,9 @@ MORNING LOOP
       │ Focus: technical alignment, task clarity, who owns what
       ▼
 09:20 │ PM → MANAGEMENT OWNER SYNC
-      │ PMs report urgent blockers to Ambrose.
+      │ PMs report urgent blockers to the Management Owner.
       │ Focus: anything that needs management attention before the day runs
-      │ Output: Ambrose aware of all critical risks before 09:30
+      │ Output: Management Owner aware of all critical risks before 09:30
 ─────────────────────────────────────────────────────────────────────
 
 WORK DAY
@@ -408,7 +408,7 @@ EVENING LOOP
 
 - Brief and focused — only urgent items
 - PMs report: anything that could affect client delivery, deadlines, or team capacity
-- Ambrose makes immediate decisions on anything critical
+- Management Owner makes immediate decisions on anything critical
 - Non-urgent items go to the PDMO weekly meeting
 
 ## Section 6 — Quality Assurance System
@@ -690,10 +690,10 @@ Immediately notify PM (if not already the PM)
 PM assesses impact on deadline
          │
          ▼
-PM notifies Ambrose (Management Owner) at once
+PM notifies the Management Owner at once
          │
          ▼
-Ambrose decides:
+Management Owner decides:
   ├── Can the team handle it?  →  Team adjusts, client informed proactively
   └── Needs escalation?        →  Consult Prakhar/Nate same day
          │
@@ -772,7 +772,7 @@ Best regards,
 
 ### 8.2 Weekly PDMO Summary
 
-Produced by Ambrose after each Tuesday PDMO meeting. Shared in the team channel.
+Produced by the Management Owner after each Tuesday PDMO meeting. Shared in the team channel.
 
 **Structure:**
 
@@ -890,7 +890,7 @@ These sessions happen immediately after each team's regular weekly meeting. They
 | **Title**      | Weekly PDMO Product Managers Sync  |
 | **Day & Time** | Tuesday at 14:00 EAT               |
 | **Duration**   | 30–45 minutes                      |
-| **Attendees**  | All Product Managers + Ambrose     |
+| **Attendees**  | All Product Managers + Management Owner |
 | **Advisors**   | Prakhar and/or Nate (as available) |
 
 **Agenda:**
@@ -928,9 +928,9 @@ These sessions happen immediately after each team's regular weekly meeting. They
 | Monday    | After 14:00 | SNS Product Meeting            | SNS PM        | 15 min    |
 | Tuesday   | 09:00       | Company Standup                | GA            | 10 min    |
 | Tuesday   | After 10:30 | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min    |
-| Tuesday   | 14:00       | PDMO — All PMs Sync            | Ambrose       | 30–45 min |
-| Wednesday | 09:00       | Company Standup                | GA            | 10 min    |
-| Wednesday | After 12:00 | Create Project Product Meeting | Ambrose (PM)  | 15 min    |
+| Tuesday   | 14:00       | PDMO — All PMs Sync            | Management Owner | 30–45 min |
+| Wednesday | 09:00       | Company Standup                | GA               | 10 min    |
+| Wednesday | After 12:00 | Create Project Product Meeting | Management Owner (PM) | 15 min |
 | Thursday  | 09:00       | Company Standup                | GA            | 10 min    |
 | Thursday  | After 11:00 | EMS Product Meeting            | EMS PM        | 15 min    |
 | Friday    | 09:00       | Company Standup                | GA            | 10 min    |
@@ -1269,11 +1269,11 @@ AIBOS Uganda (Shared Drive)
 
 | Folder                        | Access Level                                  |
 | ----------------------------- | --------------------------------------------- |
-| Operations/                   | All team members (view), PMs + Ambrose (edit) |
-| Projects/[Name]/Client Comms/ | PM + Ambrose (edit), client (view on request) |
-| Projects/[Name]/Internal/     | Project team (edit), Ambrose (view)           |
-| Teams/                        | All team members (view), PMs + Ambrose (edit) |
-| Shared with Clients/          | PM + Ambrose (edit), client (view)            |
+| Operations/                   | All team members (view), PMs + Management Owner (edit) |
+| Projects/[Name]/Client Comms/ | PM + Management Owner (edit), client (view on request) |
+| Projects/[Name]/Internal/     | Project team (edit), Management Owner (view)           |
+| Teams/                        | All team members (view), PMs + Management Owner (edit) |
+| Shared with Clients/          | PM + Management Owner (edit), client (view)            |
 
 **Governance Rules:**
 
@@ -1572,7 +1572,7 @@ Client submits new project / request
          │
          ▼
 Product team receives and reviews
-(Ambrose + relevant PM)
+(Management Owner + relevant PM)
          │
          ▼
 Product team assesses:
@@ -1600,7 +1600,8 @@ FEB 23        FEB 27        MAR 16          APR 1–30        MAY
 ────────────────────────────────────────────────────────────────────
 Technical     Follow-up     TRIAL           PROVING         STRATEGY
 Leaders       Meeting:      OPERATION       PERIOD
-Meeting       Ambrose       BEGINS
+Meeting       Management    BEGINS
+              Owner
               presents
               March Plan
 ────────────────────────────────────────────────────────────────────
@@ -1612,11 +1613,11 @@ Meeting       Ambrose       BEGINS
 
 | Action                                                                | Owner         | Target Date |
 | --------------------------------------------------------------------- | ------------- | ----------- |
-| Share and review this framework document                              | Ambrose       | Feb 27      |
-| Nominate QA Owners for each project                                   | Each team     | Mar 1       |
-| Set up KPI tracking sheet (Google Sheets)                             | Ambrose       | Mar 1       |
-| Confirm shadow assignments per project                                | Ambrose + PMs | Mar 7       |
-| Brief full team on daily pulse and SLA expectations                   | Ambrose + PMs | Mar 10–14   |
+| Share and review this framework document                              | Management Owner       | Feb 27      |
+| Nominate QA Owners for each project                                   | Each team              | Mar 1       |
+| Set up KPI tracking sheet (Google Sheets)                             | Management Owner       | Mar 1       |
+| Confirm shadow assignments per project                                | Management Owner + PMs | Mar 7       |
+| Brief full team on daily pulse and SLA expectations                   | Management Owner + PMs | Mar 10–14   |
 | Set up Google Drive folder structure (Operations/, Projects/, Teams/) | Product team  | Mar 14      |
 
 ### 14.3 Phase 2 — Trial Operation (Mar 16 – Mar 31)
@@ -1632,7 +1633,7 @@ Meeting       Ambrose       BEGINS
 | Weekly PDMO meeting running                                    | Tuesday 14:00 EAT                     |
 | Team product meetings running                                  | Per confirmed schedule                |
 
-**Review points:** Ambrose reviews what is working and what feels "clunky" — adjustments made before April.
+**Review points:** Management Owner reviews what is working and what feels "clunky" — adjustments made before April.
 
 ### 14.4 Phase 3 — Proving Period (Apr 1 – Apr 30)
 
@@ -1644,7 +1645,7 @@ Meeting       Ambrose       BEGINS
 | Delay risks escalated proactively                      | 80%+ of the time                    |
 | Post-delivery bugs reported by client                  | Significant reduction from baseline |
 | KPI sheet filled consistently                          | 90%+ completion rate                |
-| Team able to operate without Ambrose present for a day | Yes                                 |
+| Team able to operate without the Management Owner present for a day | Yes                    |
 
 At the end of April, a review meeting with Prakhar and Nate confirms whether the system is functioning and what the next phase looks like.
 
@@ -1841,9 +1842,9 @@ Tuesday | 14:00 EAT
 | Mon | SNS Product Meeting            | SNS PM        | 15 min (after 14:00) |
 | Tue | Company Standup                | GA            | 10 min               |
 | Tue | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min (after 10:30) |
-| Tue | PDMO All-PMs Sync              | Ambrose       | 30–45 min (14:00)    |
-| Wed | Company Standup                | GA            | 10 min               |
-| Wed | Create Project Product Meeting | Ambrose       | 15 min (after 12:00) |
+| Tue | PDMO All-PMs Sync              | Management Owner      | 30–45 min (14:00)    |
+| Wed | Company Standup                | GA                    | 10 min               |
+| Wed | Create Project Product Meeting | Management Owner (PM) | 15 min (after 12:00) |
 | Thu | Company Standup                | GA            | 10 min               |
 | Thu | EMS Product Meeting            | EMS PM        | 15 min (after 11:00) |
 | Fri | Company Standup                | GA            | 10 min               |
@@ -1971,10 +1972,10 @@ NOTES / DEVELOPMENT AREAS:
 | DATAGRID / Client     | Daily progress update       | Client channel / email      | Daily (17:30)                   | Project PM      |
 | DATAGRID / Client     | Delay or risk notification  | Direct message + channel    | Immediately on risk recognition | Project PM      |
 | DATAGRID / Client     | Planned change notification | Client channel              | Before P0/P1 deployments        | PM + QA Owner   |
-| AIBOS Japan (Prakhar) | Weekly status summary       | PDMO summary document       | Weekly (after Tuesday PDMO)     | Ambrose         |
-| AIBOS Japan (Nate)    | Operational matters         | Direct consultation         | As needed                       | Ambrose         |
-| Internal team         | Daily Pulse (EOD report)    | Daily Reports channel       | Daily (17:30)                   | PM per project  |
-| Internal team         | Weekly PDMO highlights      | Team channel                | Weekly (Friday)                 | Ambrose         |
+| AIBOS Japan (Prakhar) | Weekly status summary       | PDMO summary document       | Weekly (after Tuesday PDMO)     | Management Owner |
+| AIBOS Japan (Nate)    | Operational matters         | Direct consultation         | As needed                       | Management Owner |
+| Internal team         | Daily Pulse (EOD report)    | Daily Reports channel       | Daily (17:30)                   | PM per project   |
+| Internal team         | Weekly PDMO highlights      | Team channel                | Weekly (Tuesday)                | Management Owner |
 | Internal team         | TSS session summary         | Google Drive + team channel | Within 24hrs of session         | Presenting team |
 
 ### Appendix L — Shadow / Backup Handover Template
