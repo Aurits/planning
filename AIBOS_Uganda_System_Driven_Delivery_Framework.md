@@ -130,13 +130,13 @@ This document is the operational blueprint for AIBOS Uganda's transformation fro
 
 ### The Core Transformation Goal
 
-| From                                         | To                                              |
-| -------------------------------------------- | ----------------------------------------------- |
-| Quality depends on specific individuals      | Quality is enforced by the system               |
-| Communication happens when someone remembers | Communication follows a defined protocol        |
-| Decisions live in people's heads             | Decisions are documented and accessible         |
-| Managers spend time firefighting             | Managers monitor, guide, and improve the system |
-| Knowledge is lost when someone leaves        | Knowledge lives in documentation and tools      |
+| From                                          | To                                              |
+| --------------------------------------------- | ----------------------------------------------- |
+| Quality depends on specific individuals       | Quality is enforced by the system               |
+| Communication happens when someone remembers  | Communication follows a defined protocol        |
+| Decisions live in people's heads              | Decisions are documented and accessible         |
+| Managers spend time firefighting              | Managers monitor, guide, and improve the system |
+| Knowledge is lost when someone is unavailable | Knowledge lives in documentation and tools      |
 
 ### What This Document Covers
 
@@ -381,7 +381,7 @@ EVENING LOOP
       │ PM confirms product status for the day
       │ Focus: what is done, what is at risk, what needs escalation
       ▼
-17:15 │ MANAGEMENT "BIG 3" MEETING
+17:15 │ MANAGEMENT MEETING
       │ Ambrose, Martin, Joseph
       │ Focus: company-wide daily status, unresolved blockers, decisions
       ▼
@@ -840,7 +840,7 @@ PM–Mgmt Sync         (Tuesday 14:00 EAT)  (During PDMO)
 Peer Review          (per project)
 (16:30 daily)
 
-Management "Big 3"
+Management
 (17:15 daily)
 ──────────────────────────────────────────────────────────
 ```
@@ -924,16 +924,16 @@ These sessions happen immediately after each team's regular weekly meeting. They
 
 | Day       | Time        | Meeting                        | Led By        | Duration  |
 | --------- | ----------- | ------------------------------ | ------------- | --------- |
-| Monday    | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Monday    | 09:00       | Company Standup                | GA            | 10 min    |
 | Monday    | After 14:00 | SNS Product Meeting            | SNS PM        | 15 min    |
-| Tuesday   | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Tuesday   | 09:00       | Company Standup                | GA            | 10 min    |
 | Tuesday   | After 10:30 | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min    |
 | Tuesday   | 14:00       | PDMO — All PMs Sync            | Ambrose       | 30–45 min |
-| Wednesday | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Wednesday | 09:00       | Company Standup                | GA            | 10 min    |
 | Wednesday | After 12:00 | Create Project Product Meeting | Ambrose (PM)  | 15 min    |
-| Thursday  | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Thursday  | 09:00       | Company Standup                | GA            | 10 min    |
 | Thursday  | After 11:00 | EMS Product Meeting            | EMS PM        | 15 min    |
-| Friday    | 09:00       | Company Standup                | Rotating      | 10 min    |
+| Friday    | 09:00       | Company Standup                | GA            | 10 min    |
 | Friday    | After 10:00 | FOCUST Product Meeting         | FOCUST PM     | 15 min    |
 | Friday    | TBC         | Technical Sharing Session      | Assigned team | 30 min    |
 
@@ -941,7 +941,7 @@ These sessions happen immediately after each team's regular weekly meeting. They
 
 ### 10.1 The Problem This Solves
 
-When a key person is unavailable, projects should not stall. When a team member leaves, knowledge should not leave with them. This section establishes the systems that make AIBOS Uganda resilient.
+When a key person is unavailable, projects should not stall. When a team member is not available, knowledge should not be inaccessible. This section establishes the systems that make AIBOS Uganda resilient.
 
 ### 10.2 The Shadow / Backup System
 
@@ -1610,15 +1610,14 @@ Meeting       Ambrose       BEGINS
 
 **Goal:** Prepare the system. Build awareness. Assign ownership.
 
-| Action                                                                | Owner          | Target Date |
-| --------------------------------------------------------------------- | -------------- | ----------- |
-| Confirm Ambrose as Management Owner                                   | Prakhar / Nate | Feb 23      |
-| Share and review this framework document with Martin and Joseph       | Ambrose        | Feb 27      |
-| Nominate QA Owners for each project                                   | Each team      | Mar 1       |
-| Set up KPI tracking sheet (Google Sheets)                             | Ambrose        | Mar 1       |
-| Confirm shadow assignments per project                                | Ambrose + PMs  | Mar 7       |
-| Brief full team on daily pulse and SLA expectations                   | Ambrose + PMs  | Mar 10–14   |
-| Set up Google Drive folder structure (Operations/, Projects/, Teams/) | Product team   | Mar 14      |
+| Action                                                                | Owner         | Target Date |
+| --------------------------------------------------------------------- | ------------- | ----------- |
+| Share and review this framework document                              | Ambrose       | Feb 27      |
+| Nominate QA Owners for each project                                   | Each team     | Mar 1       |
+| Set up KPI tracking sheet (Google Sheets)                             | Ambrose       | Mar 1       |
+| Confirm shadow assignments per project                                | Ambrose + PMs | Mar 7       |
+| Brief full team on daily pulse and SLA expectations                   | Ambrose + PMs | Mar 10–14   |
+| Set up Google Drive folder structure (Operations/, Projects/, Teams/) | Product team  | Mar 14      |
 
 ### 14.3 Phase 2 — Trial Operation (Mar 16 – Mar 31)
 
@@ -1838,16 +1837,16 @@ Tuesday | 14:00 EAT
 
 | Day | Meeting                        | Led By        | Duration             |
 | --- | ------------------------------ | ------------- | -------------------- |
-| Mon | Company Standup                | Rotating      | 10 min               |
+| Mon | Company Standup                | GA            | 10 min               |
 | Mon | SNS Product Meeting            | SNS PM        | 15 min (after 14:00) |
-| Tue | Company Standup                | Rotating      | 10 min               |
+| Tue | Company Standup                | GA            | 10 min               |
 | Tue | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min (after 10:30) |
 | Tue | PDMO All-PMs Sync              | Ambrose       | 30–45 min (14:00)    |
-| Wed | Company Standup                | Rotating      | 10 min               |
+| Wed | Company Standup                | GA            | 10 min               |
 | Wed | Create Project Product Meeting | Ambrose       | 15 min (after 12:00) |
-| Thu | Company Standup                | Rotating      | 10 min               |
+| Thu | Company Standup                | GA            | 10 min               |
 | Thu | EMS Product Meeting            | EMS PM        | 15 min (after 11:00) |
-| Fri | Company Standup                | Rotating      | 10 min               |
+| Fri | Company Standup                | GA            | 10 min               |
 | Fri | FOCUST Product Meeting         | FOCUST PM     | 15 min (after 10:00) |
 | Fri | Technical Sharing Session      | Assigned team | 30 min               |
 
