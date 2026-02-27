@@ -917,7 +917,7 @@ These sessions happen immediately after each team's regular weekly meeting. They
 **Rules for TSS:**
 
 - Presenters prepare adequately to fit within 30 minutes
-- Every attendee from other teams must ask at least one relevant question
+- Attendees from other teams are urged to ask questions to deepen cross-team learning
 - Key learning is documented within 24 hours of the session
 
 ### 9.6 Full Weekly Meeting Reference

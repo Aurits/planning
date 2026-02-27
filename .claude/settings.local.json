@@ -6,7 +6,8 @@
       "Bash(wkhtmltopdf:*)",
       "Bash(node:*)",
       "Bash(npm install:*)",
-      "Bash(md-to-pdf:*)"
+      "Bash(md-to-pdf:*)",
+      "Bash(pdfinfo:*)"
     ]
   }
 }
