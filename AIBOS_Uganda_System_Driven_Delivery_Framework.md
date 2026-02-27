@@ -2059,7 +2059,6 @@ NOTES / ACTIONS FROM THIS MEETING:
 ────────────────────────────────────────────────────────
 ```
 
-_Version: 2.0_
+_Version: 1.0_
 _Last Updated: February 2026_
-_Document Owner: Ambrose Alanda_
 _For questions or updates: B1 Channel_
