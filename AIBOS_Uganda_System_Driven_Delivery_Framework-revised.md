@@ -552,6 +552,7 @@ If any layer fails, the item goes back to the developer — it does not move for
 | EMS                 | To be nominated by team | To be nominated by team | 2–3 months       |
 | FOCUST              | To be nominated by team | To be nominated by team | 2–3 months       |
 | AI Phone Agent      | To be nominated by team | To be nominated by team | 2–3 months       |
+| SNS _(confirm)_     | To be confirmed by Management Owner | To be confirmed | 2–3 months  |
 
 > **Process:** Each team nominates their QA Owner by **March 1** (aligned with Phase 1 of the Implementation Roadmap). Criteria: not the person who wrote the feature being tested; understands the product well; has time allocated for QA duties alongside delivery work.
 
@@ -616,6 +617,9 @@ A Pull Request cannot be merged to staging unless the DoD checklist is confirmed
 
 ```
 Developer finishes feature on Dev
+         │
+         ▼
+PR raised → reviewed and approved (async — AI tool or Lead Dev)  [Layer 1]
          │
          ▼
 QA Owner reviews on Staging
@@ -928,6 +932,7 @@ Create Project    │ ON TRACK / WATCH / BLOCKED
 EMS               │ ON TRACK / WATCH / BLOCKED
 FOCUST            │ ON TRACK / WATCH / BLOCKED
 AI Phone Agent    │ ON TRACK / WATCH / BLOCKED
+SNS               │ ON TRACK / WATCH / BLOCKED  _(confirm active status)_
 
 ON TRACK = performing well   WATCH = minor risks   BLOCKED = needs attention
 
@@ -1079,7 +1084,7 @@ PMs report compliance with these rules during the PDMO meeting. Violations are e
 | **Frequency**  | Weekly (Friday)                                                                                                 |
 | **Duration**   | 30 minutes                                                                                                      |
 | **Purpose**    | Knowledge sharing, skill development, cross-team learning                                                       |
-| **Format**     | One team presents a technical topic; mandatory Q&A from other teams                                             |
+| **Format**     | One team presents a technical topic; other teams are encouraged to ask questions and deepen cross-team understanding |
 | **Output**     | Summary documented in Google Drive (Operations/TSS Summaries/) and posted in the team channel after the session |
 | **Connection** | TSS content feeds into external technical blogs (Medium)                                                        |
 
@@ -1096,7 +1101,7 @@ PMs report compliance with these rules during the PDMO meeting. Violations are e
 | Monday    | 09:00       | Company Standup                | GA            | 10 min    |
 | Monday    | After 14:00 | SNS Product Meeting            | SNS PM        | 15 min    |
 | Tuesday   | 09:00       | Company Standup                | GA            | 10 min    |
-| Tuesday   | After 10:30 | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min    |
+| Tuesday   | After 10:30 | AI Phone Agent Product Meeting | AI Phone Agent PM | 15 min |
 | Tuesday   | 14:00       | PDMO — All PMs Sync            | Management Owner | 30–45 min |
 | Wednesday | 09:00       | Company Standup                | GA               | 10 min    |
 | Wednesday | After 12:00 | Create Project Product Meeting | Management Owner (PM) | 15 min |
@@ -1121,9 +1126,9 @@ For every project, there is a **Primary** lead and a **Shadow**. The Shadow is n
 | Project        | Primary Lead    | Shadow / Backup | Shadow Responsibilities                                            |
 | -------------- | --------------- | --------------- | ------------------------------------------------------------------ |
 | Create Project | To be confirmed | To be confirmed | Attends prep meetings, CC'd on client comms, aware of all blockers |
-| EMS            | To be confirmed (Martin or Andrew) | To be confirmed | Same as above — one person must be designated Primary; the other becomes the Shadow |
+| EMS            | To be confirmed | To be confirmed | Same as above — one person must be designated Primary; the other becomes the Shadow |
 | FOCUST         | FOCUST PM       | To be confirmed | Same as above                                                      |
-| AI Phone Agent | Kevin           | To be confirmed | Same as above                                                      |
+| AI Phone Agent | AI Phone Agent PM | To be confirmed | Same as above                                                    |
 
 **Shadow Rules:**
 
@@ -1509,7 +1514,7 @@ Does it help the client understand what was built or confirmed?
 | ----------------------------------------- | ----------------------------------------------- |
 | QA bug logs and pre-delivery test results | Delivery confirmation and release notes         |
 | KPI dashboard scores per team             | Daily progress report (EOD)                     |
-| Peer review and code review comments      | Requirement confirmations (before work starts)  |
+| PR code review comments (AI tool / Lead Dev) | Requirement confirmations (before work starts)  |
 | Architecture Decision Records (ADRs)      | Staging environment link for acceptance testing |
 | Team capacity and Skills Map data         | Timeline and delivery schedule                  |
 | Internal escalation and risk records      | Delay notifications (proactive)                 |
@@ -1557,7 +1562,7 @@ At the end of each month, review the KPI dashboard and recognize:
 
 | Award                      | Criteria                                     | Recognition                                                |
 | -------------------------- | -------------------------------------------- | ---------------------------------------------------------- |
-| **Best Response Rate**     | Fewest 15-min response violations            | Shoutout + noted in monthly summary to Japan               |
+| **Best Response Rate**     | Fewest 15-min response violations            | Shoutout + noted in weekly PDMO update shared with Japan   |
 | **Cleanest Delivery**      | Lowest post-delivery bugs reported by client | Shoutout + featured in PDMO summary                        |
 | **Best QA Catch**          | Most pre-delivery bugs caught internally     | Shoutout — framed as "protected the team"                  |
 | **Proactive Communicator** | Most delay risks escalated early             | Shoutout — framed as "showed leadership"                   |
@@ -1615,7 +1620,7 @@ AIBOS Uganda recognizes extra-mile effort as a distinct and important category o
 | ----------------------------------------- | ----------------------------------------------------------------------------- |
 | Late-night deployment or emergency fix    | Named shoutout in next-day morning standup                                    |
 | Critical task completed over the weekend  | Acknowledged in the following Tuesday PDMO highlight                          |
-| Consistently staying late during a sprint | Noted in the monthly summary shared with Japan                                |
+| Consistently staying late during a sprint | Noted in the weekly PDMO update shared with Japan                             |
 | Going beyond scope to unblock a teammate  | PDMO callout framed as: _"This person made it possible for the team to ship"_ |
 
 > **Important balance:** Recognition of overtime is not an invitation to normalize it. The PM who acknowledges the effort should also ask: _"What process gap caused this crunch? How do we prevent it next time?"_ Overtime recognition and process improvement go hand in hand.
@@ -1717,6 +1722,10 @@ DEV environment
 (feature built and developer-tested)
     │
     ▼
+PR reviewed and approved
+(async — AI tool or Lead Dev)
+    │
+    ▼
 STAGING environment
 (QA Owner reviews; client validates specific features)
     │
@@ -1805,7 +1814,7 @@ Meeting       Management    BEGINS
 | What Goes Live                                                 | Notes                                 |
 | -------------------------------------------------------------- | ------------------------------------- |
 | Daily Pulse (standup → prep → sync → staging check → EOD report) | Full cadence from day one           |
-| KPI daily logging begins                                       | Each PM fills their row every evening |
+| KPI daily logging begins                                       | Each PM fills their row during State of Product Confirmation (17:00) |
 | 15-min response protocol                                       | All teams begin tracking              |
 | QA Owner role activated                                        | DoD checklist used for every delivery |
 | Weekly PDMO meeting running                                    | Tuesday 14:00 EAT                     |
@@ -1870,7 +1879,7 @@ The following areas are planned for AI tool integration (see Section 14.5 — Ph
 #### Tools in Scope (Phase 4 — May onwards)
 
 - **Claude Code** — AI coding assistant for development and automated test generation
-- **AI-assisted review** — Supplement to peer code review; identifies common issues quickly
+- **AI-assisted review** — Supplement to async PR review; identifies common issues quickly
 - **Automated KPI dashboarding** — Scripts or integrations that pull data from existing channels into the dashboard automatically
 
 > **Important:** Managers should be trained to use AI tools to review, guide, and audit — not to replace judgment. AI output is always reviewed by a human before any client-facing use.
@@ -2024,15 +2033,15 @@ Tuesday | 14:00 EAT
 | Day | Meeting                        | Led By        | Duration             | Owner |
 | --- | ------------------------------ | ------------- | -------------------- | ----- |
 | Mon | Company Standup                | GA            | 10 min               | System Framework |
-| Mon | C-3 PMO Check _(charter)_      | C-3 PMO (Joseph) | 15 min            | C-3 PMO |
+| Mon | C-3 PMO Check _(charter)_      | C-3 PMO Lead     | 15 min            | C-3 PMO |
 | Mon | SNS Product Meeting            | SNS PM        | 15 min (after 14:00) | System Framework |
 | Tue | Company Standup                | GA            | 10 min               | System Framework |
-| Tue | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min (after 10:30) | System Framework |
+| Tue | AI Phone Agent Product Meeting | AI Phone Agent PM | 15 min (after 10:30) | System Framework |
 | Tue | PDMO All-PMs Sync              | Management Owner | 30–45 min (14:00) | System Framework |
 | Wed | Company Standup                | GA            | 10 min               | System Framework |
 | Wed | Create Project Product Meeting | Management Owner (PM) | 15 min (after 12:00) | System Framework |
 | Thu | Company Standup                | GA            | 10 min               | System Framework |
-| Thu | C-3 PMO Check _(charter)_      | C-3 PMO (Joseph) | 15 min            | C-3 PMO |
+| Thu | C-3 PMO Check _(charter)_      | C-3 PMO Lead     | 15 min            | C-3 PMO |
 | Thu | EMS Product Meeting            | EMS PM        | 15 min (after 11:00) | System Framework |
 | Fri | Company Standup                | GA            | 10 min               | System Framework |
 | Fri | FOCUST Product Meeting         | FOCUST PM     | 15 min (after 10:00) | System Framework |
@@ -2392,5 +2401,5 @@ The following table maps all meetings across the three governance layers to show
 
 _Version: 2.0_
 _Last Updated: February 2026_
-_Document Owner: Ambrose Alanda_
+_Document Owner: Management Owner_
 _For questions or updates: B1 Channel_
