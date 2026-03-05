@@ -305,7 +305,7 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 | **Client Response Time** | First response within **15 minutes** during working hours                                   | Eliminates client anxiety about being ignored; builds trust          |
 | **Deadline Management**  | Escalate delay risks **immediately upon recognition** — never on the due date               | Gives the client and team time to adjust; prevents surprise failures |
 | **Requirements & Scope** | Confirm understanding **in writing** before starting work; MVP scope first                  | Eliminates work based on assumptions; prevents over-engineering      |
-| **Quality Assurance**    | Two-stage check: **developer self-test → QA Owner verification** before any client delivery | Stops preventable bugs from reaching the client                      |
+| **Quality Assurance**    | Four-layer QA filter: **PR review → smoke test → cross-team exploratory test → automated tests** before any client delivery. See Section 6 for full detail. | Stops preventable bugs from reaching the client                      |
 | **Meeting Management**   | **Pre-assign roles**; share decisions and next actions **same day**                         | Ensures meetings produce outcomes, not just discussions              |
 
 ### 3.3 SLA Monitoring
@@ -362,19 +362,19 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 
 **Rules:**
 
-- Each PM fills their project's row during the **evening retrospective**
+- Each PM fills their project's row during the **State of Product Confirmation** (17:00 — see Section 5.7)
 - Management Owner reviews the full summary tab every **Tuesday** in the PDMO meeting
 - Japan team (Prakhar/Nate) has view access at all times
 - An empty cell by EOD is flagged as a potential gap
 
 **Summary Tab Format:**
 
-| Project        | Response SLA | Delay Escalation | Pre-delivery Bugs | Client Bugs | On-time Rate | Overall                    |
-| -------------- | ------------ | ---------------- | ----------------- | ----------- | ------------ | -------------------------- |
-| Create Project |              |                  |                   |             |              | ON TRACK / WATCH / BLOCKED |
-| EMS            |              |                  |                   |             |              |                            |
-| FOCUST         |              |                  |                   |             |              |                            |
-| AI Phone Agent |              |                  |                   |             |              |                            |
+| Project        | Response SLA | Delay Escalation | Pre-delivery Bugs | Client Bugs | On-time Rate | Rework Rate | Estimation Accuracy | Overall                    |
+| -------------- | ------------ | ---------------- | ----------------- | ----------- | ------------ | ----------- | ------------------- | -------------------------- |
+| Create Project |              |                  |                   |             |              |             |                     | ON TRACK / WATCH / BLOCKED |
+| EMS            |              |                  |                   |             |              |             |                     |                            |
+| FOCUST         |              |                  |                   |             |              |             |                     |                            |
+| AI Phone Agent |              |                  |                   |             |              |             |                     |                            |
 
 ## Section 5 — Daily Operational System (The Daily Pulse)
 
@@ -418,9 +418,10 @@ EVENING LOOP
       │ PM confirms product status for the day
       │ Focus: what is done, what is at risk, what needs escalation
       ▼
-17:15 │ MANAGEMENT MEETING
+17:15 │ MANAGEMENT MEETING (only if unresolved blockers exist)
       │ Ambrose, Martin, Joseph
-      │ Focus: company-wide daily status, unresolved blockers, decisions
+      │ Focus: unresolved blockers requiring management decision
+      │ If no blockers: this slot is not used
       ▼
 17:30 │ EOD REPORT TO CHANNEL
       │ PM posts standardized daily report
@@ -518,9 +519,9 @@ CODE WRITTEN BY DEVELOPER
              ▼
 ┌─────────────────────────┐
 │  LAYER 4: AUTOMATED     │  Unit and integration tests run
-│  TESTS                  │  automatically on every code push.
-│  (Continuous)           │  Focus: regressions, edge cases
-│  Who: Development team  │
+│  TESTS                  │  automatically on every code push
+│  (Continuous)           │  and as part of every PR pipeline.
+│  Who: Development team  │  Focus: regressions, edge cases
 └────────────┬────────────┘
              │ All layers pass
              ▼
@@ -528,6 +529,8 @@ CODE WRITTEN BY DEVELOPER
 ```
 
 If any layer fails, the item goes back to the developer — it does not move forward.
+
+> **Note on Layer 4:** Automated tests run continuously — on every code push, as part of the PR pipeline, and on every merge to staging. They are not a final gate that runs once at the end; they run in parallel with other layers throughout the development cycle. The diagram above shows the logical order of approval, not the chronological order of execution.
 
 ### 6.3 QA Ownership
 
@@ -625,10 +628,16 @@ QA Owner reviews on Staging
   Return to        PM confirms with client (if applicable)
   Developer        │
                    ▼
+              Update GitHub Issue → "To Production" (C-3 field)
+                   │
+                   ▼
               Merge to Production
                    │
                    ▼
               Smoke test on Production
+                   │
+                   ▼
+              Update GitHub Issue → "Done" (C-3 field)
                    │
                    ▼
               EOD Report updated
@@ -895,7 +904,7 @@ Best regards,
 
 - Sent to the Daily Reports channel by **17:30 every working day**
 - CC'd to the client where the project involves direct client communication
-- PM is responsible for submission — QA Owner confirms accuracy of section 3
+- PM is responsible for submission — QA Owner confirms accuracy of the delivery status (section 1) and any quality-related risks or blockers (section 3)
 
 ### 8.2 Weekly PDMO Summary
 
@@ -953,24 +962,30 @@ Closing Note
 ### 9.1 Overview of the Meeting Ecosystem
 
 ```
-DAILY                WEEKLY               PERIODIC
-──────────────────────────────────────────────────────────
-Company Standup      Product Meeting      TSS (Technical
-(Mon–Fri, 09:00)     (per team, 15 min    Sharing Session)
-                     after weekly         (Weekly, Friday)
-Team Prep Meeting    team meeting)
-(Mon–Fri, 09:10)                          Exploratory
-                     PDMO Meeting         Cross-Team Testing
-PM–Mgmt Sync         (Tuesday 14:00 EAT)  (During PDMO)
-(09:20, as needed)
-                     Weekly Tech Check
-Staging Check        (per project)
-(16:30 daily)
-
-Management
-(17:15 daily)
-──────────────────────────────────────────────────────────
+DAILY                WEEKLY                        ON-DEMAND / CONDITIONAL
+──────────────────────────────────────────────────────────────────────────
+Company Standup      Product Meeting               Management Meeting
+(Mon–Fri, 09:00)     (per team, 15 min             (17:15 — only when
+                     after weekly team meeting)    unresolved blockers exist)
+Team Prep Meeting
+(Mon–Fri, 09:10)     PDMO Meeting
+                     (Tuesday 14:00 EAT)
+PM–Mgmt Sync
+(09:20, as needed)   TSS
+                     (Weekly, Friday)
+Staging Check
+(16:30 daily)        Cross-Team Exploratory Test
+                     (Before PDMO, results shared
+State of Product     at Tuesday PDMO meeting)
+(17:00 daily)
+                     C-3 PMO Check (C-3 owned)
+EOD Report           (Mon & Thu, 15 min)
+(17:30 daily)        Weekly Tech Check (C-2 owned)
+                     (per project, weekly)
+──────────────────────────────────────────────────────────────────────────
 ```
+
+> **Note:** C-3 PMO Check and Weekly Tech Check are charter-owned meetings included here for visibility. They are not run by the System Framework — see Section 17.5 for the full integration map.
 
 ### 9.2 Company Standup
 
@@ -1007,13 +1022,15 @@ These sessions happen immediately after each team's regular weekly meeting. They
 
 **Confirmed Schedule:**
 
-| Team           | Meeting Day | Time                     |
-| -------------- | ----------- | ------------------------ |
-| SNS            | Monday      | After 14:00 team meeting |
-| AI Phone Agent | Tuesday     | After 10:30 team meeting |
-| Create Project | Wednesday   | After 12:00 team meeting |
-| EMS            | Thursday    | After 11:00 team meeting |
-| FOCUST         | Friday      | After 10:00 team meeting |
+| Team              | Meeting Day | Time                     |
+| ----------------- | ----------- | ------------------------ |
+| SNS _(see note)_  | Monday      | After 14:00 team meeting |
+| AI Phone Agent    | Tuesday     | After 10:30 team meeting |
+| Create Project    | Wednesday   | After 12:00 team meeting |
+| EMS               | Thursday    | After 11:00 team meeting |
+| FOCUST            | Friday      | After 10:00 team meeting |
+
+> **Note:** SNS refers to the Social Networking System project team. Confirm the full project name and PM with the Management Owner if needed. All other project names match the KPI dashboard and QA Owner tables.
 
 > **Early validation:** The Create Project team's pilot session identified workflow bottlenecks and missed requirements, which were assigned and actioned immediately — directly demonstrating the value of this format.
 
@@ -1045,12 +1062,13 @@ PMs report compliance with these rules during the PDMO meeting. Violations are e
 **Agenda:**
 
 1. Welcome and purpose of the meeting
-2. Updates from team product meetings
-3. Review of templates and weekly checklist
-4. Cross-team dependencies and key issues
-5. Team Highlight — one shoutout for SLA/KPI excellence that week
-6. Under-the-Radar Contribution — nominated quiet wins
-7. Questions, actions, and next steps
+2. Updates from team product meetings (each PM: progress, risks, blockers)
+3. Cross-team exploratory testing results — PMs share findings from testing other teams' products before this meeting (Layer 3 QA, Section 6.2)
+4. Review of KPI dashboard — response violations, bug rates, rework rate, C-3 planning horizon compliance
+5. Cross-team dependencies and key issues requiring management decision
+6. Team Highlight — one shoutout for SLA/KPI excellence that week
+7. Under-the-Radar Contribution — nominated quiet wins
+8. Questions, actions, and next steps
 
 ### 9.5 Technical Sharing Sessions (TSS)
 
@@ -1088,6 +1106,8 @@ PMs report compliance with these rules during the PDMO meeting. Violations are e
 | Friday    | After 10:00 | FOCUST Product Meeting         | FOCUST PM     | 15 min    |
 | Friday    | TBC         | Technical Sharing Session      | Assigned team | 30 min    |
 
+> **GA** = designated standup facilitator (rotates or is a confirmed role — confirm with Management Owner). All standup sessions follow the same 3-question format regardless of who facilitates.
+
 ## Section 10 — Capacity Building & Continuity
 
 ### 10.1 The Problem This Solves
@@ -1101,7 +1121,7 @@ For every project, there is a **Primary** lead and a **Shadow**. The Shadow is n
 | Project        | Primary Lead    | Shadow / Backup | Shadow Responsibilities                                            |
 | -------------- | --------------- | --------------- | ------------------------------------------------------------------ |
 | Create Project | To be confirmed | To be confirmed | Attends prep meetings, CC'd on client comms, aware of all blockers |
-| EMS            | Martin / Andrew | To be confirmed | Same as above                                                      |
+| EMS            | To be confirmed (Martin or Andrew) | To be confirmed | Same as above — one person must be designated Primary; the other becomes the Shadow |
 | FOCUST         | FOCUST PM       | To be confirmed | Same as above                                                      |
 | AI Phone Agent | Kevin           | To be confirmed | Same as above                                                      |
 
@@ -1738,8 +1758,11 @@ Product team assesses:
 Product team briefs the implementation team
          │
          ▼
-G1 gate: Requirements documented
-         │
+G1 gate (Scope Lock): product.md + requirement-list + function-list completed
+         │           (See Section 11.2 for full G1 requirements)
+         ▼
+G2 gate (Design Gate): architecture, tech stack, ADRs reviewed and approved
+         │           Engineers do not write code until G2 is passed (C-2 rule)
          ▼
 Implementation begins
 ```
@@ -1987,30 +2010,35 @@ WEEKLY PDMO PRODUCT MANAGERS SYNC
 Tuesday | 14:00 EAT
 
 1. Welcome and purpose of the meeting
-2. Updates from team product meetings
-3. Review of templates and weekly checklist
-4. Cross-team dependencies and key issues
-5. Team Highlight — one shoutout for SLA/KPI excellence that week
-6. Under-the-Radar Contribution — nominated quiet wins
-7. Questions, actions, and next steps
+2. Updates from team product meetings (each PM: progress, risks, blockers)
+3. Cross-team exploratory testing results (Layer 3 QA — findings shared here)
+4. Review of KPI dashboard — response violations, bug rates, rework rate, C-3 compliance
+5. Cross-team dependencies and key issues requiring management decision
+6. Team Highlight — one shoutout for SLA/KPI excellence that week
+7. Under-the-Radar Contribution — nominated quiet wins
+8. Questions, actions, and next steps
 ```
 
 ### Appendix F — Meeting Schedule Reference
 
-| Day | Meeting                        | Led By        | Duration             |
-| --- | ------------------------------ | ------------- | -------------------- |
-| Mon | Company Standup                | GA            | 10 min               |
-| Mon | SNS Product Meeting            | SNS PM        | 15 min (after 14:00) |
-| Tue | Company Standup                | GA            | 10 min               |
-| Tue | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min (after 10:30) |
-| Tue | PDMO All-PMs Sync              | Management Owner      | 30–45 min (14:00)    |
-| Wed | Company Standup                | GA                    | 10 min               |
-| Wed | Create Project Product Meeting | Management Owner (PM) | 15 min (after 12:00) |
-| Thu | Company Standup                | GA            | 10 min               |
-| Thu | EMS Product Meeting            | EMS PM        | 15 min (after 11:00) |
-| Fri | Company Standup                | GA            | 10 min               |
-| Fri | FOCUST Product Meeting         | FOCUST PM     | 15 min (after 10:00) |
-| Fri | Technical Sharing Session      | Assigned team | 30 min               |
+| Day | Meeting                        | Led By        | Duration             | Owner |
+| --- | ------------------------------ | ------------- | -------------------- | ----- |
+| Mon | Company Standup                | GA            | 10 min               | System Framework |
+| Mon | C-3 PMO Check _(charter)_      | C-3 PMO (Joseph) | 15 min            | C-3 PMO |
+| Mon | SNS Product Meeting            | SNS PM        | 15 min (after 14:00) | System Framework |
+| Tue | Company Standup                | GA            | 10 min               | System Framework |
+| Tue | AI Phone Agent Product Meeting | Kevin (PM)    | 15 min (after 10:30) | System Framework |
+| Tue | PDMO All-PMs Sync              | Management Owner | 30–45 min (14:00) | System Framework |
+| Wed | Company Standup                | GA            | 10 min               | System Framework |
+| Wed | Create Project Product Meeting | Management Owner (PM) | 15 min (after 12:00) | System Framework |
+| Thu | Company Standup                | GA            | 10 min               | System Framework |
+| Thu | C-3 PMO Check _(charter)_      | C-3 PMO (Joseph) | 15 min            | C-3 PMO |
+| Thu | EMS Product Meeting            | EMS PM        | 15 min (after 11:00) | System Framework |
+| Fri | Company Standup                | GA            | 10 min               | System Framework |
+| Fri | FOCUST Product Meeting         | FOCUST PM     | 15 min (after 10:00) | System Framework |
+| Fri | Technical Sharing Session      | Assigned team | 30 min               | System Framework |
+
+> **C-3 PMO Check** is owned and run by C-3 PMO — not the System Framework. It is included here so PMs have a complete view of the week. PMs must have their GitHub Projects data current and C-3 planning horizon rules compliant before each check.
 
 ### Appendix G — C2-PdMO Document Reference Map
 
@@ -2216,6 +2244,15 @@ PLANNING CHECK
 □  Any blockers that need management attention?
 □  Shadow up to date on project status?
 
+GITHUB HYGIENE (C-3 PMO compliance)
+────────────────────────────────────────────────────────
+□  No overdue issues in GitHub Projects (Zero Overdue rule)
+□  No issues with zero status movement for 3+ days (No Stale Issues rule)
+□  All tasks for next week have specs, assignees, and deadlines defined (One Week Rule)
+□  All issues have correct status fields (In Progress / To be Reviewed / To Production / Done)
+□  All merged PRs this week had an Approval log from someone other than the author
+□  No PRs merged without a linked GitHub Issue (No Ticket, No Code)
+
 NOTES / ACTIONS FROM THIS MEETING:
 [Action] → [Owner] → [Target Date]
 ────────────────────────────────────────────────────────
@@ -2243,7 +2280,7 @@ This table is a living document. It captures the key initiatives arising from th
 | **Technology** | Shared VM / AI Tools Environment | Each team member using separate AI tools creates cost inconsistency and management overhead | Set up shared VM with centrally managed AI tool accounts per Section 15.3 | **Nice-to-do** | Q3 2026 (Phase 4) |
 | **People** | Skills-Based Hiring Criteria | No defined hiring criteria aligned to skills gaps identified in the Skills Map | Use Skills Map gap analysis to define role requirements for next hire | **Nice-to-do** | Q3 2026 |
 | **Communication** | TSS → External Blog Pipeline | TSS sessions produce knowledge that could build AIBOS Uganda's external presence but no publishing process exists | Assign TSS content coordinator; define publishing cadence on Medium or equivalent; first post by end of Q2 | **Nice-to-do** | Q2 2026 |
-| **Governance** | "No Ticket, No Code" Enforcement | C-3 PMO mandates all PRs linked to a GitHub issue; this is not yet formally referenced or enforced in Uganda operations | Add to Section 6 DoD checklist; enforce via PR template; audit in twice-weekly C-3 PMO check | **Must-do** | Q1 2026 (Mar) |
+| **Governance** | "No Ticket, No Code" Enforcement | C-3 PMO mandates all PRs linked to a GitHub issue; must be consistently practiced by all teams | Implemented: added to Section 6.4 DoD checklist and Appendix C. Ongoing: enforce via PR template and audit at twice-weekly C-3 PMO check | **Must-do** | Q1 2026 (Mar) — ongoing |
 
 ## Section 17 — PMO & PdMO Integration
 
