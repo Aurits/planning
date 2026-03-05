@@ -325,6 +325,10 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 | **Pre-delivery bugs found in QA**         | Number of bugs caught internally before reaching the client                   | Track trend downward |
 | **Post-delivery bugs reported by client** | Number of bugs the client found after delivery                                | 0 target             |
 | **On-time delivery rate**                 | Percentage of tasks delivered on or before the agreed deadline                | 100% target          |
+| **Rework rate** _(C-2 PdMO)_             | Percentage of work that had to be corrected due to insufficient requirements or design errors | Trend toward 0% |
+| **Estimation accuracy** _(C-2 PdMO)_     | Variance between planned and actual hours per Epic or Task; causes of divergence documented | Variance < 20% per Epic |
+
+> **C-2 PdMO note:** Rework Rate and Estimation Accuracy are mandated KPIs under the C-2 PdMO charter. They are reviewed at the weekly C-2 Architecture Review alongside the System Framework's PDMO meeting. The primary mission of C-2 is to bring Rework Rate close to zero.
 
 ### 4.2 Collection & Review Cadence
 
@@ -335,6 +339,8 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 | Pre-delivery bugs found in QA        | Daily (QA Owner logs)       | Weekly (PDMO meeting) |
 | Post-delivery bugs (client reported) | Daily (PM logs)             | Weekly (PDMO meeting) |
 | On-time delivery rate                | Weekly (PM confirms)        | Weekly (PDMO meeting) |
+| Rework rate (C-2)                    | Per Epic/Task completion    | C-2 Architecture Review + PDMO meeting |
+| Estimation accuracy (C-2)            | Per Epic/Task completion    | C-2 Architecture Review + PDMO meeting |
 
 ### 4.3 KPI Dashboard
 
@@ -351,6 +357,8 @@ Service Level Agreements (SLAs) define the minimum standards of behavior expecte
 | Pre-delivery bugs found in QA     |     |     |     |     |     |              | Log & trend |
 | Post-delivery bugs (client)       |     |     |     |     |     |              | 0           |
 | On-time delivery                  |     |     |     |     |     |              | 100%        |
+| Rework rate (C-2)                 |     |     |     |     |     |              | Trend → 0%  |
+| Estimation accuracy (C-2)         |     |     |     |     |     |              | < 20% variance |
 
 **Rules:**
 
@@ -434,8 +442,9 @@ EVENING LOOP
 
 - Maximum 10 minutes
 - Led by the Project PM
+- Task source: the GitHub Projects board — PMs pull today's priorities directly from the board, not from memory or a separate list
 - Technical focus: task ownership, dependencies, environment status
-- Output: every team member knows their exact task for the day
+- Output: every team member knows their exact task for the day, with the corresponding GitHub Issue as the work record
 
 ### 5.5 PM → Management Owner Sync
 
@@ -547,6 +556,19 @@ If any layer fails, the item goes back to the developer — it does not move for
 
 > **See Appendix H for the QA Owner Appointment Form.**
 
+**GitHub Issue Status Alignment (C-3 PMO fields):**
+
+As work moves through QA layers, the corresponding GitHub Issue status must be updated:
+
+| Stage | GitHub Issue Status |
+| ----- | ------------------- |
+| Work in progress | In Progress |
+| PR raised and awaiting review | To be Reviewed |
+| QA Owner sign-off complete; ready for production | To Production |
+| Deployed and confirmed on production | Done |
+
+These status fields are mandatory per C-3 PMO requirements. An issue with no status update for 3+ days is flagged as stale at the twice-weekly PMO check.
+
 **Rotation Policy:**
 
 - QA Owner rotates every 2–3 months
@@ -562,11 +584,14 @@ DEFINITION OF DONE — CHECKLIST
 ─────────────────────────────────────────────────────
 □  GitHub Issue exists for this task (No Ticket, No Code — C-3 PMO rule)
 □  Requirements confirmed in writing before work started (C-2 PdMO gate)
+□  Design Gate (G2) passed before any code was written (C-2 PdMO gate)
 □  Developer has self-tested the feature
 □  PR reviewed and approved before merge (async — AI tool or Lead Dev)
+□  GitHub Issue status updated to "To be Reviewed" when PR is raised (C-3 field)
 □  Feature works as expected in the staging environment
 □  No obvious bugs or broken flows in staging
 □  QA Owner has reviewed and signed off
+□  GitHub Issue status updated to "To Production" after QA sign-off (C-3 field)
 □  Documentation updated if required (in /docs)
 □  Client notified if delivery is imminent
 ─────────────────────────────────────────────────────
@@ -1006,6 +1031,17 @@ These sessions happen immediately after each team's regular weekly meeting. They
 | **Attendees**  | All Product Managers + Management Owner |
 | **Advisors**   | Prakhar and/or Nate (as available) |
 
+**C-3 Planning Horizon Compliance (PMs must maintain at all times):**
+
+| Rule | Requirement |
+| ---- | ----------- |
+| **One Week Rule** | All tasks starting next week must have specifications, assignees, and deadlines fully defined in GitHub Projects before the week begins |
+| **One Month Rule** | Milestones and Epics for the coming month must be created and queued — never create a state where there is "nothing to do tomorrow" |
+| **Zero Overdue** | Overdue tickets must always be zero — any overdue issue must be split, re-scoped, or escalated immediately |
+| **No Stale Issues** | Any GitHub issue with no status movement for 3 or more days must be split or marked as blocked |
+
+PMs report compliance with these rules during the PDMO meeting. Violations are escalated to C-3 PMO at the twice-weekly check.
+
 **Agenda:**
 
 1. Welcome and purpose of the meeting
@@ -1267,6 +1303,8 @@ Documentation is not a chore — it is the mechanism by which individual knowled
 ### 11.2 C2-PdMO Templates
 
 The C2-PdMO (Product Design & Management Office) framework provides the standard document lifecycle for all projects.
+
+> **Architecture Governance Rule (C-2 PdMO mandate):** No technology outside the organisation's approved standard stack (e.g., Next.js, Supabase) may be adopted without a formal RFC document and explicit C-2 PdMO approval. Technology choices based on personal preference or temporary trends are not permitted. Any team proposing a non-standard technology must submit an ADR with alternative comparison before adoption. C-2 has authority to reject the adoption and require a rewrite if this rule is not followed.
 
 **Document Lifecycle:**
 
@@ -1710,6 +1748,8 @@ Implementation begins
 
 ### 14.1 Overview
 
+> **C-2 PdMO note:** All phase timelines in this roadmap are subject to C-2 PdMO feasibility review. If C-2 judges any milestone technically unfeasible or identifies technical debt that exceeds acceptable limits, the affected phase timeline will be revised. No phase is locked until C-2 has confirmed feasibility.
+
 ```
 FEB 23        FEB 27        MAR 16          APR 1–30        MAY
 ────────────────────────────────────────────────────────────────────
@@ -1911,13 +1951,17 @@ Best regards,
 ```
 DEFINITION OF DONE
 ──────────────────────────────────────────────
-□  Requirements confirmed in writing before work started
+□  GitHub Issue exists for this task (C-3: No Ticket, No Code)
+□  Requirements confirmed in writing before work started (C-2 gate)
+□  Design Gate (G2) passed before any code was written (C-2 gate)
 □  Developer has self-tested the feature
 □  PR reviewed and approved before merge (async — AI tool or Lead Dev)
+□  GitHub Issue status → "To be Reviewed" when PR raised (C-3 field)
 □  Feature works correctly on staging
 □  No obvious bugs or broken flows in staging
 □  QA Owner has reviewed and signed off
-□  Documentation updated if required
+□  GitHub Issue status → "To Production" after QA sign-off (C-3 field)
+□  Documentation updated if required (in /docs)
 □  Client notified if delivery is imminent
 ──────────────────────────────────────────────
 QA Owner sign-off: ___________________
@@ -1933,6 +1977,8 @@ Date: ___________________
 | Pre-delivery bugs found in QA        |     |     |     |     |     |              | Log trend |
 | Post-delivery bugs (client reported) |     |     |     |     |     |              | 0         |
 | On-time delivery                     |     |     |     |     |     |              | 100%      |
+| Rework rate (C-2)                    |     |     |     |     |     |              | Trend → 0% |
+| Estimation accuracy (C-2)            |     |     |     |     |     |              | < 20% variance |
 
 ### Appendix E — Weekly PDMO Agenda Template
 
@@ -2240,13 +2286,13 @@ AIBOS Uganda operates within three complementary governance layers. Each has a d
 
 | Responsibility | C-2 PdMO | C-3 PMO | System Framework | Notes |
 | -------------- | --------- | ------- | ---------------- | ----- |
-| Architecture decisions and tech stack governance | **Owns** | — | Defers | C-2 has authority to reject non-standard tech |
+| Architecture decisions and tech stack governance | **Owns** | — | Submits RFC for non-standard choices | No technology outside the approved stack may be adopted without a formal RFC and C-2 approval. Section 11.2 governs this gate. |
 | Architecture Decision Records (ADRs) | **Owns** | — | References | ADRs stored in GitHub meta repository; System Framework references them in Section 11.2 |
 | Requirement traceability (REQ→FUNC→COMP) | **Owns** | — | Aligns | System Framework's DoD checklist includes "requirements confirmed in writing" as a gate |
 | Design Gate approval (before epic start) | **Owns** | Signs off | Aligns | Engineers cannot write code until both C-3 and PdMO sign off |
-| Feasibility audit and schedule veto | **Owns** | — | Defers | If C-2 judges a schedule technically unfeasible, the System Framework timeline adjusts |
+| Feasibility audit and schedule veto | **Owns** | — | Adjusts to C-2 ruling | If C-2 judges a schedule technically unfeasible or orders a rewrite, the Implementation Roadmap (Section 14) is revised accordingly. No phase timeline is final until C-2 has reviewed feasibility. |
 | Weekly Architecture Review (15 min, squad) | **Owns** | — | — | Separate from PDMO; System Framework does not duplicate this |
-| GitHub Projects — task and issue master record | — | **Owns** | Defers | GitHub Projects is the sole tool for task status per C-3 mandate |
+| GitHub Projects — task and issue master record | — | **Owns** | Maintains fields and uses as task source | PMs maintain GitHub Projects with required C-3 fields (Type, Status, Start Date, End Date, Work Hours) and use the board as the source for daily task planning. See Section 5.4. |
 | "No Ticket, No Code" enforcement | — | **Owns** | References | System Framework DoD checklist includes this as a required gate; Section 6.4 updated accordingly |
 | PR review approval before merge | — | **Owns** | Executes | C-3 mandates this; System Framework's Layer 1 QA (Section 6.2) is the execution mechanism via AI tool + Lead Dev review |
 | Daily SitRep submission | — | **Owns format** | **Executes** | System Framework's EOD Report (Section 8.1) is the Uganda-level SitRep; one report satisfies both |
