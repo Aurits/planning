@@ -401,9 +401,9 @@ WORK DAY
 
 EVENING LOOP
 ─────────────────────────────────────────────────────────────────────
-16:30 │ TEAM PEER REVIEWS (30 min)
-      │ Led by PM. All team members.
-      │ Focus: review staging environment, cross-check each other's work
+16:30 │ STAGING CHECK (30 min)
+      │ Led by QA Owner. All team members.
+      │ Focus: verify own work in staging environment, smoke test checklist
       │ QA Owner runs smoke test checklist
       ▼
 17:00 │ STATE OF PRODUCT CONFIRMATION
@@ -446,7 +446,7 @@ EVENING LOOP
 - Management Owner makes immediate decisions on anything critical
 - Non-urgent items go to the PDMO weekly meeting — this sync is not a status update
 
-### 5.6 Evening Peer Review / Staging Check
+### 5.6 Evening Staging Check
 
 > **Objective:** Catch integration issues, regression bugs, and environment failures before they enter the EOD report or reach the client.
 
@@ -939,7 +939,7 @@ Team Prep Meeting    team meeting)
 PM–Mgmt Sync         (Tuesday 14:00 EAT)  (During PDMO)
 (09:20, as needed)
                      Weekly Tech Check
-Peer Review          (per project)
+Staging Check        (per project)
 (16:30 daily)
 
 Management
@@ -1115,7 +1115,7 @@ TSS sessions should actively build team capacity, not just share information pas
 | Phase         | Duration | Description                                                                     |
 | ------------- | -------- | ------------------------------------------------------------------------------- |
 | Presentation  | 20 min   | Team presents a technical topic, decision, or implementation                    |
-| Q&A           | 8 min    | Other teams ask questions — minimum 1 question per attendee                     |
+| Q&A           | 8 min    | Other teams ask questions to deepen cross-team understanding                    |
 | Documentation | 2 min    | Key points saved to Google Drive and posted in the team channel within 24 hours |
 
 **Cross-pollination rule:** The Shadow for a project should lead the Q&A for that project's TSS presentation — they have the most to learn and the most responsibility to stay current.
@@ -1420,7 +1420,7 @@ Not all documentation is meant for the client. A clear, consistent boundary betw
 | ----------------------------- | ----------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | **Client-Facing**             | Always shared     | Created specifically for client communication              | Daily progress reports, release notes, delivery confirmations, requirement confirmations |
 | **Client-Accessible**         | Shared on request | Available to the client if asked, but not proactively sent | Approved technical specs, staging links, test plans, deployment schedules                |
-| **Internal — Project**        | Internal only     | Used by the project team for execution                     | ADRs, architecture docs, peer review comments, bug trackers, QA logs, KPI logs           |
+| **Internal — Project**        | Internal only     | Used by the project team for execution                     | ADRs, architecture docs, PR code review comments, bug trackers, QA logs, KPI logs        |
 | **Internal — Organizational** | Internal only     | Organizational operations, not project-specific            | Team performance data, capacity plans, KPI dashboard scores, team health discussions     |
 | **Restricted**                | Leadership only   | Sensitive to business or personnel                         | Personnel matters, financial discussions, strategic decisions not yet finalized          |
 
@@ -1741,7 +1741,7 @@ Meeting       Management    BEGINS
 
 | What Goes Live                                                 | Notes                                 |
 | -------------------------------------------------------------- | ------------------------------------- |
-| Daily Pulse (standup → prep → sync → peer review → EOD report) | Full cadence from day one             |
+| Daily Pulse (standup → prep → sync → staging check → EOD report) | Full cadence from day one           |
 | KPI daily logging begins                                       | Each PM fills their row every evening |
 | 15-min response protocol                                       | All teams begin tracking              |
 | QA Owner role activated                                        | DoD checklist used for every delivery |
@@ -1913,7 +1913,7 @@ DEFINITION OF DONE
 ──────────────────────────────────────────────
 □  Requirements confirmed in writing before work started
 □  Developer has self-tested the feature
-□  Code has been peer-reviewed
+□  PR reviewed and approved before merge (async — AI tool or Lead Dev)
 □  Feature works correctly on staging
 □  No obvious bugs or broken flows in staging
 □  QA Owner has reviewed and signed off
