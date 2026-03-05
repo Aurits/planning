@@ -1,0 +1,275 @@
+C-2. PdMO Charter
+Corporate Function Group: Section 2 Product Design & Management Office
+
+
+
+1. Mission Statement
+To eliminate inconsistencies between technology and business, embedding the "correct answer for the customer" into engineering. To define and audit not only the technical "How" but also the business "What" and "Why," preventing deliverables from diverging from customer requirements.
+2. Core Responsibilities
+Architecture Governance
+Strict Standardization: Authority to reject the adoption of any technology outside the organization's standard stack (e.g., Next.js, Supabase) unless a clear reason and alternative comparison (RFC) are provided.
+Optimization of Tech Selection: Eliminate choices based on temporary trends or personal preferences, prioritizing long-term operational costs and scalability.
+Traceability
+Mandatory Requirement Linking: Require that all implemented features and designs be explicitly linked to specific business requirements (in the customer's words). "Developing for the sake of developing" is strictly prohibited.
+Feasibility & Quality Audit
+Veto Power: Authority to order a rewrite (plan revision) if the schedule presented by C-3 (PMO) is judged to be technically unfeasible.
+Debt Management: Authority to prioritize debt repayment tasks in the schedule if technical debt exceeds acceptable limits.
+3. Meeting Cadence
+Meeting Name
+Frequency / Duration
+Purpose & Rules
+Weekly Architecture Review
+Weekly 15 min
+
+(1on1 / Squad)
+Purpose: Health check of design direction and early detection of technical blockers.
+
+**Rules**: No detailed code reviews; focus strictly on "Design Direction" and "Validity of Estimation."
+Design Gate (Approval)
+Per Milestone
+
+(Before Epic Start)
+Purpose: Design approval before starting an Epic.
+
+**Rules**: Engineers must not write code until a Sign-off is issued by C-3 (PMO) and PdMO.
+
+4. Reporting Protocol
+To visualize project health, reporting using the following formats is mandatory.
+A. Weekly Tech Check Format
+A progress and risk report at the Epic level, submitted during the weekly review.
+
+[Template] Weekly Tech Check
+
+Target Epic: [Epic Name/ID] Tech Lead: [Name]
+
+Design Integrity Indicator: 🟢 On Track: Proceeding as designed. 🟡 Needs Modification: Design change required (due to requirements or implementation reasons). 🔴 Critical Blocker: Implementation within the period is impossible / Technical feasibility is significantly low.
+
+Change Requests / Blockers:
+
+Client-driven: [Content and Scope of Impact]
+Implementation/Tech-driven: [Content and Technical Background]
+
+Related ADRs: NOTE, ADRs are stored in the GitHub meta repository. [ADR-00X: Link to Title]
+B. Design Approval Request
+The submission package required to undergo the Epic start examination (Design Gate). The following artifacts must be submitted as a set.
+
+Design Approval Cover (Overview)
+Requirement List (Customer Requirements)
+Function List (Functional Specifications)
+Architecture/Design Doc (Design Document)
+5. Key Metrics & Artifacts
+Key Performance Indicators (KPIs)
+Rework Rate: The percentage of correction work caused by insufficient requirement definition or design errors. The primary mission is to bring this close to zero.
+Estimation Accuracy: The difference between planned and actuals per Epic/Task. Evaluate whether the causes of divergence are analyzed and reflected in the next estimation.
+Key Artifacts
+Architecture Decision Record (ADR): A design decision record including subdomain analysis, technology selection, cost estimation, and comparison of alternatives.
+Approval Request Package: A complete set of design approval applications based on the prescribed format.
+6. Critical Success Factor
+"Clarify and Achieve Requirements"
+Do not create documents for the sake of creating documents; focus on "consensus building to prevent rework."
+Derive a realistic and sustainable design that matches the functions, timeline, and costs required by the client.
+
+
+Appendix: Design Approval Request Template
+Requirement List Purpose: To fix "Who," "What," and "Why" is required, preventing "he said, she said" disputes.
+
+ID
+Date
+Requester
+User Voice (Requirement)
+Is Optional?
+Original Source
+Func ID
+REQ-001
+202X/11/01
+Sales Mgr A
+I want users to be able to register daily reports from smartphones because there is high demand for input while out of office.
+Y
+[Teams]
+FUNC-01, 02
+REQ-002
+202X/11/05
+CS Rep B
+I want to cite past history when registering to reduce the effort of input.
+N
+[Meeting Rec Link]
+FUNC-03
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Directive: Corporate Function Group Section 3 (Project Management Office)
+To: Joseph (Head of C-3)
+From: CEO, AIBOS
+Subject: C-3 Charter Definition & Action Requirements
+
+You are hereby appointed as the Head of Corporate Function Group Section 3 (C-3). Based on the "Charter" defined below, you are to ensure project transparency. Additionally, execute the "Action Requirements" below in preparation for the B-1 Board report next Monday.
+
+
+Part 1: C-3 PMO Charter
+1. Mission Statement
+Establish "complete transparency" in project execution status and enforce process discipline. Eliminate subjectivity and wishful thinking from the field, and provide the management layer (CSB) with a "Single Source of Truth" based on quantitative data.
+2. Core Responsibilities
+Data Integrity & Roadmap
+
+GitHub Projects as the Master Record: GitHub Projects shall be the sole tool for status management. Tasks not existing on GitHub will not be recognized for evaluation.
+Securing the "Future Runway": Monitor that tasks are always queued for the immediate week (detailed design completed) and the upcoming month (milestones defined).
+
+Process Enforcement
+
+"No Ticket, No Code": All Pull Requests (PRs) must be linked to an Issue. Creating working branches without an existing Issue is prohibited.
+Quality Assurance: Merging without PR review passage (Approval) is prohibited to ensure a minimum baseline of code quality.
+
+Tactical Reporting
+
+Daily SitRep: Collect and list the health status of all projects.
+Predictive Detection: Detect signs of "progress delays" or "resource shortages" and escalate them to the Board before issues become fatal.
+3. Meeting Cadence [Updated]
+Meeting Name
+Frequency & Time
+Purpose and Rules
+Twice a week
+Monday and Thursday, 15 mins (Strict)
+Purpose: Check SitRep, share daily blockers, identify PR stagnation. 
+Escalation whenever necessary.
+
+**Rules:** No discussion. Reports must follow the prescribed format.
+
+4. Reporting Protocol
+Each Project PM must submit a Daily SitRep as a single Markdown file (.md) before the start of the Daily Check. The PMO will distribute auto-generation tools (using gh commands, etc.) to PMs; manual creation of reports is prohibited.
+Project Status - {PROJECT_NAME} 2025-12-03 - Google スプレッドシート
+
+【Daily SitRep Format (.md)】
+A. Epic Roadmap
+Status of upcoming major milestones and Epics.
+
+Epic Title
+Assignees
+Start Date
+Target Date
+Completed Sub-issues
+Open Sub-issues
+Remaining Hours
+Link
+Status / Delay Reason
+[Epic Name]
+[Names]
+YYYY-MM-DD
+YYYY-MM-DD
+[Count]
+[Count]
+[Hours]
+[Link]
+{Manual entry}
+
+B. Issue Health Check
+Audit results for data deficiencies via automated monitoring. The goal is "0" for all items.
+
+Health Metric
+Violation Count
+Flagged Issues (Links)
+Corrective Action
+Missing Assignee
+
+
+
+
+{Manual entry}
+Missing Status
+
+
+
+
+{Manual entry}
+Missing Start Date
+
+
+
+
+{Manual entry}
+Missing Target Date
+
+
+
+
+{Manual entry}
+Missing Work Hours
+
+
+
+
+{Manual entry}
+Overdue (Target Exceeded)
+
+
+
+
+{Manual entry}
+Orphaned (No Parent/Epic)
+
+
+
+
+{Manual entry}
+
+C. Resource Load
+Who is doing what (Workload status).
+
+GitHub ID
+Active Issue Count
+Notes
+@User_A
+
+
+{Manual entry}
+@User_B
+
+
+{Manual entry}
+
+5. Criteria & Governance
+The PMO shall audit projects using the following criteria. If criteria are not met, corrective actions must be taken.
+
+Ticket Hygiene
+
+Zero Overdue: Overdue tickets must always be zero.
+No Stale Issues: Issues with no status movement for 3 days or more must be split or reported as blocked.
+
+Planning Horizon
+
+One Week Rule: Tickets to be started the following week must have specifications, assignees, and deadlines fully defined.
+One Month Rule: Milestones and large-scale tickets (Epics) for one month out must be raised. Never create a state where there is "nothing to do tomorrow."
+
+Traceability
+
+Linkage: All PRs must be linked to an Issue. (Rogue commits without Issues are prohibited).
+Review: All merged PRs must have an Approval log from someone other than the author.
+
+
+Part 2: Immediate Action Requirements
+Complete the following tasks by this week to prepare for the regular report at the B-1 Board (Steering Board) next Monday.
+1. GitHub Environment Setup
+Complete the following GitHub Project Fields settings for all projects within this week. These are mandatory requirements for the automation scripts to function building correctly.
+
+Title / Assignees: System Default
+Type: (Task,Epic,Slice)
+Is Epic : (Yes/No)
+Status: Single Select (Todo, In Progress, To be Reviewed, To Production, Done, On Hold)
+Start Date: Date field
+End Date: Date field
+Work Hours: Number field
+2. Structure Reorganization
+Define the relationship between "Epics" and "Sub-issues" on GitHub.
+
+All Open Issues must be linked as child issues to an Epic.
+Eradicate "Orphaned" issues that stand alone.
+3. Tool Distribution (Automation)
+Create and distribute the automation script (collection of gh commands) for SitRep creation to each PM.
+
+Requirement: Executing the script must generate a .md file containing the formats (A, B, C) described above.
+Operation: PMs should only need to fill in the blanks (delay reasons or actions) in the generated Markdown file to submit it.
+4. First Reporting
+Next Monday will be the first reporting session.
+It is not necessary for all numbers to be perfect by Monday. Implement what is possible and iterate.
+
