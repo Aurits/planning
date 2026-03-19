@@ -10,7 +10,8 @@
       "Bash(sudo apt-get:*)",
       "Bash(pip install:*)",
       "Bash(wkhtmltopdf --version)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(wait)"
     ]
   }
 }

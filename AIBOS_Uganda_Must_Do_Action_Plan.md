@@ -97,7 +97,7 @@ header-includes: |
 | # | Action | Category | Owner | Deadline |
 | - | ------ | -------- | ----- | -------- |
 | 1 | PMO & PdMO Integration Mapping | Governance | Management Owner | March 2026 |
-| 2 | Async PR Review — AI Code Review Tool | QA | Tech Lead + Management Owner | March 2026 |
+| 2 | Async PR Review — AI Code Review Tool | QA | Product Manager + Management Owner | March 2026 |
 | 3 | QA Owner Nomination | QA | Each team PM | March 2026 |
 | 4 | Google Drive Folder Structure | Operations | Product team | March 2026 |
 | 5 | Shadow / Backup Assignments | Operations | Management Owner + PMs | March 2026 |
@@ -105,8 +105,8 @@ header-includes: |
 | 7 | Designated Weekly Communicator (DWC) | Communication | Each team PM | March 2026 |
 | 8 | Split EOD Report — Client vs. Internal | Reporting | Each team PM | March 2026 |
 | 9 | E2E Testing Framework — Playwright | QA | Development team | April–May 2026 |
-| 10 | AI Code Review Tool — Selection & Trial | Technology | Tech Lead | March 2026 |
-| 11 | No Ticket, No Code — Enforcement | Governance | All PMs + Tech Lead | March 2026 — ongoing |
+| 10 | AI Code Review Tool — Selection & Trial | Technology | Product Manager | March 2026 |
+| 11 | No Ticket, No Code — Enforcement | Governance | All PMs + Product Manager | March 2026 — ongoing |
 
 ---
 
@@ -132,7 +132,7 @@ header-includes: |
 
 ## 2. Async PR Review — Transition from Peer Review Meeting
 
-**What it is:** Layer 1 of the QA system is a code review that happens on every Pull Request before it is merged. The previous approach was a daily meeting where the team reviewed code together. This is being replaced with an asynchronous model — an AI tool reviews every routine PR automatically, and the Lead Developer reviews major PRs manually.
+**What it is:** Layer 1 of the QA system is a code review that happens on every Pull Request before it is merged. The previous approach was a daily meeting where the team reviewed code together. This is being replaced with an asynchronous model — an AI tool reviews every routine PR automatically, and the Product Manager reviews major PRs manually.
 
 **Why it matters:** A daily code review meeting is expensive in team time and tends to become a formality over time. An async AI review is available on every PR, is consistent, and costs a fraction of the team's time.
 
@@ -140,10 +140,10 @@ header-includes: |
 
 - Select and subscribe to an AI code review tool (candidates: CodeRabbit, GitHub Copilot code review, Graphite) — trial one tool for one sprint before committing
 - Configure the tool to run automatically on every Pull Request in all project repositories
-- Confirm that the Lead Developer will manually review any PR that meets the "major PR" criteria (see Item 10 / Section 6.2a of the main framework)
+- Confirm that the Product Manager will manually review any PR that meets the "major PR" criteria (see Item 10 / Section 6.2a of the main framework)
 - The 16:30 slot is no longer a code review meeting — it is the async QA Owner staging check only (see Item 3)
 
-**Owner:** Tech Lead + Management Owner
+**Owner:** Product Manager + Management Owner
 **Deadline:** March 2026
 
 > **Full reference:** Sections 6.2, 6.2a, 6.8 of the System Framework
@@ -416,7 +416,7 @@ INTERNAL SITREP — [Project] — [Day, Date]
 | Integration | Does it connect cleanly to GitHub PRs? |
 | Cost | Monthly subscription vs. value delivered |
 
-**Owner:** Tech Lead (evaluation) + Management Owner (final decision)
+**Owner:** Product Manager (evaluation) + Management Owner (final decision)
 **Deadline:** March 2026
 
 > **Full reference:** Section 6.8 of the System Framework
@@ -448,7 +448,7 @@ INTERNAL SITREP — [Project] — [Day, Date]
      NO  → confirm with PM before starting
 ```
 
-**Owner:** All developers + PMs (audit) + Tech Lead (enforcement)
+**Owner:** All Engineers + PMs (audit) + Product Manager (enforcement)
 **Deadline:** March 2026 — ongoing
 
 > **Full reference:** Sections 6.4, 17.3 of the System Framework

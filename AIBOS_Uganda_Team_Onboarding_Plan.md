@@ -101,6 +101,14 @@ header-includes: |
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      // pandoc renders ```mermaid fenced blocks as <pre class="mermaid"><code>...</code></pre>
+      // Convert these to <div class="mermaid"> so Mermaid.js can find and render them.
+      document.querySelectorAll('pre.mermaid code').forEach(function (el) {
+        var div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = el.textContent;
+        el.closest('pre').replaceWith(div);
+      });
       mermaid.initialize({
         startOnLoad: true, theme: 'base',
         themeVariables: {
@@ -130,7 +138,7 @@ Each person's daily reality is a specific slice of the framework. Onboarding mus
 
 The team has six roles. QA Owner and Shadow are responsibilities carried by existing team members — they are not separate people.
 
-<div class="mermaid">
+```mermaid
 flowchart TD
     A["AIBOS Uganda Team"]
     A --> B["Leadership\nNate · Prakhar\nDepth: Awareness"]
@@ -141,7 +149,7 @@ flowchart TD
     F --> G["QA Owner\nResponsibility held by an Engineer\nDepth: Role-specific"]
     F --> H["Shadow\nResponsibility held by an Engineer\nDepth: Continuity"]
     A --> I["New Hires\nDepth: Guided"]
-</div>
+```
 
 | Role | What They Need to Understand | Session | Depth |
 |---|---|---|---|
@@ -196,7 +204,7 @@ No single method works for every role. Use a primary method to get the knowledge
 
 Nine phases. Each phase covers one role group. No time constraints are embedded — the pace is determined by readiness, not the calendar.
 
-<div class="mermaid">
+```mermaid
 flowchart TD
     P0["Phase 0 — COMPLETE\nPREPARATION\nManagement Owner only\nPrepare materials · Select pilot team"]
     P1["Phase 1 — COMPLETE\nLEADERSHIP ALIGNMENT\nNate · Prakhar\n30 min · Awareness + sign-off"]
@@ -213,7 +221,7 @@ flowchart TD
 
     style P0 fill:#ebfbee,stroke:#2f9e44,color:#1a1f36
     style P1 fill:#ebfbee,stroke:#2f9e44,color:#1a1f36
-</div>
+```
 
 ---
 
@@ -566,7 +574,7 @@ The Shadow Handover Template is stored in Google Drive under Operations/Template
 
 Once all phases are complete, this is what the system looks like at full capacity.
 
-<div class="mermaid">
+```mermaid
 sequenceDiagram
     participant PM as Project Manager
     participant PdM as Product Manager
@@ -597,7 +605,7 @@ sequenceDiagram
     Note over PM,PdM: 17:30 — EOD Reports
     PM->>PM: Sends Client EOD to client channel
     PdM->>PdM: Sends Internal SitRep to team channel
-</div>
+```
 
 ### Weekly Pattern
 
@@ -755,7 +763,7 @@ One card per role. Each card shows daily actions and the key rules to remember.
 
 Every new team member follows this sequence regardless of when they join.
 
-<div class="mermaid">
+```mermaid
 flowchart TD
     NH["New hire joins"]
     D1["Day 1\nShadow mentor assigned\nRole 1-pager received\nAdded to relevant channels"]
@@ -766,7 +774,7 @@ flowchart TD
     W3["Week 3 onward\nOperating independently\nMentor available for questions\nProgress reviewed at next PDMO"]
 
     NH --> D1 --> D2 --> D3 --> W1 --> W2 --> W3
-</div>
+```
 
 > **Rule:** No new team member starts client-facing work without completing this sequence. The Shadow mentor confirms readiness to the Project Manager before the new hire operates independently.
 

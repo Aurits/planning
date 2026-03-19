@@ -552,8 +552,8 @@ CODE WRITTEN BY DEVELOPER
 ┌─────────────────────────┐
 │  LAYER 1: PR REVIEW     │  Every Pull Request reviewed before merge.
 │  (Async, per PR)        │  AI tool reviews all routine PRs.
-│  Who: AI tool + Lead    │  Lead Developer reviews PRs that qualify
-│  Developer (major PRs)  │  as "major" (see definition below).
+│  Who: AI tool + Product │  Product Manager reviews PRs that qualify
+│  Manager (major PRs)    │  as "major" (see definition below).
 │                         │  No merge without approval. (C-3 rule)
 └────────────┬────────────┘
              │ Approved
@@ -590,7 +590,7 @@ If any layer fails, the item goes back to the developer — it does not move for
 
 ### 6.2a Layer 1 — Definition of a Major PR
 
-The Lead Developer conducts a **manual review** for any PR that meets one or more of the following criteria. All other PRs are reviewed by the AI code review tool.
+The Product Manager conducts a **manual review** for any PR that meets one or more of the following criteria. All other PRs are reviewed by the AI code review tool.
 
 | Criterion | Example |
 | --------- | ------- |
@@ -602,9 +602,9 @@ The Lead Developer conducts a **manual review** for any PR that meets one or mor
 | **New dependency added** | Any new npm package, Python library, or infrastructure dependency |
 | **Breaking change to existing API** | Changes that would break a currently live endpoint or contract |
 
-If in doubt, the developer flags the PR for Lead Developer review in the PR description. The AI tool still reviews first; the Lead Developer reviews after.
+If in doubt, the developer flags the PR for Product Manager review in the PR description. The AI tool still reviews first; the Product Manager reviews after.
 
-> **Rule:** A PR that meets any one criterion above must be manually reviewed by the Lead Developer before merge, regardless of the AI tool's approval.
+> **Rule:** A PR that meets any one criterion above must be manually reviewed by the Product Manager before merge, regardless of the AI tool's approval.
 
 ### 6.2b Layer 3 — Cross-Team Exploratory Testing: Rotating Pair Model
 
@@ -689,7 +689,7 @@ DEFINITION OF DONE — CHECKLIST
 □  Requirements confirmed in writing before work started (C-2 PdMO gate)
 □  Design Gate (G2) passed before any code was written (C-2 PdMO gate)
 □  Developer has self-tested the feature
-□  PR reviewed and approved before merge (async — AI tool or Lead Dev)
+□  PR reviewed and approved before merge (async — AI tool or Product Manager)
 □  GitHub Issue status updated to "To be Reviewed" when PR is raised (C-3 field)
 □  Feature works as expected in the staging environment
 □  No obvious bugs or broken flows in staging
@@ -718,7 +718,7 @@ A Pull Request cannot be merged to staging unless the DoD checklist is confirmed
 Developer finishes feature on Dev
          │
          ▼
-PR raised → reviewed and approved (async — AI tool or Lead Dev)  [Layer 1]
+PR raised → reviewed and approved (async — AI tool or Product Manager)  [Layer 1]
          │
          ▼
 QA Owner reviews on Staging
@@ -828,7 +828,7 @@ A hybrid approach replaces the daily peer review meeting with two complementary 
 
 **Layer 1A — Async PR Review (immediate, Phase 1):**
 - All Pull Requests are reviewed by an AI code review tool before merge for routine changes
-- The Lead Developer conducts manual review for significant architectural changes or major PRs
+- The Product Manager conducts manual review for significant architectural changes or major PRs
 - No merge to staging without an approval — this directly enforces the C-3 PMO rule: *"Merging without PR review passage is prohibited"*
 - The daily 16:30 slot becomes a **staging environment check only** (QA Owner runs smoke test checklist) — not a code review meeting
 
@@ -851,24 +851,24 @@ A hybrid approach replaces the daily peer review meeting with two complementary 
 
 #### Why This Section Exists
 
-As AI tools allow developers to produce code faster than ever, the risk is not writing less code — it is shipping more untested code faster. QA must become a **formal, clearly defined role** rather than an afterthought. Equally, the Engineering Manager's most valuable contribution is no longer in writing features — it is in ensuring quality at scale.
+As AI tools allow developers to produce code faster than ever, the risk is not writing less code — it is shipping more untested code faster. QA must become a **formal, clearly defined role** rather than an afterthought. Equally, the Project Manager's most valuable contribution is no longer in writing features — it is in ensuring quality at scale.
 
 #### Role Responsibilities
 
 | Role | Primary Focus | QA Responsibility | Coding Focus |
 | ---- | ------------- | ----------------- | ------------ |
-| **Engineering Manager** | Quality oversight, team unblocking, system improvement | Owns QA process; reviews QA outputs; identifies systemic failures | ~30% — contributes where needed, not as primary coder |
-| **Tech Lead** | Architecture decisions, PR review, technical direction | Reviews all major PRs (Layer 1); escalates systemic code quality issues | ~50% — leads technical delivery |
-| **Individual Contributor (IC)** | Feature development, unit tests, self-review | Self-tests before PR; writes automated tests for their own code | ~80% — primary coding role |
+| **Project Manager** | Quality oversight, team unblocking, system improvement, client communication | Owns QA process oversight; reviews QA outputs; identifies systemic failures | ~30% — contributes where needed, not as primary coder |
+| **Product Manager** | Architecture decisions, PR review, technical direction, product quality | Reviews all major PRs (Layer 1); enforces DoD; escalates systemic code quality issues | ~50% — leads technical delivery |
+| **Engineer** | Feature development, unit tests, self-review | Self-tests before PR; writes automated tests for their own code | ~80% — primary coding role |
 | **QA Owner** | Smoke testing, DoD sign-off, bug logging | Runs Layer 2 (smoke test); signs off DoD checklist; logs KPI bugs | Not a coding role during QA rotation |
 
-> **Note:** These percentages reflect target allocation, not strict rules. The Engineering Manager still contributes to code — but their primary lever for impact is oversight, not output.
+> **Note:** These percentages reflect target allocation, not strict rules. The Project Manager still contributes to code — but their primary lever for impact is oversight, not output.
 
 #### The Manager Transition — From Doing to Overseeing
 
-The current pattern is that Engineering Managers spend the majority of their time writing code. As AI tools raise the baseline output of every IC, the manager's highest-value activity shifts to ensuring that output is correct, well-tested, and delivered reliably.
+The current pattern is that Project Managers spend the majority of their time writing code. As AI tools raise the baseline output of every Engineer, the manager's highest-value activity shifts to ensuring that output is correct, well-tested, and delivered reliably.
 
-**Target allocation for Engineering Managers:**
+**Target allocation for Project Managers:**
 
 ```
 CURRENT STATE                    TARGET STATE
@@ -881,14 +881,14 @@ CURRENT STATE                    TARGET STATE
 **What the 70% oversight looks like in practice:**
 - Reviewing QA Owner reports and KPI logs daily
 - Spotting patterns in pre-delivery bugs and initiating process fixes
-- Conducting or reviewing major PR assessments (alongside Tech Lead)
-- Mentoring ICs through technically challenging tasks
+- Conducting or reviewing major PR assessments (alongside Product Manager)
+- Mentoring Engineers through technically challenging tasks
 - Monitoring the staging environment health
 - Participating in the weekly PDMO as the quality representative for their team
 
 **Transition approach:** This shift does not happen overnight. Phase 2 (Trial) is the observation period. Phase 3 (Proving) is when managers begin actively reducing their coding allocation and building oversight habits. The KPI dashboard makes quality trends visible — managers use this data to direct their attention.
 
-> **Rule:** If the Engineering Manager is always the person who fixes the bug, the QA system has failed. The manager's job is to ensure the system catches bugs — not to catch every bug personally.
+> **Rule:** If the Project Manager is always the person who fixes the bug, the QA system has failed. The manager's job is to ensure the system catches bugs — not to catch every bug personally.
 
 ## Section 7 — Communication Protocol
 
@@ -1195,7 +1195,7 @@ These two meetings are frequently confused. They are distinct in purpose and sho
 |---|---|---|
 | **Owned by** | C-2 PdMO | System Framework (PM-led) |
 | **Focus** | Architecture health, code quality, technical debt | Task priorities, deadlines, blockers, client requirements |
-| **Attendees** | Tech Lead, Engineering Manager, developers | Full project team + PM |
+| **Attendees** | Product Manager, Project Manager, Engineers | Full project team + PM |
 | **Output** | weekly-tech-check.md — architecture decisions, tech debt log | Weekly product checklist, updated GitHub board |
 | **Frequency** | Weekly (per project) | Weekly (per confirmed schedule, Section 9.3) |
 
@@ -1723,7 +1723,7 @@ Does it help the client understand what was built or confirmed?
 | ----------------------------------------- | ----------------------------------------------- |
 | QA bug logs and pre-delivery test results | Delivery confirmation and release notes         |
 | KPI dashboard scores per team             | Daily progress report (EOD)                     |
-| PR code review comments (AI tool / Lead Dev) | Requirement confirmations (before work starts)  |
+| PR code review comments (AI tool / Product Manager) | Requirement confirmations (before work starts)  |
 | Architecture Decision Records (ADRs)      | Staging environment link for acceptance testing |
 | Team capacity and Skills Map data         | Timeline and delivery schedule                  |
 | Internal escalation and risk records      | Delay notifications (proactive)                 |
@@ -1932,7 +1932,7 @@ DEV environment
     │
     ▼
 PR reviewed and approved
-(async — AI tool or Lead Dev)
+(async — AI tool or Product Manager)
     │
     ▼
 STAGING environment
@@ -2110,11 +2110,11 @@ Each role receives a single-page summary of what the framework means for them sp
 
 | Role | Key Sections to Understand | Daily Actions |
 | ---- | -------------------------- | ------------- |
-| **Developer / IC** | Section 6 (QA layers, DoD), Section 7 (response protocol), Section 11.3 (docs/) | Self-test before PR; update GitHub Issue status; write tests for your code |
+| **Engineer** | Section 6 (QA layers, DoD), Section 7 (response protocol), Section 11.3 (docs/) | Self-test before PR; update GitHub Issue status; write tests for your code |
 | **QA Owner** | Section 6.2–6.4 (QA layers, smoke test, DoD), Section 5.6 (async staging check) | Run smoke test by 16:45; post result in channel; log bugs in KPI sheet |
 | **Designated Weekly Communicator** | Section 3.3 (DWC role), Section 7 (response templates) | Monitor client channel; acknowledge within 15 min; route to right person |
-| **Product Manager** | Sections 5, 7, 8, 9 (Daily Pulse, communication, reporting, meetings) | Run standup; complete KPI log by 17:00; send both EOD reports by 17:30 |
-| **Engineering Manager** | Section 6.9 (QA roles, manager transition), Section 4 (KPI dashboard) | Review QA outputs; identify patterns; mentor ICs; reduce coding allocation over time |
+| **Product Manager** | Sections 5, 6.9, 7, 8, 9 (Daily Pulse, QA gates, communication, reporting, meetings) | Run standup; complete KPI log by 17:00; send both EOD reports by 17:30; review major PRs |
+| **Project Manager** | Sections 5, 6.9, 4 (Daily Pulse, QA oversight, KPI dashboard) | Review QA outputs; identify patterns; mentor Engineers; reduce coding allocation over time |
 
 #### Onboarding New Team Members
 
@@ -2259,7 +2259,7 @@ DEFINITION OF DONE
 □  Requirements confirmed in writing before work started (C-2 gate)
 □  Design Gate (G2) passed before any code was written (C-2 gate)
 □  Developer has self-tested the feature
-□  PR reviewed and approved before merge (async — AI tool or Lead Dev)
+□  PR reviewed and approved before merge (async — AI tool or Product Manager)
 □  GitHub Issue status → "To be Reviewed" when PR raised (C-3 field)
 □  Feature works correctly on staging
 □  No obvious bugs or broken flows in staging
@@ -2548,7 +2548,7 @@ This table is a living document. It captures the key initiatives arising from th
 | Category | Title | Description | Solution Ideas | Priority | Timeline |
 | -------- | ----- | ----------- | -------------- | -------- | -------- |
 | **Governance** | PMO & PdMO Integration Mapping | Risk of parallel governance between C-2, C-3, and the System Framework without clear ownership lines | Map all responsibilities to clear owners; resolve Google Sheets vs GitHub Projects scope; unify EOD Report with C-3 SitRep | **Must-do** | Q1 2026 (Mar) |
-| **QA** | Transition Layer 1 to Async PR Review | Current peer review meeting format carries high cost and risk of becoming a formality | Subscribe to AI code review tool (CodeRabbit or equivalent); Lead Developer reviews major PRs manually | **Must-do** | Q1 2026 (Mar) |
+| **QA** | Transition Layer 1 to Async PR Review | Current peer review meeting format carries high cost and risk of becoming a formality | Subscribe to AI code review tool (CodeRabbit or equivalent); Product Manager reviews major PRs manually | **Must-do** | Q1 2026 (Mar) |
 | **QA** | QA Owner Nomination | All projects need named QA Owners to activate Layer 2 of the QA system | Each team nominates QA Owner and Backup by March 1 using Appendix H | **Must-do** | Q1 2026 (Mar 1) |
 | **Operations** | Google Drive Folder Structure Setup | Knowledge management system cannot function without the defined folder structure | Product team sets up Operations/, Projects/, Teams/ per Section 11.4 | **Must-do** | Q1 2026 (Mar 14) |
 | **Operations** | Shadow / Backup Assignments | No formal continuity coverage confirmed on any project | Confirm all shadow assignments per Section 10.2; document in Appendix L handover template | **Must-do** | Q1 2026 (Mar 7) |
@@ -2612,7 +2612,7 @@ AIBOS Uganda operates within three complementary governance layers. Each has a d
 | Weekly Architecture Review (15 min, squad) | **Owns** | — | — | Separate from PDMO; System Framework does not duplicate this |
 | GitHub Projects — task and issue master record | — | **Owns** | Maintains fields and uses as task source | PMs maintain GitHub Projects with required C-3 fields (Type, Status, Start Date, End Date, Work Hours) and use the board as the source for daily task planning. See Section 5.4. |
 | "No Ticket, No Code" enforcement | — | **Owns** | References | System Framework DoD checklist includes this as a required gate; Section 6.4 updated accordingly |
-| PR review approval before merge | — | **Owns** | Executes | C-3 mandates this; System Framework's Layer 1 QA (Section 6.2) is the execution mechanism via AI tool + Lead Dev review |
+| PR review approval before merge | — | **Owns** | Executes | C-3 mandates this; System Framework's Layer 1 QA (Section 6.2) is the execution mechanism via AI tool + Product Manager review |
 | Daily SitRep submission | — | **Owns format** | **Executes** | System Framework's EOD Report (Section 8.1) is the Uganda-level SitRep; one report satisfies both |
 | Twice-weekly PMO check (Mon & Thu, 15 min) | — | **Owns** | Aligns | Separate from PDMO; System Framework PMs prepare their EOD data for this check |
 | Predictive escalation to the Board | — | **Owns** | Feeds | System Framework's KPI dashboard and risk escalation process provide the data C-3 uses to escalate |
@@ -2655,7 +2655,7 @@ The previous approach of a unified report serving both audiences created tension
 
 **Conflict 3: Peer Review Meeting (System Framework Layer 1) vs. PR Approval Mandate (C-3)**
 
-*Resolution:* The daily peer review meeting is replaced. Layer 1 of the QA system is now **async PR review** — enforced by an AI code review tool for routine PRs and mandatory Lead Developer review for major changes. This directly implements the C-3 mandate ("no merge without PR review approval") while removing the meeting format that carries formality risk and high time cost. See Section 6.8 for the full Value-Risk-Cost analysis.
+*Resolution:* The daily peer review meeting is replaced. Layer 1 of the QA system is now **async PR review** — enforced by an AI code review tool for routine PRs and mandatory Product Manager review for major changes. This directly implements the C-3 mandate ("no merge without PR review approval") while removing the meeting format that carries formality risk and high time cost. See Section 6.8 for the full Value-Risk-Cost analysis.
 
 ### 17.5 Integration Points — Meeting Cadence
 
