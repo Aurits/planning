@@ -1,0 +1,15 @@
+# PDF generation commands
+
+# Framework v3 and Must-Do Action Plan (no Mermaid diagrams in body)
+pandoc AIBOS_Uganda_System_Driven_Delivery_Framework-v3.md -o AIBOS_Uganda_System_Driven_Delivery_Framework-v3.pdf --pdf-engine=wkhtmltopdf --standalone -t html5 -V margin-top=22mm -V margin-bottom=22mm -V margin-left=25mm -V margin-right=25mm
+
+pandoc AIBOS_Uganda_Must_Do_Action_Plan.md -o AIBOS_Uganda_Must_Do_Action_Plan.pdf --pdf-engine=wkhtmltopdf --standalone -t html5 -V margin-top=22mm -V margin-bottom=22mm -V margin-left=25mm -V margin-right=25mm
+
+# Team Onboarding Plan (has Mermaid diagrams — two-step process)
+# Step 1: mmdc pre-renders the 4 mermaid diagrams to SVG files and produces a processed .md
+# Step 2: pandoc converts the processed .md (with SVG image references) to PDF
+# This avoids relying on JavaScript execution in wkhtmltopdf entirely.
+mmdc -i AIBOS_Uganda_Team_Onboarding_Plan.md -o AIBOS_Uganda_Team_Onboarding_Plan_processed.md -t neutral -b white -w 1000
+pandoc AIBOS_Uganda_Team_Onboarding_Plan_processed.md -o AIBOS_Uganda_Team_Onboarding_Plan.pdf --pdf-engine=wkhtmltopdf --standalone -t html5 --no-highlight -V margin-top=22mm -V margin-bottom=22mm -V margin-left=25mm -V margin-right=25mm
+# Clean up temp files after:
+# rm AIBOS_Uganda_Team_Onboarding_Plan_processed.md AIBOS_Uganda_Team_Onboarding_Plan_processed-*.svg

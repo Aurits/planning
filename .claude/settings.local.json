@@ -11,7 +11,12 @@
       "Bash(pip install:*)",
       "Bash(wkhtmltopdf --version)",
       "Bash(ls:*)",
-      "Bash(wait)"
+      "Bash(wait)",
+      "Bash(npx --no-install mmdc --version)",
+      "Bash(npm --version)",
+      "Bash(npm install:*)",
+      "Bash(mmdc --version)",
+      "Bash(mmdc:*)"
     ]
   }
 }
