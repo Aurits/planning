@@ -431,9 +431,9 @@ INTERNAL SITREP — [Project] — [Day, Date]
 
 **What to do:**
 
-- Every developer checks: does a GitHub Issue exist for this work before writing any code?
+- Every engineer checks: does a GitHub Issue exist for this work before writing any code?
 - Every PR description must include a link to the corresponding GitHub Issue
-- If no issue exists, the developer creates one before opening the PR
+- If no issue exists, the engineer creates one before opening the PR
 - PMs audit compliance at the twice-weekly C-3 PMO check (Monday and Thursday)
 - The Definition of Done checklist (Section 6.4 of main framework) includes this as the first gate
 

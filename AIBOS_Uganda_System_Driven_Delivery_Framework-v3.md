@@ -688,7 +688,7 @@ DEFINITION OF DONE — CHECKLIST
 □  GitHub Issue exists for this task (No Ticket, No Code — C-3 PMO rule)
 □  Requirements confirmed in writing before work started (C-2 PdMO gate)
 □  Design Gate (G2) passed before any code was written (C-2 PdMO gate)
-□  Developer has self-tested the feature
+□  Engineer has self-tested the feature
 □  PR reviewed and approved before merge (async — AI tool or Product Manager)
 □  GitHub Issue status updated to "To be Reviewed" when PR is raised (C-3 field)
 □  Feature works as expected in the staging environment
@@ -1046,13 +1046,13 @@ Best regards,
 - Sent to the client channel by **17:30 every working day**
 - Written in plain, professional language — no GitHub issue numbers, no internal jargon, no KPI references
 - If there is a risk or delay, it is stated honestly and accompanied by what the team is doing about it
-- PM writes this report; QA Owner confirms accuracy of any quality-related items before it is sent
+- Project Manager writes this report; QA Owner confirms accuracy of any quality-related items before it is sent
 
 ### 8.2 Internal SitRep (Daily)
 
 The Internal SitRep is the **operational record** for internal management and the C-3 PMO. It contains the level of detail that the client does not need — task health, GitHub status, KPI notes, blockers — all in one place.
 
-> **C-3 PMO alignment:** The C-3 SitRep automation script generates the data layer (Epic Roadmap status, Issue Health, Resource Load from GitHub Projects). The PM appends the narrative sections to produce the unified Internal SitRep. One submission satisfies the C-3 SitRep requirement.
+> **C-3 PMO alignment:** The C-3 SitRep automation script generates the data layer (Epic Roadmap status, Issue Health, Resource Load from GitHub Projects). The Product Manager appends the narrative sections to produce the unified Internal SitRep. One submission satisfies the C-3 SitRep requirement.
 
 **Audience:** Internal management, C-3 PMO, Japan leadership (Prakhar/Nate).
 
@@ -2258,7 +2258,7 @@ DEFINITION OF DONE
 □  GitHub Issue exists for this task (C-3: No Ticket, No Code)
 □  Requirements confirmed in writing before work started (C-2 gate)
 □  Design Gate (G2) passed before any code was written (C-2 gate)
-□  Developer has self-tested the feature
+□  Engineer has self-tested the feature
 □  PR reviewed and approved before merge (async — AI tool or Product Manager)
 □  GitHub Issue status → "To be Reviewed" when PR raised (C-3 field)
 □  Feature works correctly on staging
