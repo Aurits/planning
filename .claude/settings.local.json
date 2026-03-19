@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc:*)",
+      "Bash(apt list:*)",
+      "Bash(cmd.exe /c 'where wkhtmltopdf')",
+      "Bash(cmd.exe /c 'where pandoc')",
+      "Bash(cmd.exe /c 'pandoc --version')",
+      "Bash(powershell.exe -Command \"Get-Command wkhtmltopdf -ErrorAction SilentlyContinue | Select-Object Source; Get-Command pandoc -ErrorAction SilentlyContinue | Select-Object Source\" 2>/dev/null)",
+      "Bash(sudo apt-get:*)",
+      "Bash(pip install:*)",
+      "Bash(wkhtmltopdf --version)",
+      "Bash(ls:*)"
+    ]
+  }
+}
